@@ -11,4 +11,4 @@ backend of this project is wordress i connected wordpress restapi with nuxtjs
 
 ```
 
-visit website at [lavazemesakhteman.com](https://lavazemesakhteman.com/).
+visit website at [lab.intelligilesolutions.com](https://lab.intelligilesolutions.com/).
