@@ -1,0 +1,23 @@
+{
+  "name": "kandaka",
+  "version": "1.0.0",
+  "description": "kandaka is a online shop",
+  "author": "Pedram Alidoust",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --hostname 'localhost' --port '3001'",
+    "build": "nuxt build",
+    "start": "nuxt start --hostname 'localhost' --port '3001'",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@splidejs/vue-splide": "^0.6.7",
+    "axios": "^0.26.1",
+    "nuxt": "^1.0.0",
+    "vue-split-carousel": "^1.1.1",
+    "woocommerce-api": "^1.5.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  }
+}

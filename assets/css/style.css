@@ -1,0 +1,173 @@
+/* General */
+/*
+@font-face {
+  font-family: iransanse;
+  src: url("~assets/fonts/IRANSansWebFaNum.ttf");
+}
+*/
+
+/* general */
+.BodyBackground {
+  background-image: url("~assets/pictures/bodybackground.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
+/* navbar component style */
+nav a {
+  color: #055452 !important;
+  font-family: Playfair Display !important;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color:  #e99d7b !important;
+}
+
+
+.logo {
+  border-radius: 50%;
+  width: 97px;
+}
+
+.searchbtn {
+  background-color: #e99d7b !important;
+  margin-left: -36px !important;
+  margin-top: 0px;
+  height: 37px;
+  width: 37px;
+  z-index: 1;
+}
+
+.searchicon {
+ color: #055452;
+ position: relative;
+ right: 2px;
+}
+
+.inputstyle {
+  border: 0.5px solid #707070 !important;
+  border-radius: 30px !important;
+}
+
+.loginbtn {
+  background-color: #e99d7b !important;
+  height: 45px;
+  border-radius: 30px !important;
+}
+
+.loginicon {
+  color: #055452;
+  font-size: 15pt;
+}
+
+.signintext {
+  font-weight: 600;
+  font-size: 16px;
+  color: #055452;
+  font-family: 'Open Sans';
+  font-style: normal;
+  padding: 8px;
+}
+
+.shopbtn {
+  background-color: #e99d7b !important;
+  border-radius: 50% !important;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+/* slider section */
+.slider {
+  border-radius: 30px;
+}
+
+.SliderTxt {
+  margin-top: -118%;
+  margin-left: 14%;
+  font-family: Playfair Display;
+  font-weight: 800;
+  font-size: 25pt;
+}
+
+.SliderDesc {
+  text-align: left;
+  margin-left: 14%;
+}
+
+.SliderBtn {
+  font-family: 'Open Sans';
+  font-weight: 400 !important;
+  font-size: 10pt !important;
+  margin-left: 14%;
+  border-radius: 30px !important;
+  background-color: #f0b86c !important;
+  color: #492e25;
+  border: none !important;
+  letter-spacing: 3px;
+  padding: 8px 17px !important;
+  text-transform: capitalize;
+}
+
+
+/*categiroe section */
+.CategorieTxt {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+/* off section*/
+.offbackground {
+  background-image: url("~assets/pictures/offbackground.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.OffCarousel {
+  margin-top: 95px !important;
+}
+
+.offimg {
+  margin-top: 215px;
+  width: 90%;
+}
+
+/* top products */
+
+.TopProducts {
+  font-family: Playfair Display !important;
+  font-weight: 400;
+  font-size: 35pt;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.hr {
+  width: 100%;
+  border-bottom: 2px solid #f0b86c;
+  line-height: 0.2em;
+}
+
+.toptextback {
+  background-color: #fafafa;
+  padding: 0 30px;
+}
+
+/* best products */
+
+.BestProducts {
+  font-family: Playfair Display !important;
+  font-weight: 600 !important;
+  font-size: 35pt;
+  width: 35%;
+  margin: 0 auto;  
+  background-color: #fafafa;
+  padding: 0 30px;
+}
