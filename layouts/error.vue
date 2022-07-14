@@ -1,9 +1,32 @@
 <template>
-  <div class="error-page">
-    <h1>Oops, something went wrong!</h1>
-    <p>Back to <a href="/">safety</a>!</p>
+<div>
+<TheHeader />  
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <img src="~/assets/pictures/404error.svg" class="w-100" alt="">
+    </div>
   </div>
+</div>
+    
+<TheFooter />
+</div> 
 </template>
+
+
+<script>
+import TheHeader from "@/components/Navigation/TheHeader";
+import TheFooter from "@/components/TheFooter";
+
+
+export default {
+    components: {
+    TheHeader,
+    TheFooter
+  },
+}
+</script>
 
 <style scoped>
 .error-page {

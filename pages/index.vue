@@ -2,34 +2,45 @@
   <div class="BodyBackground">
     <!--- navigation section -->
     <TheHeader />
-    <!-- slider section -->
-    <section>
+    <!-- slider section Desktop -->
+  <section class="d-none d-md-block d-lg-block mt-md-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <img src="~/assets/pictures/sliderback.jpg" class="w-100" alt="">
+            </div>
+          </div>
+        </div>
+      <!-- slider text section -->
       <div class="container">
         <div class="row">
-          <div class="col-12">
-              <img src="~/assets/pictures/sliderback.jpg" class="w-100" alt="">
+          <div class="col-lg-4 text-white">
+            <p class="SliderTxt">HEALTHY CARE</p>
+            <p class="SliderDesc">
+              Kandaka Company is proud to provide its cosmetic products with the latest technology methods to its consumers.
+            </p>
+            <button type="button" class="btn btn-warning SliderBtn">shop now</button>
+          </div>
+          <div class="col-lg-8 text-center">
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- slider text section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 text-white">
-          <p class="SliderTxt">HEALTHY CARE</p>
-          <p class="SliderDesc">
-            Kandaka Company is proud to provide its cosmetic products with the latest technology methods to its consumers.
-          </p>
-          <button type="button" class="btn btn-warning SliderBtn">shop now</button>
-        </div>
-        <div class="col-lg-8 text-center">
-        </div>
-      </div>
+  </section>
+  <!-- slider section mobile -->
+    <div class="container g-lg-none d-md-none text-center mt-5 ">
+        <img src="~/assets/pictures/menuslider2.svg" class="w-100 MobileSliderGreen" alt="slider">
+        <img src="~/assets/pictures/menuslider.png" class="w-100 MobileSliderPic" alt="slider">
+        <p class="MobileSliderTxtTitle text-white text-end px-5">HEALTHY CARE</p>
+        <p class="MobileSliderTxtDesc text-white text-end px-5">
+          Kandaka Company is proud to provide its 
+          cosmetic products with the latest technology 
+          methods to its consumers.
+        </p>
+      <button type="button" class="btn btn-warning SliderMobileBtn">shop now</button>
     </div>
-
     <!-- product categorie section -->
-    <section>
+    <!-- Desktop version -->
+  <section class="d-none d-lg-block">
     <div class="container px-lg-5 pb-5 px-5 pt-5">
       <div class="container px-lg-5 pt-3">
         <div class="row">
@@ -58,37 +69,216 @@
     </div>
     </section>
 
-    <!-- off products section -->
+    <!-- Mobile And Tablet version -->
+    <section class="d-lg-none py-5">
+    <div class="container px-lg-5 px-5 pt-5">
+      <div class="container px-lg-5 pt-3">
+        <div class="row">
+          <div class="col">
+            <img src="~/assets/pictures/categorie1.png" alt="" class="w-100">
+            <p class="CategorieTxt text-center mt-3">Hair Care</p>
+          </div>
+          <div class="col">
+            <img src="~/assets/pictures/categorie2.png" alt="" class="w-100">
+            <p class="CategorieTxt text-center mt-3">Up Care</p>
+          </div>
+          <div class="col">
+            <img src="~/assets/pictures/categorie3.png" alt="" class="w-100">
+            <p class="CategorieTxt text-center mt-3">Skin Care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <!-- off products section -->
     <section class="offbackground">
     <div class="container">
       <div class="row">
-          <div class="col-lg-4 text-start">
-          <img class="offimg" src="~/assets/pictures/offimg.svg" alt="">
+          <div class="col-lg-4">
+            <p class="OffTxt">Trending Discounts</p>
+            <p class="OffDesc">
+              The best discount code for 
+              the customers of the cosmetics company.
+            </p>
+            <!-- slider arrows -->
+            <div class="d-flex flex-row align-items-center">
+                <img class="OffLeftArrow ArrowsPosition px-4" src="~/assets/pictures/LeftArrow.svg" alt="LeftArrow">
+                <img class="OffRightArrow"  src="~/assets/pictures/RightArrow.svg" alt="RightArrow">
+            </div>
+          <img class="offimg d-none d-lg-block" src="~/assets/pictures/offimg.svg" alt="">
         </div>       
          <div class="col-lg-8 OffCarousel">
-                <split-carousel display-amount="3" :item-width="240" :height="320">
-                  <split-carousel-item>
-                    <img src="~/assets/pictures/categorie1.png" class="w-100" alt="">
-                  </split-carousel-item>
-                     <split-carousel-item>
-                    <img src="~/assets/pictures/categorie2.png" class="w-100" alt="">
-                  </split-carousel-item> 
-                    <split-carousel-item>
-                    <img src="~/assets/pictures/categorie3.png" class="w-100" alt="">
-                  </split-carousel-item>   
-                  <split-carousel-item>
-                    <img src="~/assets/pictures/categorie4.png" class="w-100" alt="">
-                  </split-carousel-item>  
-                   <split-carousel-item>
-                    <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
-                  </split-carousel-item> 
-                </split-carousel>
+              <div class="OffProdSlider">
+                   <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner2"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner3"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner4"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+       
+              </div>
         </div>
       </div>
     </div>
     </section>
     <!-- top products section -->
-    <section class="py-lg-5">
+    <section class="py-lg-5 mt-5 mt-lg-0 pt-5 pt-lg-0">
       <div class="container py-lg-5">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -101,30 +291,29 @@
           <!-- top products text -->
           <p class="text-center py-5 text-muted">
             List of the newest and best-selling cosmetic <br> products of our company
-          </p>
-                <split-carousel display-amount="4" :item-width="285" :height="320">
-                  <split-carousel-item>
-                    <img src="~/assets/pictures/categorie1.png" class="w-100" alt="">
-                  </split-carousel-item>
-                     <split-carousel-item>
-                    <img src="~/assets/pictures/categorie2.png" class="w-100" alt="">
-                  </split-carousel-item> 
-                    <split-carousel-item>
-                    <img src="~/assets/pictures/categorie3.png" class="w-100" alt="">
-                  </split-carousel-item>   
-                  <split-carousel-item>
-                    <img src="~/assets/pictures/categorie4.png" class="w-100" alt="">
-                  </split-carousel-item>  
-                   <split-carousel-item>
-                    <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
-                  </split-carousel-item> 
-                </split-carousel>
+          </p>       
+              <div class="TopProdSlider">
+                <div>
+                  <img src="~/assets/pictures/categorie1.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie2.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie3.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie4.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
+                </div>
+              </div>
         </div>
       </div>
     </section>
-    <!-- best products section -->
-        <!-- top products section -->
-    <section class="py-lg-5">
+   <!-- best products section -->
+    <section class="py-lg-5 mt-lg-0 pt-5 pt-lg-0">
       <div class="container py-lg-5">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -134,86 +323,153 @@
               </span>
             </p>
           </div>
-          <!-- top products text -->
+          <!-- Best products text -->
           <p class="text-center py-5 text-muted">
             List of the newest and best-selling cosmetic <br> products of our company
           </p>
-                <split-carousel display-amount="4" :item-width="285" :height="320">
-                  <split-carousel-item>
-                    <img src="~/assets/pictures/categorie1.png" class="w-100" alt="">
-                  </split-carousel-item>
-                     <split-carousel-item>
-                    <img src="~/assets/pictures/categorie2.png" class="w-100" alt="">
-                  </split-carousel-item> 
-                    <split-carousel-item>
-                    <img src="~/assets/pictures/categorie3.png" class="w-100" alt="">
-                  </split-carousel-item>   
-                  <split-carousel-item>
-                    <img src="~/assets/pictures/categorie4.png" class="w-100" alt="">
-                  </split-carousel-item>  
-                   <split-carousel-item>
-                    <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
-                  </split-carousel-item> 
-                </split-carousel>
+              <div class="BestProdSlider">
+                <div>
+                  <img src="~/assets/pictures/categorie1.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie2.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie3.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie4.png" class="w-100" alt="">
+                </div>
+                <div>
+                  <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
+                </div>
+              </div>
         </div>
       </div>
     </section>
-
     <TheFooter />
   </div>
 </template>
 
 <script>
+
+
 /* 
 import axios from "axios"; 
 */
-import { SplitCarousel, SplitCarouselItem } from "vue-split-carousel";
 import TheHeader from "@/components/Navigation/TheHeader";
 import TheFooter from "@/components/TheFooter";
 export default {
-   head: {
-    titleTemplate: 'Kandaka Project',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=1024, initial-scale=1' },
-      // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-      { hid: 'description', name: 'description', content: 'description about kandaka' }
-    ]
-  },
   components: {
     TheHeader,
     TheFooter,
-    SplitCarousel,
-    SplitCarouselItem
   },
-  /*
-  computed: {
-    FltCat: function () {
-      return this.categories.filter(
-        (item) =>
-          item.name !== "سایر محصولات" && item.name !== "فلکه سیم ایتالیا"
-      );
-    },
-  },
-  */
-  /*
-  asyncData(context) {
-    return axios
-      .get("https://lavazemesakhteman.com/wp-json/wc/v3/products/categories", {
-        params: {
-          per_page: 100,
-          page: 1,
-        },
+
+  methods: {}, 
+
+
+  mounted() {
+
+    $(function () {
+      // top products slider
+      $('.TopProdSlider').slick({
+        arrows: false,
+        infinite: false,
+        slidesToScroll: 4,
+        slidesToShow: 4,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+            },
+          },
+        ],
       })
-      .then((res) => {
-        return {
-          categories: res.data,
-        };
+      
+      // Best products slider
+    $('.BestProdSlider').slick({
+        dots: true,
+        appendDots: '.slider-dots',
+        arrows: false,
+        infinite: false,
+        slidesToScroll: 4,
+        slidesToShow: 4,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        nextArrow: $(".BestNext"),
+        prevArrow: $(".BestPrev"),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+            },
+          },
+        ],
       })
-      .catch((e) => context.error(e));
+
+
+      //Off Products slider
+         $('.OffProdSlider').slick({
+        dots: true,
+        appendDots: '.slider-dots',
+        arrows: true,
+        infinite: false,
+        slidesToScroll: 3,
+        slidesToShow: 3,
+        accessibility: true,
+        variableWidth: false,
+        focusOnSelect: false,
+        centerMode: false,
+        nextArrow: $(".OffLeftArrow"),
+        prevArrow: $(".OffRightArrow"),
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+            },
+          },
+        ],
+      })
+
+    })
   },
-  */
+
 };
+
+
 
 </script>
 

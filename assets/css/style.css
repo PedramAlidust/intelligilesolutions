@@ -1,11 +1,3 @@
-/* General */
-/*
-@font-face {
-  font-family: iransanse;
-  src: url("~assets/fonts/IRANSansWebFaNum.ttf");
-}
-*/
-
 /* general */
 .BodyBackground {
   background-image: url("~assets/pictures/bodybackground.jpg");
@@ -13,6 +5,13 @@
   background-position: top;
   background-size: cover;
   min-height: 100vh;
+}
+
+hr{
+  height: 1px !important;
+  color: #acaaaa !important;
+  width: 92%;
+  margin: 0 auto !important;
 }
 
 
@@ -28,10 +27,46 @@ nav a:hover {
   color:  #e99d7b !important;
 }
 
-
 .logo {
   border-radius: 50%;
   width: 97px;
+}
+
+@media all and (max-width: 994px) {
+
+  .logo {
+    border-radius: 50%;
+    width: 70px;
+  }
+
+  .SearchIcon {
+    width: 40px;
+    background-color: #e99d7b;
+    border-radius: 50%;
+    padding: 9px;
+  }
+
+  .ShopIcon {
+    width: 40px;  
+    background-color: #e99d7b;
+    border-radius: 40%;
+    padding: 9px;
+  }
+
+}
+
+@media all and (max-width: 1200px) {
+  .SearchForm {
+    display: none;
+  }
+}
+
+.MobileMenuBack {
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
+}
+
+.MobileMenuIcon {
+  margin-top: 30px;
 }
 
 .searchbtn {
@@ -82,6 +117,13 @@ nav a:hover {
   width: 40px;
 }
 
+@media all and (max-width: 1200px) {
+  .SearchForm {
+    display: none;
+  }
+}
+
+
 /* slider section */
 .slider {
   border-radius: 30px;
@@ -100,6 +142,7 @@ nav a:hover {
   margin-left: 14%;
 }
 
+
 .SliderBtn {
   font-family: 'Open Sans';
   font-weight: 400 !important;
@@ -114,6 +157,63 @@ nav a:hover {
   text-transform: capitalize;
 }
 
+.SliderMobileBtn {
+
+  font-family: 'Open Sans';
+  font-weight: 400 !important;
+  font-size: 10pt !important;
+  border-radius: 30px !important;
+  background-color: #f0b86c !important;
+  color: #492e25;
+  border: none !important;
+  letter-spacing: 3px;
+  padding: 8px 17px !important;
+  text-transform: capitalize;
+}
+
+@media all and (max-width: 990px) {
+
+  .SliderTxt {
+    margin-top: -45%;
+    margin-left: 10%;
+    font-family: Playfair Display;
+    font-weight: 800;
+    font-size: 25pt;
+  }
+
+  .SliderDesc {
+    text-align: left;
+    margin-left: 10%;
+    width: 300px;
+  }
+
+  .SliderBtn {
+    margin-left: 10%;
+  }
+  
+}
+
+.MobileSliderGreen {
+  margin-top: 80px;
+}
+
+.MobileSliderPic {
+ margin-top: -740px;; 
+}
+
+.MobileSliderTxtTitle {
+ font-family: Playfair Display;
+ font-size: 18pt;
+ font-weight: 800;
+ margin-top: -210px;
+ color: #e3e3e3;
+}
+
+.MobileSliderTxtDesc {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 10pt;
+}
 
 /*categiroe section */
 .CategorieTxt {
@@ -128,15 +228,125 @@ nav a:hover {
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 450px;
 }
 
 .OffCarousel {
   margin-top: 95px !important;
 }
 
+@media screen and (max-width: 768px) {
+  .OffCarousel {
+    margin-top: 45px !important;
+  }
+}
+  
+
 .offimg {
-  margin-top: 215px;
+  margin-top: 20px;
   width: 90%;
+}
+
+.OffTxt {
+  margin-left: 11%;
+  margin-top: 10%;
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 22pt;
+}
+
+.OffDesc {
+  font-family: Poppins;
+  margin-left: 12%;
+  font-size: 12pt;
+  text-align: left;
+  color: #606060;
+}
+
+.ArrowsPosition {
+  margin-left: 5%;
+}
+
+.OffSinglePicBackPos {
+  margin-left: 1.5px;
+}
+
+.OffBaner {
+  background-image: url("~/assets/pictures/off1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffBaner2 {
+  background-image: url("~/assets/pictures/off2.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffBaner3 {
+  background-image: url("~/assets/pictures/off3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffBaner4 {
+  background-image: url("~/assets/pictures/off1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffCard {
+  background-image: url("~/assets/pictures/OffSinglePicBackground.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.OffCardTxt {
+  padding:  16px 10px 0px 10px;
+  color: #2a2446;
+  font-family: 'Open Sans';
+  font-size: 7pt;
+}
+
+.CardPrice {
+  color: #65a79f;
+  font-family: 'Open Sans';
+  font-size: 15pt;
+  font-style: italic;
+  position: relative;
+  top: 16px;
+  left: 10px;
+}
+
+.CardButton {
+  font-family: 'Open Sans';
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  background-color: #f0b86c !important;
+  font-size: 7pt !important;
+  padding: 5px !important;
+  position: relative;
+  top: 10px;
+  right: 10px;
 }
 
 /* top products */
@@ -171,3 +381,212 @@ nav a:hover {
   background-color: #fafafa;
   padding: 0 30px;
 }
+
+
+/* Footer section */
+
+.FooterBkg {
+  background-image: url("~assets/pictures/footerbkg.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.FooterMobileForm {
+  background-image: url("~assets/pictures/FooterFormBkg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  min-height: 350px;
+}
+
+.MobileFooterTitle {
+  font-family: 'Open Sans';
+  font-size: 16pt;
+  font-weight: 600;
+  color: #000;
+}
+
+.MobileFooterDesc {
+  font-family: 'Open Sans';
+  font-size: 12pt;
+  font-weight: 600;
+  color: #2a2446;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.KandakaFooter {
+  width: 110px;
+  margin-left: 15%;
+}
+
+.KandakaMobileFooter {
+  width: 110px;;
+}
+
+.contactbg {
+  background-image: url("~assets/pictures/contactbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 70px;
+  min-height: 280px;
+  border-radius: 16px;
+}
+
+.ContactTitle {
+ margin-top: 90px; 
+ font-family: 'Open Sans';
+ font-weight: 600;
+ font-size: 26pt;
+}
+
+.ContactDesc {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+.FormSection {
+  margin-top: 160px; 
+  margin-left: 10px;
+}
+
+.ContactInputStyle {
+  border: 0.5px solid #707070 !important;
+  background-color: #fafafa !important;
+  width: 340px !important;
+}
+
+.ContactBtn {
+background-color: #055452 !important;
+margin-left: -36px !important;
+margin-top: 0px;
+height: 37px;
+width: 37px;
+z-index: 1;
+}
+
+.ContactIcon {
+  color: #fafafa;
+  position: relative;
+  right: 2px;
+ }
+
+ .SearchFormLabel {
+  position: absolute;
+  color: #a1a2a1;
+  top: 10px;
+  right: 75%;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+
+ }
+
+ .FormLabel {
+  position: absolute;
+  color: #a1a2a1;
+  top: 10px;
+  right: 230px;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+ }
+
+ .FooterLogoTxt {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #fafafa;
+  text-align: left;
+ }
+
+ .FooterMobileLogoTxt {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #fafafa;
+  text-align: center;
+ }
+
+ .SocialIcons {
+  color: #e99d7b;
+  font-size: 14pt;
+ }
+
+ .FooterMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #e99d7b;
+  text-align: left;
+  margin-top: 50%;
+ }
+
+ .FooterResponsiveMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #e99d7b;
+  margin-top: 10%;
+ }
+
+ .FooterSubMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 10pt;
+  color: #fff;
+  text-align: left;
+ }
+
+
+ .FtrSubMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 10pt;
+  color: #fff;
+ }
+
+ .LinksPadding {
+  padding: 0px 0px 0px 20% !important;
+ }
+
+ .MobileFooterBackground {
+  background-image: url("~assets/pictures/MbFtBkg.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 20px;
+ }
+
+ .GmailIcon {
+  padding: 5px 9px;
+  border-radius: 50%;
+  background-color: #e99d7b;
+  color: #055452;
+ }
+
+ .copyright {
+  background-color: #fafafa;
+ }
+
+ .CopyrightTxt {
+  margin-top: 3%;
+  margin-left: 8%;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 11pt;
+ }
+
+ .payments {
+  margin-top: 2%;
+  margin-left: 40%;
+ }
+
