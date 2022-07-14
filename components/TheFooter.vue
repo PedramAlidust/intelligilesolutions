@@ -91,8 +91,7 @@
                   </p>
                      <div class="d-flex flex-row FormMobileSection justify-content-center mt-4 mt-md-5 mt-lg-0">
                           <div class="form-outline">
-                            <input type="search" id="form3" class="form-control ContactInputStyle" />
-                            <label class="FormLabel" for="form3">Enter your email</label>
+                            <input type="search" id="form3" class="form-control ContactInputStyle" placeholder="enter your email" />
                           </div>
                           <button type="button" class="btn ContactBtn">
                             <i class="bi bi-forward ContactIcon"></i>
@@ -177,10 +176,10 @@
             </div>
             <div class="col-lg-6">
                  <div class="text-center"> 
-                    <img class="px-2" src="~/assets/pictures/visa.svg" alt="visa">
-                    <img class="px-2" src="~/assets/pictures/paypal.svg" alt="master">
-                    <img class="px-2" src="~/assets/pictures/master.svg" alt="paypal">
-                    <img class="px-2" src="~/assets/pictures/bitcoin.svg" alt="bitcoin">
+                    <img class="px-1" src="~/assets/pictures/visa.svg" alt="visa">
+                    <img class="px-0" src="~/assets/pictures/paypal.svg" alt="master">
+                    <img class="px-1" src="~/assets/pictures/master.svg" alt="paypal">
+                    <img class="px-0" src="~/assets/pictures/bitcoin.svg" alt="bitcoin">
                 </div>
             </div>
           </div>

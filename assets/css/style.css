@@ -32,6 +32,13 @@ nav a:hover {
   width: 97px;
 }
 
+@media screen and (max-width: 320px) {
+  .logo {
+    display: none;
+  }
+}
+  
+
 @media all and (max-width: 994px) {
 
   .logo {
@@ -193,20 +200,28 @@ nav a:hover {
   
 }
 
-.MobileSliderGreen {
-  margin-top: 80px;
+.SliderMbBkg {
+  background-image: url("~assets/pictures/SliderMbBkg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 70vh;
 }
 
-.MobileSliderPic {
- margin-top: -740px;; 
-}
 
 .MobileSliderTxtTitle {
  font-family: Playfair Display;
  font-size: 18pt;
  font-weight: 800;
- margin-top: -210px;
  color: #e3e3e3;
+ padding-top: 80%;
+}
+
+@media screen and (max-width: 320px) {
+  .MobileSliderTxtTitle {
+    padding-top: 115%;
+    font-size: 15pt;
+  }
 }
 
 .MobileSliderTxtDesc {
@@ -214,6 +229,14 @@ nav a:hover {
   font-weight: 400;
   font-size: 10pt;
 }
+
+@media screen and (max-width: 320px) {
+  .MobileSliderTxtDesc {
+    display: none;
+  }
+}
+  
+
 
 /*categiroe section */
 .CategorieTxt {
@@ -359,6 +382,12 @@ nav a:hover {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 500px) {
+  .TopProducts {
+    font-size: 20pt;
+  }
+}
+
 .hr {
   width: 100%;
   border-bottom: 2px solid #f0b86c;
@@ -380,6 +409,12 @@ nav a:hover {
   margin: 0 auto;  
   background-color: #fafafa;
   padding: 0 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .BestProducts {
+    font-size: 20pt;
+  }
 }
 
 
@@ -414,7 +449,7 @@ nav a:hover {
   font-size: 12pt;
   font-weight: 600;
   color: #2a2446;
-  width: 300px;
+  width:  100%;
   margin: 0 auto;
 }
 
@@ -458,7 +493,7 @@ nav a:hover {
 .ContactInputStyle {
   border: 0.5px solid #707070 !important;
   background-color: #fafafa !important;
-  width: 340px !important;
+  width: 100% !important;
 }
 
 .ContactBtn {
@@ -492,7 +527,7 @@ z-index: 1;
   position: absolute;
   color: #a1a2a1;
   top: 10px;
-  right: 230px;
+  right: 170px;
   font-family: 'Open Sans';
   font-size: 8pt;
   font-style: italic;
@@ -513,6 +548,12 @@ z-index: 1;
   font-size: 12pt;
   color: #fafafa;
   text-align: center;
+ }
+
+ @media screen and (max-width: 320px) {
+  .FooterMobileLogoTxt {
+    text-align: justify;
+  }
  }
 
  .SocialIcons {

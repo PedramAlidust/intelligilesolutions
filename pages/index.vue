@@ -27,9 +27,7 @@
       </div>
   </section>
   <!-- slider section mobile -->
-    <div class="container g-lg-none d-md-none text-center mt-5 ">
-        <img src="~/assets/pictures/menuslider2.svg" class="w-100 MobileSliderGreen" alt="slider">
-        <img src="~/assets/pictures/menuslider.png" class="w-100 MobileSliderPic" alt="slider">
+    <div class="container g-lg-none d-md-none text-center mt-5 SliderMbBkg">
         <p class="MobileSliderTxtTitle text-white text-end px-5">HEALTHY CARE</p>
         <p class="MobileSliderTxtDesc text-white text-end px-5">
           Kandaka Company is proud to provide its 
@@ -74,15 +72,15 @@
     <div class="container px-lg-5 px-5 pt-5">
       <div class="container px-lg-5 pt-3">
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <img src="~/assets/pictures/categorie1.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Hair Care</p>
           </div>
-          <div class="col">
+          <div class="col-12">
             <img src="~/assets/pictures/categorie2.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Up Care</p>
           </div>
-          <div class="col">
+          <div class="col-12">
             <img src="~/assets/pictures/categorie3.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Skin Care</p>
           </div>
@@ -369,7 +367,6 @@ export default {
 
 
   mounted() {
-
     $(function () {
       // top products slider
       $('.TopProdSlider').slick({
@@ -394,6 +391,13 @@ export default {
             settings: {
               slidesToScroll: 2,
               slidesToShow: 2,
+            },
+          },
+           {
+            breakpoint: 500,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 1,
             },
           },
         ],
@@ -428,6 +432,13 @@ export default {
               slidesToShow: 2,
             },
           },
+           {
+            breakpoint: 500,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 1,
+            },
+          },
         ],
       })
 
@@ -459,6 +470,13 @@ export default {
             settings: {
               slidesToScroll: 2,
               slidesToShow: 2,
+            },
+          },
+           {
+            breakpoint: 500,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 1,
             },
           },
         ],
