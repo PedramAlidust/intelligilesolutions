@@ -1,4 +1,5 @@
 <template>
+<section>
   <div>
     <!-- Desktop And Tablet version -->
     <section class="background d-none d-md-block d-lg-block">
@@ -6,34 +7,39 @@
             <div class="container pt-5">
                 <div class="container pt-3">
                     <div class="row pt-4">
-                        <div class="col-lg-6 col-md-6 LeftBkg text-center py-5">
-                            <img src="~assets/pictures/logokandaka.png" class="w-100" alt="logo">
-                        </div>
                         <div class="pt-5 col-lg-6 col-md-6 bg-white px-5">
-                            <p class="LoginTitle text-center">Login</p>
-                            <p class="text-center text-muted">Please login to your account.</p>
+                            <p class="LoginTitle text-center">Sign Up</p>
+                            <p class="text-center text-muted">Please register by completing the information below</p>
                             <!-- login form -->
                                 <form @submit.prevent="FormSubmit" class="my-5">
+                                    <!-- Name input -->
+                                    <div class="form-outline mb-2">
+                                        <input v-model="name" placeholder="Your Name" type="text" id="input1" class="InputStyle form-control" />
+                                        <p class="text-danger" v-if="NameCheck">No Empty Name Field</p>
+                                    </div>
                                     <!-- Email input -->
-                                    <div class="form-outline mb-3">
-                                        <input v-model="email" placeholder="Email Address" type="email" id="input1" class="InputStyle form-control" />
-                                        <p class="text-danger" v-if="MailCheck">No Empty email Field</p>
+                                    <div class="form-outline mb-2">
+                                        <input v-model="email" placeholder="kandaka@example.com" type="email" id="input2" class="InputStyle form-control" />
+                                        <p class="text-danger" v-if="MailCheck">No Empty Email Field</p>
                                     </div>
                                     <!-- Password input -->
                                     <div class="form-outline mb-2">
-                                        <input v-model="password" placeholder="Password" type="password" id="input2" class="InputStyle form-control" />
+                                        <input v-model="password" placeholder="Password" type="password" id="input3" class="InputStyle form-control" />
                                         <p class="text-danger" v-if="PassCheck">No Empty Password Field</p>
                                     </div>
-                                    <p class="mb-4 text-muted">Forgot password?</p>
+                                    <p class="my-4 text-center terms">
+                                        By pressing “Create Account” you agree to our 
+                                        <span class="TermSpan"> terms & conditions </span>
+                                    </p>
                                     <!-- Submit button -->
                                     <button type="submit" class="btn BtnStyle btn-block mb-4 SubmitBtnStyle">
                                         Continue
                                     </button>
                                     <!-- flex column -->
                                     <div class="d-flex flex-row pb-4">
-                                        <p class="SignUpTxt">Need an account?</p>
-                                        <nuxt-link to="/signup">
-                                        <p class="SignUpTxt pe-2 text-muted">Sign Up</p>
+                                        <p class="SignUpTxt">Already have account?</p>
+                                        <nuxt-link to="/login">
+                                        <p class="SignUpTxt pe-2 text-muted">Log in</p>
                                         </nuxt-link>
                                     </div>        
                                     <!-- google login -->
@@ -54,6 +60,9 @@
                               </form>
                             <!-- end login form -->    
                         </div>
+                        <div class="col-lg-6 col-md-6 LeftBkg text-center py-5">
+                            <img src="~assets/pictures/SignUpRight.svg" class="w-100" alt="logo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,30 +74,38 @@
              <img src="~assets/pictures/logokandaka.png" class="MobileLogo" alt="logo">
         </div>
             <div class="py-4 bg-white px-3 FormMobileBkgStyle">
-                            <p class="mt-3 LoginTitle text-center">Login</p>
-                            <p class="text-center text-muted">Please login to your account.</p>
+                            <p class="mt-3 LoginTitle text-center">Sign up</p>
+                            <p class="text-center text-muted">Please register by completing the information below</p>
                             <!-- login form -->
                                 <form @submit.prevent="FormSubmit" class="my-4">
+                                       <!-- Name input -->
+                                    <div class="form-outline mb-2">
+                                        <input v-model="name" placeholder="Your Name" type="text" id="input1" class="InputStyle form-control" />
+                                        <p class="text-danger" v-if="NameCheck">No Empty Name Field</p>
+                                    </div>
                                     <!-- Email input -->
-                                    <div class="form-outline mb-3">
-                                        <input v-model="email" placeholder="Email Address" type="email" id="input1" class="InputStyle form-control" />
-                                        <p class="text-danger" v-if="MailCheck">No Empty email Field</p>
+                                    <div class="form-outline mb-2">
+                                        <input v-model="email" placeholder="kandaka@example.com" type="email" id="input2" class="InputStyle form-control" />
+                                        <p class="text-danger" v-if="MailCheck">No Empty Email Field</p>
                                     </div>
                                     <!-- Password input -->
                                     <div class="form-outline mb-2">
-                                        <input v-model="password" placeholder="Password" type="password" id="input2" class="InputStyle form-control" />
+                                        <input v-model="password" placeholder="Password" type="password" id="input3" class="InputStyle form-control" />
                                         <p class="text-danger" v-if="PassCheck">No Empty Password Field</p>
                                     </div>
-                                    <p class="mb-4 text-muted">Forgot password?</p>
+                                    <p class="my-4 text-center terms">
+                                        By pressing “Create Account” you agree to our 
+                                        <span class="TermSpan"> terms & conditions </span>
+                                    </p>
                                     <!-- Submit button -->
                                     <button type="submit" class="btn BtnStyle btn-block mb-4 SubmitBtnStyle">
-                                        Continue
+                                        Create Account
                                     </button>
                                     <!-- flex column -->
                                     <div class="d-flex flex-row pb-4">
-                                        <p class="SignUpTxt">Need an account?</p>
-                                        <nuxt-link to="/signup">
-                                        <p class="SignUpTxt pe-2 text-muted">Sign Up</p>
+                                        <p class="SignUpTxt">Already have account?</p>
+                                        <nuxt-link to="/login">
+                                        <p class="SignUpTxt pe-2 text-muted">Log In</p>
                                         </nuxt-link>
                                     </div>        
                                     <!-- google login -->
@@ -111,21 +128,29 @@
                         </div>
     </section>
   </div>
+</section>    
 </template>
 
 <script>
 export default {
    data() {
         return {
+            name: '',
             email: '',
             password: '',
             MailCheck: false,
             PassCheck: false,
+            NameCheck: false
         }
    },
 
     methods: {
         FormSubmit() {
+            if(!this.name) {
+                this.NameCheck = true
+            } else {
+                this.NameCheck = false
+            }
             if(!this.email) {
                 this.MailCheck = true;
             } else {
@@ -145,7 +170,20 @@ export default {
 }
 </script>
 
+
 <style scoped>
+.TermSpan {
+   color: #e99d7b;
+   text-decoration: underline;
+}
+
+.terms {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    line-height: 1.25;
+    color: #8a9ead;
+    font-size: 10pt;
+}
 
 .FormMobileBkgStyle {
     border-radius: 15px;
@@ -220,7 +258,7 @@ export default {
 }
 
 .LeftBkg {
-    background-color: #055452;
+    background-color: #ffff;
 }
 
 .LoginTitle {
