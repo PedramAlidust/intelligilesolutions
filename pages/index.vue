@@ -442,7 +442,6 @@ export default {
         ],
       })
 
-
       //Off Products slider
          $('.OffProdSlider').slick({
         dots: true,
@@ -487,11 +486,291 @@ export default {
 
 };
 
-
-
 </script>
 
 
 <style scoped>
+/* slider section */
+.slider {
+  border-radius: 30px;
+}
+
+.SliderTxt {
+  margin-top: -118%;
+  margin-left: 14%;
+  font-family: Playfair Display;
+  font-weight: 800;
+  font-size: 25pt;
+}
+
+.SliderDesc {
+  text-align: left;
+  margin-left: 14%;
+}
+
+
+.SliderBtn {
+  font-family: 'Open Sans';
+  font-weight: 400 !important;
+  font-size: 10pt !important;
+  margin-left: 14%;
+  border-radius: 30px !important;
+  background-color: #f0b86c !important;
+  color: #492e25;
+  border: none !important;
+  letter-spacing: 3px;
+  padding: 8px 17px !important;
+  text-transform: capitalize;
+}
+
+.SliderMobileBtn {
+
+  font-family: 'Open Sans';
+  font-weight: 400 !important;
+  font-size: 10pt !important;
+  border-radius: 30px !important;
+  background-color: #f0b86c !important;
+  color: #492e25;
+  border: none !important;
+  letter-spacing: 3px;
+  padding: 8px 17px !important;
+  text-transform: capitalize;
+}
+
+@media all and (max-width: 990px) {
+
+  .SliderTxt {
+    margin-top: -45%;
+    margin-left: 10%;
+    font-family: Playfair Display;
+    font-weight: 800;
+    font-size: 25pt;
+  }
+
+  .SliderDesc {
+    text-align: left;
+    margin-left: 10%;
+    width: 300px;
+  }
+
+  .SliderBtn {
+    margin-left: 10%;
+  }
+  
+}
+
+.SliderMbBkg {
+  background-image: url("~assets/pictures/SliderMbBkg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 70vh;
+}
+
+
+.MobileSliderTxtTitle {
+ font-family: Playfair Display;
+ font-size: 18pt;
+ font-weight: 800;
+ color: #e3e3e3;
+ padding-top: 80%;
+}
+
+@media screen and (max-width: 320px) {
+  .MobileSliderTxtTitle {
+    padding-top: 115%;
+    font-size: 15pt;
+  }
+}
+
+.MobileSliderTxtDesc {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+@media screen and (max-width: 320px) {
+  .MobileSliderTxtDesc {
+    display: none;
+  }
+}
+  
+/*categiroe section */
+.CategorieTxt {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+/* off section*/
+.offbackground {
+  background-image: url("~assets/pictures/offbackground.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+}
+
+.OffCarousel {
+  margin-top: 95px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .OffCarousel {
+    margin-top: 45px !important;
+  }
+}
+  
+
+.offimg {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.OffTxt {
+  margin-left: 11%;
+  margin-top: 10%;
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 22pt;
+}
+
+.OffDesc {
+  font-family: Poppins;
+  margin-left: 12%;
+  font-size: 12pt;
+  text-align: left;
+  color: #606060;
+}
+
+.ArrowsPosition {
+  margin-left: 5%;
+}
+
+.OffSinglePicBackPos {
+  margin-left: 1.5px;
+}
+
+.OffBaner {
+  background-image: url("~/assets/pictures/off1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffBaner2 {
+  background-image: url("~/assets/pictures/off2.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffBaner3 {
+  background-image: url("~/assets/pictures/off3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffBaner4 {
+  background-image: url("~/assets/pictures/off1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.OffCard {
+  background-image: url("~/assets/pictures/OffSinglePicBackground.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.OffCardTxt {
+  padding:  16px 10px 0px 10px;
+  color: #2a2446;
+  font-family: 'Open Sans';
+  font-size: 7pt;
+}
+
+.CardPrice {
+  color: #65a79f;
+  font-family: 'Open Sans';
+  font-size: 15pt;
+  font-style: italic;
+  position: relative;
+  top: 16px;
+  left: 10px;
+}
+
+.CardButton {
+  font-family: 'Open Sans';
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  background-color: #f0b86c !important;
+  font-size: 7pt !important;
+  padding: 5px !important;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+/* top products */
+
+.TopProducts {
+  font-family: Playfair Display !important;
+  font-weight: 400;
+  font-size: 35pt;
+  width: 35%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .TopProducts {
+    font-size: 20pt;
+  }
+}
+
+.hr {
+  width: 100%;
+  border-bottom: 2px solid #f0b86c;
+  line-height: 0.2em;
+}
+
+.toptextback {
+  background-color: #fafafa;
+  padding: 0 30px;
+}
+
+/* best products */
+.BestProducts {
+  font-family: Playfair Display !important;
+  font-weight: 600 !important;
+  font-size: 35pt;
+  width: 35%;
+  margin: 0 auto;  
+  background-color: #fafafa;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .BestProducts {
+    font-size: 20pt;
+  }
+}
 
 </style>

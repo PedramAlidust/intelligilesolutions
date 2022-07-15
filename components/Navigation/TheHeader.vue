@@ -39,11 +39,13 @@
         </div>
       </div>
       <div class="col-lg-3 text-start py-4 d-flex flex-row  flex-row-reverse">
+        <nuxt-link to="/login">
         <button type="button" class="btn loginbtn">
             <i class="bi bi-box-arrow-right loginicon">
               <span class="signintext">sign in</span>
             </i>         
         </button>
+        </nuxt-link>
         <button type="button" class="btn shopbtn">
             <i class="bi bi-bag shopicon"></i>         
         </button>      
@@ -80,4 +82,131 @@ export default {
 
 
 <style scoped>
+/* navbar component style */
+nav a {
+  color: #055452 !important;
+  font-family: Playfair Display !important;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color:  #e99d7b !important;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 97px;
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    display: none;
+  }
+}
+  
+
+@media all and (max-width: 994px) {
+
+  .logo {
+    border-radius: 50%;
+    width: 70px;
+  }
+
+  .SearchIcon {
+    width: 40px;
+    background-color: #e99d7b;
+    border-radius: 50%;
+    padding: 9px;
+  }
+
+  .ShopIcon {
+    width: 40px;  
+    background-color: #e99d7b;
+    border-radius: 40%;
+    padding: 9px;
+  }
+
+}
+
+@media all and (max-width: 1200px) {
+  .SearchForm {
+    display: none;
+  }
+}
+
+ .SearchFormLabel {
+  position: absolute;
+  color: #a1a2a1;
+  top: 10px;
+  right: 75%;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+
+ }
+
+.MobileMenuBack {
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
+}
+
+.MobileMenuIcon {
+  margin-top: 30px;
+}
+
+.searchbtn {
+  background-color: #e99d7b !important;
+  margin-left: -36px !important;
+  margin-top: 0px;
+  height: 37px;
+  width: 37px;
+  z-index: 1;
+}
+
+.searchicon {
+ color: #055452;
+ position: relative;
+ right: 2px;
+}
+
+.inputstyle {
+  border: 0.5px solid #707070 !important;
+  border-radius: 30px !important;
+}
+
+.loginbtn {
+  background-color: #e99d7b !important;
+  height: 45px;
+  border-radius: 30px !important;
+}
+
+.loginicon {
+  color: #055452;
+  font-size: 15pt;
+}
+
+.signintext {
+  font-weight: 600;
+  font-size: 16px;
+  color: #055452;
+  font-family: 'Open Sans';
+  font-style: normal;
+  padding: 8px;
+}
+
+.shopbtn {
+  background-color: #e99d7b !important;
+  border-radius: 50% !important;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+@media all and (max-width: 1200px) {
+  .SearchForm {
+    display: none;
+  }
+}
+
 </style>

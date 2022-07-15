@@ -196,7 +196,203 @@ export default {
 </script>
 
 <style scoped>
-.footer-margin {
-  margin-left: auto;
+/* Footer section */
+.FooterBkg {
+  background-image: url("~assets/pictures/footerbkg.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
 }
+
+.FooterMobileForm {
+  background-image: url("~assets/pictures/FooterFormBkg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  min-height: 350px;
+}
+
+.MobileFooterTitle {
+  font-family: 'Open Sans';
+  font-size: 16pt;
+  font-weight: 600;
+  color: #000;
+}
+
+.MobileFooterDesc {
+  font-family: 'Open Sans';
+  font-size: 12pt;
+  font-weight: 600;
+  color: #2a2446;
+  width:  100%;
+  margin: 0 auto;
+}
+
+.KandakaFooter {
+  width: 110px;
+  margin-left: 15%;
+}
+
+.KandakaMobileFooter {
+  width: 110px;;
+}
+
+.contactbg {
+  background-image: url("~assets/pictures/contactbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0px 70px;
+  min-height: 280px;
+  border-radius: 16px;
+}
+
+.ContactTitle {
+ margin-top: 90px; 
+ font-family: 'Open Sans';
+ font-weight: 600;
+ font-size: 26pt;
+}
+
+.ContactDesc {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+.FormSection {
+  margin-top: 160px; 
+  margin-left: 10px;
+}
+
+.ContactInputStyle {
+  border: 0.5px solid #707070 !important;
+  background-color: #fafafa !important;
+  width: 100% !important;
+}
+
+.ContactBtn {
+background-color: #055452 !important;
+margin-left: -36px !important;
+margin-top: 0px;
+height: 37px;
+width: 37px;
+z-index: 1;
+}
+
+.ContactIcon {
+  color: #fafafa;
+  position: relative;
+  right: 2px;
+ }
+
+ .FormLabel {
+  position: absolute;
+  color: #a1a2a1;
+  top: 10px;
+  right: 170px;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+ }
+
+ .FooterLogoTxt {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #fafafa;
+  text-align: left;
+ }
+
+ .FooterMobileLogoTxt {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #fafafa;
+  text-align: center;
+ }
+
+ @media screen and (max-width: 320px) {
+  .FooterMobileLogoTxt {
+    text-align: justify;
+  }
+ }
+
+ .SocialIcons {
+  color: #e99d7b;
+  font-size: 14pt;
+ }
+
+ .FooterMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #e99d7b;
+  text-align: left;
+  margin-top: 50%;
+ }
+
+ .FooterResponsiveMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12pt;
+  color: #e99d7b;
+  margin-top: 10%;
+ }
+
+ .FooterSubMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 10pt;
+  color: #fff;
+  text-align: left;
+ }
+
+
+ .FtrSubMenu {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 10pt;
+  color: #fff;
+ }
+
+ .LinksPadding {
+  padding: 0px 0px 0px 20% !important;
+ }
+
+ .MobileFooterBackground {
+  background-image: url("~assets/pictures/MbFtBkg.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 20px;
+ }
+
+ .GmailIcon {
+  padding: 5px 9px;
+  border-radius: 50%;
+  background-color: #e99d7b;
+  color: #055452;
+ }
+
+ .copyright {
+  background-color: #fafafa;
+ }
+
+ .CopyrightTxt {
+  margin-top: 3%;
+  margin-left: 8%;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 11pt;
+ }
+
+ .payments {
+  margin-top: 2%;
+  margin-left: 40%;
+ }
 </style>
