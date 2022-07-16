@@ -14,4 +14,8 @@ hr{
   margin: 0 auto !important;
 }
 
+.nuxt-link-active {
+  text-decoration: none !important;
+}
+
 

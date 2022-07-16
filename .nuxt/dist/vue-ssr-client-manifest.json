@@ -30,27 +30,27 @@
     "img/categorie3.ce71877.png",
     "img/paypal.8441033.svg",
     "pages/index.c103b1d11947d696b736.js",
-    "pages/about/index.32520decaf93ca4e454e.js",
-    "pages/contact/index.7bbb7b12cc1193098b22.js",
+    "pages/about/index.06f7309c854fd36a2b06.js",
+    "pages/contact/index.dfaff8d0fe344ffe4045.js",
     "pages/signup/index.01abb9963a3b6568e1db.js",
     "pages/login/index.ff061c63686213eaf84a.js",
     "layouts/default.ce8276e7386d4a31a4c7.js",
     "vendor.1e976efdffc010bbc713.js",
-    "app.32e427ea369868361dcc.js",
-    "manifest.ca7dc71d3616c6f37e40.js",
+    "app.99c545a6f971e64b6b6e.js",
+    "manifest.9a13215bac6158102e77.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.ca7dc71d3616c6f37e40.js",
+    "manifest.9a13215bac6158102e77.js",
     "vendor.1e976efdffc010bbc713.js",
-    "app.32e427ea369868361dcc.js"
+    "app.99c545a6f971e64b6b6e.js"
   ],
   "async": [
     "pages/index.c103b1d11947d696b736.js",
-    "pages/about/index.32520decaf93ca4e454e.js",
-    "pages/contact/index.7bbb7b12cc1193098b22.js",
+    "pages/about/index.06f7309c854fd36a2b06.js",
+    "pages/contact/index.dfaff8d0fe344ffe4045.js",
     "pages/signup/index.01abb9963a3b6568e1db.js",
     "pages/login/index.ff061c63686213eaf84a.js",
     "layouts/default.ce8276e7386d4a31a4c7.js"

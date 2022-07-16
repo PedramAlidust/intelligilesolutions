@@ -42,7 +42,7 @@
           </button>
         </div>
       </div>
-      <div class="col-lg-3 text-start py-4 d-flex flex-row  flex-row-reverse">
+      <div class="col-lg-3 text-start py-3 mt-1 d-flex flex-row  flex-row-reverse">
         <nuxt-link to="/login">
         <button type="button" class="btn loginbtn">
             <i class="bi bi-box-arrow-right loginicon">
