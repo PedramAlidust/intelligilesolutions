@@ -31,28 +31,28 @@
     "img/paypal.8441033.svg",
     "pages/index.c103b1d11947d696b736.js",
     "pages/about/index.32520decaf93ca4e454e.js",
-    "pages/contact/index.0d598934d0f261273dfb.js",
+    "pages/contact/index.599af0d5144baf6671a5.js",
     "pages/signup/index.01abb9963a3b6568e1db.js",
-    "pages/login/index.7d6a3cc48f99e9744267.js",
+    "pages/login/index.ff061c63686213eaf84a.js",
     "layouts/default.ce8276e7386d4a31a4c7.js",
     "vendor.1e976efdffc010bbc713.js",
     "app.32e427ea369868361dcc.js",
-    "manifest.47d0d2912f8adc522aea.js",
+    "manifest.3d76e9e99d1593c819ed.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.47d0d2912f8adc522aea.js",
+    "manifest.3d76e9e99d1593c819ed.js",
     "vendor.1e976efdffc010bbc713.js",
     "app.32e427ea369868361dcc.js"
   ],
   "async": [
     "pages/index.c103b1d11947d696b736.js",
     "pages/about/index.32520decaf93ca4e454e.js",
-    "pages/contact/index.0d598934d0f261273dfb.js",
+    "pages/contact/index.599af0d5144baf6671a5.js",
     "pages/signup/index.01abb9963a3b6568e1db.js",
-    "pages/login/index.7d6a3cc48f99e9744267.js",
+    "pages/login/index.ff061c63686213eaf84a.js",
     "layouts/default.ce8276e7386d4a31a4c7.js"
   ],
   "modules": {

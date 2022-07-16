@@ -117,7 +117,6 @@ export default {
             PassCheck: false,
         }
    },
-
     methods: {
         FormSubmit() {
             if(!this.email) {
@@ -140,29 +139,23 @@ export default {
 </script>
 
 <style scoped>
-
 body {
     overflow-y: hidden !important;
 }
-
 .FormMobileBkgStyle {
     border-radius: 15px;
 }
-
 .MobileLogo {
     width: 70%;
 }
-
 ::placeholder {
   color: #6e7689;
   opacity: 1 !important;
 }
-
 .MobileBkg {
     background-color: #055452;
     min-height: 100vh;
 }
-
 .GoogleBtn {
     font-family: 'Open Sans';
     font-weight: 600;
@@ -173,17 +166,14 @@ body {
     padding: 15px;
     width: 100%;
 }
-
 @media screen and (max-width: 320px) {
     .GoogleBtn {
         font-size: 8pt;
     }    
 }
-
 .Devider {
     border-bottom: 1px solid #e6e6e6;
 }
-
 .DeviderTxt {
     font-family: 'Open Sans';
     font-size: 16px;
@@ -191,13 +181,11 @@ body {
     width: 50px;
     margin: -13px auto;
 }
-
 .SignUpTxt {
   font-family: 'Open Sans';
   font-weight: 600;  
   color: #231942;
 }
-
 .InputStyle {
     padding: 13px;
     font-family: 'Open Sans';
@@ -207,7 +195,6 @@ body {
     border-radius: 10px;
     color: #6e7689;
 }
-
 .background {
     background-image: url("~assets/pictures/LoginBkgPic.jpeg");
     background-size: cover;
@@ -216,17 +203,14 @@ body {
     min-height: 100vh;
     padding: 4% 20%;
 }
-
 .LeftBkg {
     background-color: #055452;
 }
-
 .LoginTitle {
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18pt;
 }
-
 .BtnStyle {
     font-family: 'Open Sans';
     font-weight: 600;
@@ -234,7 +218,6 @@ body {
     background-color: #055452 !important;
     color: #fff !important;
 }
-
 .SubmitBtnStyle {
     font-family: 'Open Sans';
     font-weight: 600;
@@ -243,12 +226,10 @@ body {
     border-radius: 8px;
     text-transform: capitalize;
 }
-
 @media screen and (max-width: 320px) {
     .SubmitBtnStyle {
         font-size: 10pt;
         padding: 15px;
     }    
 }
-
 </style>

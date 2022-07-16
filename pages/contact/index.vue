@@ -78,24 +78,24 @@
          <div class="container pt-3">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <p class="MapTxt">Contact Information</p>
 
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <p class="MapTxt">Social Media</p>
+                <div class="col-lg-6 col-md-6 ps-5">
                 </div>
             </div>
          </div>
          <!-- mail and media -->
-          <div class="container pt-3">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 d-flex ">
-                    <div class="d-flex flex-row  align-items-center">
+          <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <p class="MapTxt">Contact Information</p>
+                    <div class="d-flex align-items-center">
                     <i class="GmailIcon bi bi-envelope-fill"></i> 
-                    <p class="FooterSubMenu ps-2 mt-2">kandakacollections@gmail.com</p>
+                    <p class="FooterSubMenu ps-lg-2 px-lg-2 px-2 pt-2 pt-lg-2">kandakacollections@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 ps-lg-5 pt-lg-2 pt-md-4 pt-4">
+                    <p class="MapTxt">Social Media</p>
                     <i class="SocialIcons bi bi-facebook px-2"></i>
                     <i class="SocialIcons bi bi-tiktok px-2"></i>
                     <i class="SocialIcons bi bi-youtube px-2"></i>
@@ -166,8 +166,15 @@ label {
     color: #055452 !important;
     padding: 12px;
     border-radius: 30px;
-    min-width: 30%;
+    width: 30%;
 }
+
+@media screen and (max-width: 768px) {
+  .BtnStyle {
+    width: 100%;
+  }
+}
+    
 
 .InputStyle {
     padding: 13px;
