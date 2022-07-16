@@ -191,6 +191,7 @@ export default {
   font-family: 'Open Sans';
   font-weight: 600;
   font-size: 14pt;
+  text-align: left;
 }
 
 .accordion-body {
@@ -199,6 +200,7 @@ export default {
   color: #000;
 }
 
+  
 .accordion-button:not(.collapsed) {
   background-color: #e99d7b;
   color: #055452;
@@ -246,15 +248,6 @@ export default {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-}
-
-@media (max-width: 768px) {
-  .PageBkg {
-    background-image: url("~assets/pictures/PageBack.jpg");
-    background-size: 100% 100%;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
 }
 
 .PageTitle {
