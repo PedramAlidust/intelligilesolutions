@@ -1,11 +1,8 @@
 <template>
   <div>
     <!-- Desktop And Tablet version -->
-    <section class="background d-none d-md-block d-lg-block">
-         <div class="container">
-            <div class="container pt-5">
-                <div class="container pt-3">
-                    <div class="row pt-4">
+                <div class="container-full background d-none d-md-block d-lg-block">
+                    <div class="row gx-0">
                         <div class="col-lg-6 col-md-6 LeftBkg text-center py-5">
                             <img src="~assets/pictures/logokandaka.png" class="w-100" alt="logo">
                         </div>
@@ -55,10 +52,7 @@
                             <!-- end login form -->    
                         </div>
                     </div>
-                </div>
-            </div>
-         </div>
-    </section>    
+            </div>         
     <!-- Mobile version -->
     <section class="d-md-none d-lg-none container MobileBkg pb-5">
          <div class="text-center py-2">
@@ -147,6 +141,10 @@ export default {
 
 <style scoped>
 
+body {
+    overflow-y: hidden !important;
+}
+
 .FormMobileBkgStyle {
     border-radius: 15px;
 }
@@ -182,7 +180,6 @@ export default {
     }    
 }
 
-
 .Devider {
     border-bottom: 1px solid #e6e6e6;
 }
@@ -216,7 +213,8 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4% 20%;
 }
 
 .LeftBkg {

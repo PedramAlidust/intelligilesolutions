@@ -190,13 +190,13 @@ export default {
   color: #000;
   font-family: 'Open Sans';
   font-weight: 600;
-  font-size: 14pt;
+  font-size: 12pt;
   text-align: left;
 }
 
 .accordion-body {
   font-family: 'Open Sans';
-  font-size: 11pt;
+  font-size: 10pt;
   color: #000;
 }
 
@@ -206,7 +206,7 @@ export default {
   color: #055452;
   font-family: 'Open Sans';
   font-weight: 600;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .accordion-button::after {
@@ -216,7 +216,7 @@ export default {
 
 .FaqDesc {
   font-family: 'Open Sans';
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5;
   color: #000;
 
@@ -224,22 +224,22 @@ export default {
 
 .faq {
   font-family: "Open Sans";
-  font-size: 24pt;
+  font-size: 22pt;
   font-weight: bold;
   color: #000;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 .DescTitle {
   color: #055452;
   font-family: 'Open Sans';
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 600;
 }
 
 .Desc {
   font-family: 'Open Sans';
-  font-size: 13pt;
+  font-size: 11pt;
   color: #707070;
 }
 
@@ -252,7 +252,7 @@ export default {
 
 .PageTitle {
   font-family: "Open Sans";
-  font-size: 20pt;
+  font-size: 18pt;
   font-weight: 600;
   color: #231942;
 }
@@ -262,7 +262,7 @@ export default {
   font-family: "Open Sans";
   font-weight: 600;
   line-height: 1.25;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .BroadSub {
@@ -270,6 +270,6 @@ export default {
   font-family: "Open Sans";
   font-weight: 600;
   line-height: 1.25;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 </style>

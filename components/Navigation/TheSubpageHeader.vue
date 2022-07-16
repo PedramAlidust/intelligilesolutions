@@ -22,7 +22,9 @@
                 <a href="#popular" class="nav-link">Products</a>
               </li>
               <li class="nav-item px-3">
-                <a href="#discount" class="nav-link">Contact</a>
+                <nuxt-link class="nav-link" to="/contact">
+                  Contact
+                </nuxt-link>
               </li>
             </ul>
           </div>
