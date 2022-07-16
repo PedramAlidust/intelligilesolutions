@@ -12,7 +12,6 @@
           <p class="BroadSub">Contact</p>
         </div>
       </div>
-    </section>
     <!-- page title -->
     <div class="container px-5 px-md-4 px-lg-4">
       <p class="PageTitle">Contact</p>
@@ -107,7 +106,7 @@
         </div>
       </div>
     </div>
-
+    </section>
     <TheFooter />
   </div>
 </template>
