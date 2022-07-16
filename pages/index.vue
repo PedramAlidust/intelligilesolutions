@@ -508,7 +508,6 @@ export default {
   margin-left: 14%;
 }
 
-
 .SliderBtn {
   font-family: 'Open Sans';
   font-weight: 400 !important;

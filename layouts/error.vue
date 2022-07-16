@@ -68,6 +68,5 @@ export default {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-
 }
 </style>

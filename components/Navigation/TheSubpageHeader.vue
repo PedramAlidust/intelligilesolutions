@@ -1,6 +1,6 @@
 <template>
   <!-- navigation section -->
-  <header>  
+  <header class="SubPageMenuBkg">  
   <div class="container py-4 d-none d-lg-block">
     <div class="row">
       <div class="col-lg-1">
@@ -10,7 +10,7 @@
         <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav">
-              <nuxt-link class="nav-link" to="/">
+               <nuxt-link class="nav-link" to="/">
                  Home
               </nuxt-link>
               <li class="nav-item px-3">
@@ -210,5 +210,9 @@ nav a:hover {
     display: none;
   }
 }
+
+ .SubPageMenuBkg {
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
+ }
 
 </style>

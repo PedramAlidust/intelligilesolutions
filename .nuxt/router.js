@@ -4,6 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const _531c959c = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _3eccf7cc = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
 const _30fba614 = () => import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */).then(m => m.default || m)
 const _4489cac1 = () => import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */).then(m => m.default || m)
 
@@ -45,6 +46,11 @@ export function createRouter () {
 			path: "/",
 			component: _531c959c,
 			name: "index"
+		},
+		{
+			path: "/about",
+			component: _3eccf7cc,
+			name: "about"
 		},
 		{
 			path: "/login",
