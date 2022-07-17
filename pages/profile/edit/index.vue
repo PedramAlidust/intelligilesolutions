@@ -1,5 +1,8 @@
 <template>
   <div>
+    <template slot="subnav">
+      <div>Hello</div>
+    </template>
     <h3 class="pb-2">Personal Information</h3>
     <div class="container">
       <div class="row border rounded-3">

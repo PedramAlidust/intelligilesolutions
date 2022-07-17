@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheHeader/>
+    <the-header/>
     <div class="d-none d-lg-block mt-5">
       <div class="container">
         <div class="row">
@@ -21,11 +21,10 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
-import TheHeader from "../components/Navigation/TheSubpageHeader";
+import TheHeader from "../components/Navigation/TheHeader";
 import ProfileMenuList from "../components/Navigation/ProfileMenuList";
 
 export default {

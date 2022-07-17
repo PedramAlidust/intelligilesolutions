@@ -2,11 +2,11 @@
   <!-- navigation section -->
   <header>
     <div class="container py-4 d-none d-lg-block">
-      <div class="row">
+      <div class="row justify-content-between">
         <div class="col-lg-1">
           <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo"/>
         </div>
-        <div class="col-lg-5 text-start pe-5">
+        <div class="col-auto col-lg-5 text-start pe-5">
           <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
             <div class="collapse navbar-collapse" id="navmenu">
               <ul class="navbar-nav">
@@ -42,8 +42,8 @@
             </button>
           </div>
         </div>
-        <div class="col-lg-3 text-start py-4 d-flex flex-row  flex-row-reverse">
-          <the-nav-menu />
+        <div class="col-lg-3 text-start py-4 d-flex flex-row flex-row-reverse">
+          <TheNavMenu/>
           <button type="button" class="btn shopbtn">
             <i class="bi bi-bag shopicon"></i>
           </button>
@@ -68,6 +68,9 @@
         </div>
       </div>
     </div>
+
+    <!--  sub navigation holder  -->
+    <slot name="subnav"/>
   </header>
 </template>
 
@@ -104,7 +107,6 @@ nav a:hover {
     display: none;
   }
 }
-
 
 @media all and (max-width: 994px) {
 
@@ -175,8 +177,6 @@ nav a:hover {
   border-radius: 30px !important;
 }
 
-
-
 .shopbtn {
   background-color: #e99d7b !important;
   border-radius: 50% !important;
@@ -184,11 +184,4 @@ nav a:hover {
   height: 40px;
   width: 40px;
 }
-
-@media all and (max-width: 1200px) {
-  .SearchForm {
-    display: none;
-  }
-}
-
 </style>
