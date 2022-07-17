@@ -39,7 +39,7 @@ export default {
 
 .navbar-menu {
   position: absolute;
-  background: white;
+  background: #65a69e;
   display: flex;
   flex-direction: column;
   top: 64px;
@@ -49,6 +49,7 @@ export default {
   overflow: hidden;
   min-width: 300px;
   box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%), 0 10px 15px 0 rgb(0 0 0 / 10%);
+  z-index: 999;
 }
 
 .bg-enter-active,

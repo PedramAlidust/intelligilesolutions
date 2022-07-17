@@ -51,8 +51,7 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: ['portal-vue/nuxt'],
 
   /*
   ** Build configuration
