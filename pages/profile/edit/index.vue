@@ -1,8 +1,18 @@
 <template>
-  <div>
-    <template slot="subnav">
-      <div>Hello</div>
-    </template>
+  <div class="px-4">
+    <Portal to="under-header">
+      <div class="container-full d-lg-none py-2 subNavPage px-4">
+        <div class="row w-100 justify-content-between g-0">
+          <nuxt-link class="col d-flex align-items-center gap-3 text-dark" to="/profile">
+            <img src="~/assets/svg/angle-small-right.svg" alt="">
+            <span>Back</span>
+          </nuxt-link>
+          <!--  Actions are here  -->
+          <div class="col-auto g-0"></div>
+        </div>
+      </div>
+    </Portal>
+
     <h3 class="pb-2">Personal Information</h3>
     <div class="container">
       <div class="row border rounded-3">

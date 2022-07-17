@@ -1,6 +1,8 @@
 <template>
   <div>
-    <the-header/>
+    <the-header>
+      <PortalTarget name="under-header"/>
+    </the-header>
     <div class="d-none d-lg-block mt-5">
       <div class="container">
         <div class="row">

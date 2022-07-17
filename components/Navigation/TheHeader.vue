@@ -1,6 +1,6 @@
 <template>
   <!-- navigation section -->
-  <header>
+  <header class="position-relative">
     <div class="container py-4 d-none d-lg-block">
       <div class="row justify-content-between">
         <div class="col-lg-1">
@@ -51,8 +51,8 @@
       </div>
     </div>
     <!-- menu responsive -->
-    <div class="container-full d-lg-none py-3 MobileMenuBack px-5">
-      <div class="row g-0">
+    <div class="container-full d-lg-none pt-3 px-4">
+      <div class="row g-0 border-bottom pb-3">
         <div class="col-4">
           <div class="d-flex flex-row align-items-center mt-3">
             <img src="~/assets/pictures/search.svg" class="SearchIcon" alt="search">
@@ -70,7 +70,7 @@
     </div>
 
     <!--  sub navigation holder  -->
-    <slot name="subnav"/>
+    <slot/>
   </header>
 </template>
 

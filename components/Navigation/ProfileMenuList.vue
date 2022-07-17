@@ -16,7 +16,7 @@
         <i class="bi bi-chevron-right"></i>
       </div>
     </nuxt-link>
-    <nuxt-link class="menu-item" to="/">
+    <nuxt-link class="menu-item" to="/cart">
       <div class="menu-item-text">
         <div class="menu-item-user">
           <img src="~/assets/svg/cart-add.svg" alt="" width="19">
@@ -25,7 +25,7 @@
         <i class="bi bi-chevron-right"></i>
       </div>
     </nuxt-link>
-    <nuxt-link class="menu-item" to="/">
+    <nuxt-link class="menu-item" to="/orders">
       <div class="menu-item-text">
         <div class="menu-item-user">
           <img src="~/assets/svg/cart-check.svg" alt="" width="19">
@@ -34,7 +34,7 @@
         <i class="bi bi-chevron-right"></i>
       </div>
     </nuxt-link>
-    <nuxt-link class="menu-item" to="/">
+    <nuxt-link class="menu-item" to="/saved">
       <div class="menu-item-text">
         <div class="menu-item-user">
           <i class="bi bi-heart"></i>
@@ -43,7 +43,7 @@
         <i class="bi bi-chevron-right"></i>
       </div>
     </nuxt-link>
-    <nuxt-link class="menu-item" to="/">
+    <nuxt-link class="menu-item" to="/comments">
       <div class="menu-item-text">
         <div class="menu-item-user">
           <img src="~/assets/svg/comment.svg" alt="" width="19">
@@ -52,7 +52,7 @@
         <i class="bi bi-chevron-right"></i>
       </div>
     </nuxt-link>
-    <nuxt-link class="menu-item" to="/">
+    <nuxt-link class="menu-item" to="/supports">
       <div class="menu-item-text">
         <div class="menu-item-user">
           <img src="~/assets/svg/headset.svg" alt="" width="19">

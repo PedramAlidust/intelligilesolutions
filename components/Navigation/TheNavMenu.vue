@@ -16,23 +16,23 @@
               <i class="bi bi-chevron-right"></i>
             </div>
           </nuxt-link>
-          <nuxt-link class="nav-item" to="/">
+          <nuxt-link class="nav-item" to="/cart">
             <img src="~/assets/svg/cart-add.svg" alt="" width="19">
             <div class="nav-item-text">Cart</div>
           </nuxt-link>
-          <nuxt-link class="nav-item" to="/">
+          <nuxt-link class="nav-item" to="/orders">
             <img src="~/assets/svg/cart-check.svg" alt="" width="19">
             <div class="nav-item-text">Orders</div>
           </nuxt-link>
-          <nuxt-link class="nav-item" to="/">
+          <nuxt-link class="nav-item" to="/saved">
             <i class="bi bi-heart"></i>
             <div class="nav-item-text">Saved</div>
           </nuxt-link>
-          <nuxt-link class="nav-item" to="/">
+          <nuxt-link class="nav-item" to="/comments">
             <img src="~/assets/svg/comment.svg" alt="" width="19">
             <div class="nav-item-text">Comments</div>
           </nuxt-link>
-          <nuxt-link class="nav-item" to="/">
+          <nuxt-link class="nav-item" to="/supports">
             <img src="~/assets/svg/headset.svg" alt="" width="19">
             <div class="nav-item-text">Support</div>
           </nuxt-link>

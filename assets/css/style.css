@@ -18,3 +18,6 @@ hr{
   text-decoration: none !important;
 }
 
+.subNavPage {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.09);
+}
