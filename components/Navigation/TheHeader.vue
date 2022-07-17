@@ -1,89 +1,85 @@
 <template>
   <!-- navigation section -->
-  <header>  
-  <div class="container py-4 d-none d-lg-block">
-    <div class="row">
-      <div class="col-lg-1">
-        <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo" />
-      </div>
-      <div class="col-lg-5 text-start pe-5">
-        <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
-          <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav">
-              <nuxt-link class="nav-link" to="/">
-                 Home
-              </nuxt-link>
-              <li class="nav-item px-3">
-                <nuxt-link class="nav-link" to="/about">
-                  About
+  <header>
+    <div class="container py-4 d-none d-lg-block">
+      <div class="row">
+        <div class="col-lg-1">
+          <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo"/>
+        </div>
+        <div class="col-lg-5 text-start pe-5">
+          <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
+            <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav">
+                <nuxt-link class="nav-link" to="/">
+                  Home
                 </nuxt-link>
-              </li>
-              <li class="nav-item px-3">
-                <a href="#popular" class="nav-link">Products</a>
-              </li>
-              <li class="nav-item px-3">
-                <nuxt-link class="nav-link" to="/contact">
-                  Contact
-                </nuxt-link>
-              </li>
-            </ul>
+                <li class="nav-item px-3">
+                  <nuxt-link class="nav-link" to="/about">
+                    About
+                  </nuxt-link>
+                </li>
+                <li class="nav-item px-3">
+                  <a href="#popular" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item px-3">
+                  <nuxt-link class="nav-link" to="/contact">
+                    Contact
+                  </nuxt-link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-3 text-end py-4 SearchForm">
+          <!-- search form -->
+          <div class="d-flex flex-row">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control inputstyle"/>
+              <label class="SearchFormLabel" for="form1">Search...</label>
+            </div>
+            <button type="button" class="btn searchbtn rounded-circle">
+              <i class="bi bi-search searchicon"></i>
+            </button>
           </div>
-        </nav>
-      </div>
-      <div class="col-lg-3 text-end py-4 SearchForm">
-        <!-- search form --> 
-        <div class="d-flex flex-row">
-          <div class="form-outline">
-            <input type="search" id="form1" class="form-control inputstyle" />
-            <label class="SearchFormLabel" for="form1">Search...</label>
-          </div>
-          <button type="button" class="btn searchbtn rounded-circle">
-            <i class="bi bi-search searchicon"></i>
+        </div>
+        <div class="col-lg-3 text-start py-4 d-flex flex-row  flex-row-reverse">
+          <the-nav-menu />
+          <button type="button" class="btn shopbtn">
+            <i class="bi bi-bag shopicon"></i>
           </button>
         </div>
       </div>
-      <div class="col-lg-3 text-start py-4 d-flex flex-row  flex-row-reverse">
-        <nuxt-link to="/login">
-        <button type="button" class="btn loginbtn">
-            <i class="bi bi-box-arrow-right loginicon">
-              <span class="signintext">sign in</span>
-            </i>         
-        </button>
-        </nuxt-link>
-        <button type="button" class="btn shopbtn">
-            <i class="bi bi-bag shopicon"></i>         
-        </button>      
-      </div>
     </div>
-  </div>
-  <!-- menu responsive -->
-  <div class="container-full d-lg-none py-3 MobileMenuBack px-5">
-    <div class="row g-0">
-       <div class="col-4">
+    <!-- menu responsive -->
+    <div class="container-full d-lg-none py-3 MobileMenuBack px-5">
+      <div class="row g-0">
+        <div class="col-4">
           <div class="d-flex flex-row align-items-center mt-3">
             <img src="~/assets/pictures/search.svg" class="SearchIcon" alt="search">
             <div class="px-1"></div>
             <img src="~/assets/pictures/shop.svg" class="ShopIcon" alt="search">
           </div>
-       </div>
-       <div class="col-4 text-center">
-          <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo" />
-       </div>
-       <div class="col-4 text-start">
+        </div>
+        <div class="col-4 text-center">
+          <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo"/>
+        </div>
+        <div class="col-4 text-start">
           <img src="~/assets/pictures/menu.svg" alt="menu" class="MobileMenuIcon">
-       </div>
+        </div>
+      </div>
     </div>
-  </div>
   </header>
 </template>
 
 <script>
+import TheNavMenu from "./TheNavMenu";
+
 export default {
   name: "TheHeader",
+  components: {TheNavMenu},
   props: ["menu_data"],
 };
 </script>
-
 
 <style scoped>
 /* navbar component style */
@@ -95,7 +91,7 @@ nav a {
 }
 
 nav a:hover {
-  color:  #e99d7b !important;
+  color: #e99d7b !important;
 }
 
 .logo {
@@ -108,7 +104,7 @@ nav a:hover {
     display: none;
   }
 }
-  
+
 
 @media all and (max-width: 994px) {
 
@@ -125,7 +121,7 @@ nav a:hover {
   }
 
   .ShopIcon {
-    width: 40px;  
+    width: 40px;
     background-color: #e99d7b;
     border-radius: 40%;
     padding: 9px;
@@ -139,7 +135,7 @@ nav a:hover {
   }
 }
 
- .SearchFormLabel {
+.SearchFormLabel {
   position: absolute;
   color: #a1a2a1;
   top: 10px;
@@ -149,7 +145,7 @@ nav a:hover {
   font-style: italic;
   font-weight: normal;
 
- }
+}
 
 .MobileMenuBack {
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
@@ -169,9 +165,9 @@ nav a:hover {
 }
 
 .searchicon {
- color: #055452;
- position: relative;
- right: 2px;
+  color: #055452;
+  position: relative;
+  right: 2px;
 }
 
 .inputstyle {
@@ -179,25 +175,7 @@ nav a:hover {
   border-radius: 30px !important;
 }
 
-.loginbtn {
-  background-color: #e99d7b !important;
-  height: 45px;
-  border-radius: 30px !important;
-}
 
-.loginicon {
-  color: #055452;
-  font-size: 15pt;
-}
-
-.signintext {
-  font-weight: 600;
-  font-size: 16px;
-  color: #055452;
-  font-family: 'Open Sans';
-  font-style: normal;
-  padding: 8px;
-}
 
 .shopbtn {
   background-color: #e99d7b !important;

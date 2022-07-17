@@ -3,11 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _531c959c = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _3eccf7cc = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
-const _32f8f726 = () => import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */).then(m => m.default || m)
-const _30fba614 = () => import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */).then(m => m.default || m)
-const _4489cac1 = () => import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */).then(m => m.default || m)
+const _2d7ff469 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _0adbd527 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
+const _ed14738c = () => import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */).then(m => m.default || m)
+const _11c47e03 = () => import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */).then(m => m.default || m)
+const _62919b54 = () => import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */).then(m => m.default || m)
 
 
 
@@ -45,27 +45,27 @@ export function createRouter () {
     routes: [
 		{
 			path: "/",
-			component: _531c959c,
+			component: _2d7ff469,
 			name: "index"
 		},
 		{
 			path: "/about",
-			component: _3eccf7cc,
+			component: _0adbd527,
 			name: "about"
 		},
 		{
 			path: "/contact",
-			component: _32f8f726,
+			component: _ed14738c,
 			name: "contact"
 		},
 		{
 			path: "/login",
-			component: _30fba614,
+			component: _11c47e03,
 			name: "login"
 		},
 		{
 			path: "/signup",
-			component: _4489cac1,
+			component: _62919b54,
 			name: "signup"
 		}
     ],
