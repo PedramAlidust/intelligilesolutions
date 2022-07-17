@@ -8,7 +8,7 @@
           </i>
         </button>
         <template slot="content">
-          <nuxt-link class="nav-item" to="/">
+          <nuxt-link class="nav-item" to="/profile">
             <div class="nav-item-text">
               <span class="nav-item-user">
                 <i class="bi bi-person"></i>
@@ -97,18 +97,23 @@ export default {
   padding: 8px;
 }
 
+.bi {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .nav-item {
   display: flex;
   gap: 15px;
   margin: 10px;
-  color: black;
+  color: white;
   appearance: none;
   text-decoration: none;
   transition: color 0.15s ease-in-out;
 }
 
 .nav-item:hover {
-  color: #e99d7b;
+  color: #222;
 }
 
 .nav-item-text {
@@ -116,7 +121,7 @@ export default {
   width: 100%;
   text-align: left;
   padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(147, 193, 188, 0.63);
 }
 
 .nav-item-user {

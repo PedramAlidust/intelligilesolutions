@@ -39,7 +39,7 @@ export default {
 
 .navbar-menu {
   position: absolute;
-  background: white;
+  background: #65a69e;
   display: flex;
   flex-direction: column;
   top: 64px;

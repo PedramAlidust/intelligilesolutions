@@ -7,7 +7,9 @@ const _2d7ff469 = () => import('../pages/index.vue' /* webpackChunkName: "pages/
 const _0adbd527 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
 const _ed14738c = () => import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */).then(m => m.default || m)
 const _11c47e03 = () => import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */).then(m => m.default || m)
+const _46769483 = () => import('../pages/profile/index.vue' /* webpackChunkName: "pages/profile/index" */).then(m => m.default || m)
 const _62919b54 = () => import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */).then(m => m.default || m)
+const _e2e673a8 = () => import('../pages/profile/edit/index.vue' /* webpackChunkName: "pages/profile/edit/index" */).then(m => m.default || m)
 
 
 
@@ -64,9 +66,19 @@ export function createRouter () {
 			name: "login"
 		},
 		{
+			path: "/profile",
+			component: _46769483,
+			name: "profile"
+		},
+		{
 			path: "/signup",
 			component: _62919b54,
 			name: "signup"
+		},
+		{
+			path: "/profile/edit",
+			component: _e2e673a8,
+			name: "profile-edit"
 		}
     ],
     

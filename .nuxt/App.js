@@ -10,7 +10,9 @@ import '../assets/bootstrap/css/bootstrap.rtl.min.css'
 
 let layouts = {
 
-  "_default": () => import('../layouts/default.vue'  /* webpackChunkName: "layouts/default" */).then(m => m.default || m)
+  "_default": () => import('../layouts/default.vue'  /* webpackChunkName: "layouts/default" */).then(m => m.default || m),
+
+  "_profile": () => import('../layouts/profile.vue'  /* webpackChunkName: "layouts/profile" */).then(m => m.default || m)
 
 }
 
