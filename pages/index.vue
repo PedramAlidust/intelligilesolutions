@@ -3,11 +3,11 @@
     <!--- navigation section -->
     <TheHeader />
     <!-- slider section Desktop -->
-  <section class="d-none d-md-block d-lg-block mt-md-5">
-        <div class="container">
+  <section class="d-none d-md-block d-lg-block pt-md-3">
+        <div class="container px-5">
           <div class="row">
             <div class="col-12">
-                <img src="~/assets/pictures/sliderback.jpg" class="w-100" alt="">
+                <img style="height: 70vh;" src="~/assets/pictures/sliderback.jpg" class="w-100" alt="">
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
       </div>
   </section>
   <!-- slider section mobile -->
-    <div class="container g-lg-none d-md-none text-center mt-5 SliderMbBkg">
+    <div class="container g-lg-none d-md-none text-center mt-5 SliderMbBkg p-5">
         <p class="MobileSliderTxtTitle text-white text-end px-5">HEALTHY CARE</p>
         <p class="MobileSliderTxtDesc text-white text-end px-5">
           Kandaka Company is proud to provide its 
@@ -39,9 +39,9 @@
     <!-- product categorie section -->
     <!-- Desktop version -->
   <section class="d-none d-lg-block">
-    <div class="container px-lg-5 pb-5 px-5 pt-5">
+    <div class="container px-lg-5 py-4 px-5">
       <div class="container px-lg-5 pt-3">
-        <div class="row">
+        <div class="row px-5">
           <div class="col-lg">
             <img src="~/assets/pictures/categorie1.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Hair Care</p>
@@ -68,19 +68,19 @@
     </section>
 
     <!-- Mobile And Tablet version -->
-    <section class="d-lg-none py-5">
-    <div class="container px-lg-5 px-5 pt-5">
-      <div class="container px-lg-5 pt-3">
+    <section class="d-lg-none pt-4">
+    <div class="container px-lg-5 px-5 pt-md-0">
+      <div class="container px-lg-5">
         <div class="row">
-          <div class="col-12">
+          <div class="col col-md-4 ">
             <img src="~/assets/pictures/categorie1.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Hair Care</p>
           </div>
-          <div class="col-12">
+          <div class="col col-md-4">
             <img src="~/assets/pictures/categorie2.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Up Care</p>
           </div>
-          <div class="col-12">
+          <div class="col col-md-4">
             <img src="~/assets/pictures/categorie3.png" alt="" class="w-100">
             <p class="CategorieTxt text-center mt-3">Skin Care</p>
           </div>
@@ -108,44 +108,9 @@
         </div>       
          <div class="col-lg-8 OffCarousel">
               <div class="OffProdSlider">
-                   <!-- Off Slider Item -->
-                  <div class="container">
-                      <!-- discount baner section -->
-                        <div class="container-full OffBaner"></div>
-                      <!-- off Card look section -->
-                      <div class="container-full OffCard">
-                        <p class="text-center OffCardTxt">
-                          Get $ 50.00 off your next full price purchase!
-                        </p>
-                        <hr>
-                       <!-- card look price and button -->
-                       <div class="d-flex flex-row align-items-center justify-content-between">
-                         <p class="CardPrice">$ 50.00</p>
-                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
-                        </div>       
-                      </div>
-                   </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
-                      <!-- discount baner section -->
-                        <div class="container-full OffBaner2"></div>
-                      <!-- off Card look section -->
-                      <div class="container-full OffCard">
-                        <p class="text-center OffCardTxt">
-                          Get $ 50.00 off your next full price purchase!
-                        </p>
-                        <hr>
-                       <!-- card look price and button -->
-                       <div class="d-flex flex-row align-items-center justify-content-between">
-                         <p class="CardPrice">$ 50.00</p>
-                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
-                        </div>       
-                      </div>
-                   </div>
-
-                    <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner3"></div>
                       <!-- off Card look section -->
@@ -163,7 +128,43 @@
                    </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner2"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                        <!-- Off Slider Item -->
+                  <div class="container px-5 px-lg-2 px-md-2">
+                      <!-- discount baner section -->
+                        <div class="container-full OffBaner"></div>
+                      <!-- off Card look section -->
+                      <div class="container-full OffCard">
+                        <p class="text-center OffCardTxt">
+                          Get $ 50.00 off your next full price purchase!
+                        </p>
+                        <hr>
+                       <!-- card look price and button -->
+                       <div class="d-flex flex-row align-items-center justify-content-between">
+                         <p class="CardPrice">$ 50.00</p>
+                          <button type="button" class="CardButton btn btn-sm">Get Offer</button>
+                        </div>       
+                      </div>
+                   </div>
+
+                    <!-- Off Slider Item -->
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner4"></div>
                       <!-- off Card look section -->
@@ -181,7 +182,7 @@
                    </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner"></div>
                       <!-- off Card look section -->
@@ -199,7 +200,7 @@
                    </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner"></div>
                       <!-- off Card look section -->
@@ -217,7 +218,7 @@
                    </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner"></div>
                       <!-- off Card look section -->
@@ -235,7 +236,7 @@
                    </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner"></div>
                       <!-- off Card look section -->
@@ -253,7 +254,7 @@
                    </div>
 
                     <!-- Off Slider Item -->
-                  <div class="container">
+                  <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
                         <div class="container-full OffBaner"></div>
                       <!-- off Card look section -->
@@ -496,23 +497,25 @@ export default {
 }
 
 .SliderTxt {
-  margin-top: -118%;
-  margin-left: 14%;
+  margin-top: -110%;
+  margin-left: 20%;
   font-family: Playfair Display;
   font-weight: 800;
   font-size: 25pt;
 }
 
+  
+
 .SliderDesc {
   text-align: left;
-  margin-left: 14%;
+  margin-left: 20%;
 }
 
 .SliderBtn {
   font-family: 'Open Sans';
   font-weight: 400 !important;
   font-size: 10pt !important;
-  margin-left: 14%;
+  margin-left: 20%;
   border-radius: 30px !important;
   background-color: #f0b86c !important;
   color: #492e25;

@@ -4,7 +4,9 @@
   <div class="container py-4 d-none d-lg-block">
     <div class="row">
       <div class="col-lg-1">
+        <nuxt-link to="/">
         <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo" />
+        </nuxt-link>
       </div>
       <div class="col-lg-5 text-start pe-5">
         <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
@@ -19,7 +21,9 @@
                 </nuxt-link>
               </li>
               <li class="nav-item px-3">
-                <a href="#popular" class="nav-link">Products</a>
+                <nuxt-link class="nav-link" to="/products">
+                  Products
+                </nuxt-link>
               </li>
               <li class="nav-item px-3">
                 <nuxt-link class="nav-link" to="/contact">
@@ -34,10 +38,9 @@
         <!-- search form --> 
         <div class="d-flex flex-row">
           <div class="form-outline">
-            <input type="search" id="form1" class="form-control inputstyle" />
-            <label class="SearchFormLabel" for="form1">Search...</label>
+            <input @blur="OnBlur" @focus="OnFocus" placeholder="Search..." type="search" id="form1" class="form-control inputstyle" />
           </div>
-          <button type="button" class="btn searchbtn rounded-circle">
+          <button type="button" :class="OnFocusCss" class="btn rounded-circle">
             <i class="bi bi-search searchicon"></i>
           </button>
         </div>
@@ -70,22 +73,60 @@
           <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo" />
        </div>
        <div class="col-4 text-start">
-          <img src="~/assets/pictures/menu.svg" alt="menu" class="MobileMenuIcon">
+          <img @click="EnableMobileMenu" src="~/assets/pictures/menu.svg" alt="menu" class="MobileMenuIcon">
        </div>
     </div>
   </div>
+      <TheMobileMenuModal @SendModalStatus="DisableMobileMenu" v-if="MobileMenu" :menu_status="MobileMenu" />
   </header>
 </template>
 
 <script>
+
+import TheMobileMenuModal from "@/components/Navigation/TheMobileMenuModal.vue";
+
 export default {
+  components: {
+    TheMobileMenuModal
+  },
   name: "TheHeader",
   props: ["menu_data"],
+
+  data() {
+    return {
+      Focused: false,
+      MobileMenu: false,
+    }
+  },
+
+  methods: {
+    OnFocus() {
+      this.Focused = true;
+    },
+    OnBlur() {
+      this.Focused = false;
+    },
+    EnableMobileMenu() {
+      this.MobileMenu = true;
+    },
+    DisableMobileMenu() {
+      this.MobileMenu = false;
+    }
+  },
+  
+  computed: {
+    OnFocusCss() {
+      return this.Focused ? 'FocusedBtn' : 'searchbtn';
+    }
+  }
+
 };
+
 </script>
 
 
 <style scoped>
+
 /* navbar component style */
 nav a {
   color: #055452 !important;
@@ -108,7 +149,7 @@ nav a:hover {
     display: none;
   }
 }
-  
+ 
 
 @media all and (max-width: 994px) {
 
@@ -139,17 +180,22 @@ nav a:hover {
   }
 }
 
- .SearchFormLabel {
-  position: absolute;
-  color: #a1a2a1;
-  top: 10px;
-  right: 75%;
-  font-family: 'Open Sans';
-  font-size: 8pt;
-  font-style: italic;
-  font-weight: normal;
-
+ ::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+   opacity: 1 !important;
  }
+
+input:focus {
+  width: 120%;
+  border: 1px solid #e99d7b !important;
+}
+
+input:focus::placeholder {
+  color: #e99d7b;
+  transition: 0.3s;
+}
+
 
 .MobileMenuBack {
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
@@ -157,6 +203,7 @@ nav a:hover {
 
 .MobileMenuIcon {
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .searchbtn {
@@ -166,7 +213,22 @@ nav a:hover {
   height: 37px;
   width: 37px;
   z-index: 1;
+  box-shadow: none;
+  transition: 0.5;
 }
+
+.FocusedBtn {
+ background-color: #e99d7b !important;
+  margin-left: 5px !important;
+  margin-top: 0px;
+  height: 37px;
+  width: 37px;
+  z-index: 1;
+  box-shadow: none;
+  animation-name: move;
+  animation-duration: 0.5s; 
+}
+
 
 .searchicon {
  color: #055452;
@@ -174,20 +236,45 @@ nav a:hover {
  right: 2px;
 }
 
+
+.searchicon:hover {
+ color: #fff;
+ transition: 0.3s;
+}
+
+.shopicon {
+ color: #055452;
+ position: relative;
+ right: 1px;
+}
+
+.shopicon:hover {
+ color: #fff;
+ transition: 0.3s;
+}
+
 .inputstyle {
   border: 0.5px solid #707070 !important;
   border-radius: 30px !important;
 }
 
+
 .loginbtn {
   background-color: #e99d7b !important;
   height: 45px;
   border-radius: 30px !important;
+  box-shadow: none;
+  margin-top: -4px;
 }
 
 .loginicon {
   color: #055452;
   font-size: 15pt;
+}
+
+.loginicon:hover {
+  color: #fff;
+  transition: 0.3s;
 }
 
 .signintext {
@@ -199,12 +286,18 @@ nav a:hover {
   padding: 8px;
 }
 
+.signintext:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
 .shopbtn {
   background-color: #e99d7b !important;
   border-radius: 50% !important;
   margin-right: 10px;
   height: 40px;
   width: 40px;
+  box-shadow: none;
 }
 
 @media all and (max-width: 1200px) {

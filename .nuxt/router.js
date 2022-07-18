@@ -7,7 +7,11 @@ const _531c959c = () => import('../pages/index.vue' /* webpackChunkName: "pages/
 const _3eccf7cc = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
 const _32f8f726 = () => import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */).then(m => m.default || m)
 const _30fba614 = () => import('../pages/login/index.vue' /* webpackChunkName: "pages/login/index" */).then(m => m.default || m)
+const _66995ee6 = () => import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */).then(m => m.default || m)
+const _b8f75a94 = () => import('../pages/profile/index.vue' /* webpackChunkName: "pages/profile/index" */).then(m => m.default || m)
+const _0c58de94 = () => import('../pages/saved/index.vue' /* webpackChunkName: "pages/saved/index" */).then(m => m.default || m)
 const _4489cac1 = () => import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */).then(m => m.default || m)
+const _3d26204e = () => import('../pages/profile/edit/index.vue' /* webpackChunkName: "pages/profile/edit/index" */).then(m => m.default || m)
 
 
 
@@ -64,9 +68,29 @@ export function createRouter () {
 			name: "login"
 		},
 		{
+			path: "/products",
+			component: _66995ee6,
+			name: "products"
+		},
+		{
+			path: "/profile",
+			component: _b8f75a94,
+			name: "profile"
+		},
+		{
+			path: "/saved",
+			component: _0c58de94,
+			name: "saved"
+		},
+		{
 			path: "/signup",
 			component: _4489cac1,
 			name: "signup"
+		},
+		{
+			path: "/profile/edit",
+			component: _3d26204e,
+			name: "profile-edit"
 		}
     ],
     
