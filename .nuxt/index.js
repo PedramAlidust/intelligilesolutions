@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_portalvue_0639135e from 'nuxt_plugin_portalvue_0639135e' // Source: ./portal-vue.js (mode: 'all')
+import nuxt_plugin_ckeditor_01e62ccc from 'nuxt_plugin_ckeditor_01e62ccc' // Source: ../plugins/ckeditor.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -53,7 +54,7 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 const originalRegisterModule = Vuex.Store.prototype.registerModule
 
@@ -72,9 +73,6 @@ async function createApp(ssrContext, config = {}) {
   const store = createStore(ssrContext)
   // Add this.$router into store actions/mutations
   store.$router = router
-
-  // Fix SSR caveat https://github.com/nuxt/nuxt.js/issues/3757#issuecomment-414689141
-  store.registerModule = registerModule
 
   // Create Root instance
 
@@ -212,6 +210,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_portalvue_0639135e === 'function') {
     await nuxt_plugin_portalvue_0639135e(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_ckeditor_01e62ccc === 'function') {
+    await nuxt_plugin_ckeditor_01e62ccc(app.context, inject)
   }
 
   // Lock enablePreview in context

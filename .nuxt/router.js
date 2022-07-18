@@ -13,7 +13,9 @@ const _b7351e3e = () => interopDefault(import('../pages/orders/index.vue' /* web
 const _46769483 = () => interopDefault(import('../pages/profile/index.vue' /* webpackChunkName: "pages/profile/index" */))
 const _369b2fa1 = () => interopDefault(import('../pages/saved/index.vue' /* webpackChunkName: "pages/saved/index" */))
 const _62919b54 = () => interopDefault(import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */))
+const _e3dbed00 = () => interopDefault(import('../pages/supports/index.vue' /* webpackChunkName: "pages/supports/index" */))
 const _e2e673a8 = () => interopDefault(import('../pages/profile/edit/index.vue' /* webpackChunkName: "pages/profile/edit/index" */))
+const _31ca646b = () => interopDefault(import('../pages/supports/_id/index.vue' /* webpackChunkName: "pages/supports/_id/index" */))
 const _2d7ff469 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -64,9 +66,17 @@ export const routerOptions = {
     component: _62919b54,
     name: "signup"
   }, {
+    path: "/supports",
+    component: _e3dbed00,
+    name: "supports"
+  }, {
     path: "/profile/edit",
     component: _e2e673a8,
     name: "profile-edit"
+  }, {
+    path: "/supports/:id",
+    component: _31ca646b,
+    name: "supports-id"
   }, {
     path: "/",
     component: _2d7ff469,

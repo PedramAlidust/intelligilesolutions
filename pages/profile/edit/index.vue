@@ -68,7 +68,7 @@
     <h3 class="pb-2 pt-5">Payment Method</h3>
     <span class="text-black-50">Choose your payment method below</span>
     <div class="container mb-2">
-      <div class="row flex flex-wrap gap-3 py-4">
+      <div class="row flex flex-wrap py-4">
         <bank-card bank="paypal" :number="card" :select="cardSelected==='paypal'" @click.native="cardSelected='paypal'"/>
         <bank-card bank="master" :number="card" :select="cardSelected==='master'" @click.native="cardSelected='master'"/>
         <bank-card/>

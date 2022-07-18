@@ -1,5 +1,5 @@
 <template>
-  <div class="py-md-4 px-4 px-md-5 bord">
+  <div class="py-md-4 px-4 px-md-5 mb-5 bord">
     <Portal to="under-header">
       <div class="container-full d-lg-none py-2 subNavPage px-4">
         <div class="row w-100 justify-content-between g-0">
@@ -17,16 +17,18 @@
     </Portal>
     <h3 class="pb-2">Comments</h3>
     <comment-box v-for="item in data" :key="item.id" :data="item"/>
+    <pagination :pages="5" :select="1"/>
   </div>
 
 </template>
 
 <script>
 import CommentBox from "@/components/CommentBox";
+import Pagination from "@/components/Pagination";
 
 export default {
   name: "index",
-  components: {CommentBox},
+  components: {CommentBox, Pagination},
   layout: "profile",
   data() {
     return {
