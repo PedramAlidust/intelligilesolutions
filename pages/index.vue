@@ -278,7 +278,7 @@
     </section>
     <!-- top products section -->
     <section class="py-lg-5 mt-5 mt-lg-0 pt-5 pt-lg-0">
-      <div class="container py-lg-5">
+      <div class="container py-lg-4">
         <div class="row">
           <div class="col-lg-12 text-center">
             <p class="hr TopProducts text-dark">
@@ -288,7 +288,7 @@
             </p>
           </div>
           <!-- top products text -->
-          <p class="text-center py-5 text-muted">
+          <p class="text-center pt-5 pb-3 text-muted">
             List of the newest and best-selling cosmetic <br> products of our company
           </p>       
               <div class="TopProdSlider">
@@ -313,7 +313,7 @@
     </section>
    <!-- best products section -->
     <section class="py-lg-5 mt-lg-0 pt-5 pt-lg-0">
-      <div class="container py-lg-5">
+      <div class="container py-lg-4">
         <div class="row">
           <div class="col-lg-12 text-center">
             <p class="hr text-dark">
@@ -323,7 +323,7 @@
             </p>
           </div>
           <!-- Best products text -->
-          <p class="text-center py-5 text-muted">
+          <p class="text-center pt-5 text-muted">
             List of the newest and best-selling cosmetic <br> products of our company
           </p>
               <div class="BestProdSlider">
