@@ -21,8 +21,7 @@
               <div class="col-lg-6 text-center">
                    <div class="d-flex flex-row FormSection">
                           <div class="form-outline">
-                            <input type="search" id="form2" class="form-control ContactInputStyle" />
-                            <label class="FormLabel" for="form2">Enter your email</label>
+                            <input placeholder="Enter your email" type="search" id="form2" class="form-control ContactInputStyle" />
                           </div>
                           <button type="button" class="btn ContactBtn">
                             <i class="bi bi-forward ContactIcon"></i>
@@ -196,6 +195,18 @@ export default {
 </script>
 
 <style scoped>
+
+::placeholder {
+  position: absolute;
+  color: #a1a2a1;
+  top: 10px;
+  right: 170px;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+  opacity: 1 !important;
+}
 /* Footer section */
 .FooterBkg {
   background-image: url("~assets/pictures/footerbkg.svg");

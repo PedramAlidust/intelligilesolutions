@@ -108,7 +108,6 @@
         </div>       
          <div class="col-lg-8 OffCarousel">
               <div class="OffProdSlider">
-
                     <!-- Off Slider Item -->
                   <div class="container px-5 px-lg-2 px-md-2">
                       <!-- discount baner section -->
@@ -290,7 +289,8 @@
           <!-- top products text -->
           <p class="text-center pt-5 pb-3 text-muted">
             List of the newest and best-selling cosmetic <br> products of our company
-          </p>       
+          </p>   
+             <!-- top products slider -->    
               <div class="TopProdSlider">
                 <div>
                   <img src="~/assets/pictures/categorie1.png" class="w-100" alt="">
@@ -307,6 +307,11 @@
                 <div>
                   <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
                 </div>
+              </div>
+              <!-- arrows inside flex -->
+              <div class="SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5">
+                <i class="TopProdLeft bi bi-caret-left"></i>
+                <i class="TopProdRight bi bi-caret-right"></i>
               </div>
         </div>
       </div>
@@ -342,6 +347,11 @@
                 <div>
                   <img src="~/assets/pictures/categorie5.png" class="w-100" alt="">
                 </div>
+              </div>
+                   <!-- arrows inside flex -->
+              <div class="SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5">
+                <i class="TopProdLeft2 bi bi-caret-left"></i>
+                <i class="TopProdRight2 bi bi-caret-right"></i>
               </div>
         </div>
       </div>
@@ -379,6 +389,8 @@ export default {
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
+        nextArrow: $(".TopProdLeft"),
+        prevArrow: $(".TopProdRight"),
         responsive: [
           {
             breakpoint: 992,
@@ -416,8 +428,8 @@ export default {
         variableWidth: false,
         focusOnSelect: false,
         centerMode: false,
-        nextArrow: $(".BestNext"),
-        prevArrow: $(".BestPrev"),
+        nextArrow: $(".TopProdLeft2"),
+        prevArrow: $(".TopProdRight2"),
         responsive: [
           {
             breakpoint: 992,
@@ -491,6 +503,26 @@ export default {
 
 
 <style scoped>
+
+.TopProdLeft {
+
+}
+
+.TopProdRight {
+  
+}
+
+.SlideArrowPosition {
+  margin-top: -17%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .SlideArrowPosition {
+    margin-top: -35%;
+  }
+}
+  
 /* slider section */
 .slider {
   border-radius: 30px;
@@ -523,7 +555,19 @@ export default {
   letter-spacing: 3px;
   padding: 8px 17px !important;
   text-transform: capitalize;
+  box-shadow: none;
+
 }
+
+.SliderBtn:hover {
+  box-shadow: none;
+  background-color: #ffc07f !important;
+  color:#fff;
+  font-family: 'Open Sans';
+  font-weight: 700 !important;
+  transition: 0.5s;
+}
+
 
 .SliderMobileBtn {
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Desktop And Tablet version -->
-                <div class="container-full background d-none d-md-block d-lg-block">
+                <div class="py-auto container-full background d-none d-md-block d-lg-block">
                     <div class="row gx-0">
                         <div class="col-lg-6 col-md-6 LeftBkg text-center py-5">
                             <img src="~assets/pictures/logokandaka.png" class="w-100" alt="logo">
@@ -201,7 +201,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    padding: 4% 20%;
+    padding: 10% 20%;
 }
 .LeftBkg {
     background-color: #055452;

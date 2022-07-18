@@ -36,38 +36,38 @@
     "img/paypal.8441033.svg",
     "img/mastercard.e97b550.svg",
     "pages/profile/edit/index.191886dbe99622b5dc68.js",
-    "pages/index.827953de1b53aefc15e1.js",
+    "pages/index.01185a45b24dc1e219cb.js",
     "pages/profile/index.b3b405e4e05a24ac5d53.js",
     "pages/products/index.a558b4e681b40186b071.js",
     "layouts/profile.4dbbaac75dcf68d05caf.js",
-    "pages/about/index.4fb2e09f5857a13778f3.js",
-    "pages/contact/index.8fe6a40c731eac602551.js",
+    "pages/contact/index.9e39a61721e4bbf16d89.js",
+    "pages/about/index.63fad619cd73193f86f5.js",
     "pages/signup/index.af3f93e587f646ca479b.js",
-    "pages/login/index.34acd936c149ba602f32.js",
+    "pages/login/index.a81b05da23e54abce996.js",
     "pages/saved/index.25f5c5bbe6f5c47b73a4.js",
     "layouts/default.2e1e77cd08ee1ad23ba9.js",
     "vendor.5c11ff92234160fcb228.js",
-    "app.68e90cb27ce4cd9bb2ca.js",
-    "manifest.91a7b35c638322ff7a91.js",
+    "app.30dca7979bcdc33492b9.js",
+    "manifest.ebc9080af55db91084e9.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.91a7b35c638322ff7a91.js",
+    "manifest.ebc9080af55db91084e9.js",
     "vendor.5c11ff92234160fcb228.js",
-    "app.68e90cb27ce4cd9bb2ca.js"
+    "app.30dca7979bcdc33492b9.js"
   ],
   "async": [
     "pages/profile/edit/index.191886dbe99622b5dc68.js",
-    "pages/index.827953de1b53aefc15e1.js",
+    "pages/index.01185a45b24dc1e219cb.js",
     "pages/profile/index.b3b405e4e05a24ac5d53.js",
     "pages/products/index.a558b4e681b40186b071.js",
     "layouts/profile.4dbbaac75dcf68d05caf.js",
-    "pages/about/index.4fb2e09f5857a13778f3.js",
-    "pages/contact/index.8fe6a40c731eac602551.js",
+    "pages/contact/index.9e39a61721e4bbf16d89.js",
+    "pages/about/index.63fad619cd73193f86f5.js",
     "pages/signup/index.af3f93e587f646ca479b.js",
-    "pages/login/index.34acd936c149ba602f32.js",
+    "pages/login/index.a81b05da23e54abce996.js",
     "pages/saved/index.25f5c5bbe6f5c47b73a4.js",
     "layouts/default.2e1e77cd08ee1ad23ba9.js"
   ],
@@ -222,6 +222,9 @@
     "2c6c5272": [
       45
     ],
+    "d07d71b2": [
+      39
+    ],
     "84b73af6": [
       45
     ],
@@ -328,7 +331,7 @@
       32
     ],
     "3c1ac4a6": [
-      39
+      40
     ],
     "c853ddfe": [
       45
@@ -340,7 +343,7 @@
       45
     ],
     "97e235b8": [
-      40
+      39
     ],
     "b515d952": [
       45
@@ -418,7 +421,7 @@
       43
     ],
     "39e097fa": [
-      40
+      39
     ],
     "587636fe": [
       45
@@ -480,7 +483,7 @@
       45
     ],
     "acfd1d34": [
-      39
+      40
     ],
     "9339cb18": [
       45
@@ -593,7 +596,7 @@
       32
     ],
     "15254eb9": [
-      40
+      39
     ],
     "c8e5403c": [
       45
@@ -1034,7 +1037,7 @@
       45
     ],
     "34eea174": [
-      40
+      39
     ],
     "57bc0cc5": [
       45
@@ -1346,7 +1349,7 @@
       45
     ],
     "74ae99ea": [
-      39
+      40
     ],
     "24bd081c": [
       45
@@ -1926,7 +1929,7 @@
       45
     ],
     "c202dd70": [
-      39
+      40
     ],
     "173eeff8": [
       45
@@ -1950,7 +1953,7 @@
       45
     ],
     "5878a130": [
-      39
+      40
     ],
     "aa559da0": [
       46,
@@ -1973,7 +1976,7 @@
       33
     ],
     "204a2121": [
-      40
+      39
     ],
     "181d8fa8": [
       45

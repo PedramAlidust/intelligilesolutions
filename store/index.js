@@ -1,5 +1,4 @@
 import Vuex from "vuex";
-
 const createStore = () => {
     return new Vuex.Store({
         state: {
@@ -29,7 +28,6 @@ const createStore = () => {
                 .catch(e => context.error(e));
             },
             */
-
             setPosts(vuexContext, posts) {
                 vuexContext.commit("setPosts", posts);
             }

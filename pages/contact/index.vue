@@ -47,7 +47,12 @@
             <!-- subject input -->
             <div class="form-outline mb-2">
               <label for="input3">Subject</label>
-              <input placeholder="your subject" type="text" id="input3" class="InputStyle form-control"/>
+               <select class="InputStyle form-control" name="cars" id="cars">
+                <option value="volvo">Suggestions</option>
+                <option value="saab">Criticism</option>
+                <option value="opel">Help</option>
+                <option value="audi">Question</option>
+              </select>
               <!--
               <p class="text-danger" v-if="PassCheck">
                 No Empty Subject Field
@@ -124,6 +129,16 @@ export default {
 </script>
 
 <style scoped>
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none !important;
+  background: transparent !important;
+  background-image: url("~/assets/svg/ArrowDown.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 96% !important;
+  background-position-y: 20px !important;
+}
 
 
  .GmailIcon {
