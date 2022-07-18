@@ -3,7 +3,7 @@
     <Portal to="under-header">
       <div class="container-full d-lg-none py-2 subNavPage px-4">
         <div class="row w-100 justify-content-between g-0">
-          <nuxt-link class="col d-flex align-items-center gap-3 text-dark" to="/profile">
+          <nuxt-link class="col d-flex align-items-center gap-3 text-dark text-decoration-none" to="/profile">
             <img src="~/assets/svg/angle-small-right.svg" alt="">
             <span>Back</span>
           </nuxt-link>
