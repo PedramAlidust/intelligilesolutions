@@ -147,6 +147,17 @@ export default {
 
 .menu-item:hover, .nuxt-link-exact-active {
   color: #222;
+  position: relative;
+}
+
+.nuxt-link-exact-active:before {
+  content: '';
+  position: absolute;
+  background-color: #222;
+  width: 4px;
+  left: -25px;
+  top: -18px;
+  height: 56px;
 }
 
 .menu-item-text {

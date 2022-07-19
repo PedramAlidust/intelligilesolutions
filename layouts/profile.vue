@@ -32,6 +32,7 @@ import ProfileMenuList from "../components/Navigation/ProfileMenuList";
 export default {
   name: "profile",
   components: {ProfileMenuList, TheHeader},
+  middleware: "loggedIn"
 }
 </script>
 

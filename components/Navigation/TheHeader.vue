@@ -18,11 +18,9 @@
                     About
                   </nuxt-link>
                 </li>
-              <li class="nav-item px-3">
-                <nuxt-link class="nav-link" to="/products">
-                  Products
-                </nuxt-link>
-              </li>
+                <li class="nav-item px-3">
+                  <a href="#popular" class="nav-link">Products</a>
+                </li>
                 <li class="nav-item px-3">
                   <nuxt-link class="nav-link" to="/contact">
                     Contact
@@ -36,9 +34,10 @@
           <!-- search form -->
           <div class="d-flex flex-row">
             <div class="form-outline">
-              <input @blur="OnBlur" @focus="OnFocus" placeholder="Search..." type="search" id="form1" class="form-control inputstyle" />
+              <input type="search" id="form1" class="form-control inputstyle"/>
+              <label class="SearchFormLabel" for="form1">Search...</label>
             </div>
-            <button type="button" :class="OnFocusCss" class="btn searchbtn rounded-circle">
+            <button type="button" class="btn searchbtn rounded-circle">
               <i class="bi bi-search searchicon"></i>
             </button>
           </div>
@@ -65,56 +64,27 @@
           <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo"/>
         </div>
         <div class="col-4 text-start">
-          <img @click="EnableMobileMenu" src="~/assets/pictures/menu.svg" alt="menu" class="MobileMenuIcon">
+          <img src="~/assets/pictures/menu.svg" alt="menu" class="MobileMenuIcon">
         </div>
       </div>
     </div>
 
-    <TheMobileMenuModal @SendModalStatus="DisableMobileMenu" v-if="MobileMenu" :menu_status="MobileMenu" />
     <!--  sub navigation holder  -->
     <slot/>
   </header>
 </template>
 
 <script>
-import TheMobileMenuModal from "@/components/Navigation/TheMobileMenuModal.vue";
 import TheNavMenu from "./TheNavMenu";
 
 export default {
   name: "TheHeader",
-  components: {TheNavMenu, TheMobileMenuModal},
+  components: {TheNavMenu},
   props: ["menu_data"],
-   data() {
-    return {
-      Focused: false,
-      MobileMenu: false,
-    }
-  },
-   methods: {
-    OnFocus() {
-      this.Focused = true;
-    },
-    OnBlur() {
-      this.Focused = false;
-    },
-    EnableMobileMenu() {
-      this.MobileMenu = true;
-    },
-    DisableMobileMenu() {
-      this.MobileMenu = false;
-    }
-  },
-  
-  computed: {
-    OnFocusCss() {
-      return this.Focused ? 'FocusedBtn' : 'searchbtn';
-    }
-  }
 };
 </script>
 
 <style scoped>
-
 /* navbar component style */
 nav a {
   color: #055452 !important;
@@ -124,7 +94,7 @@ nav a {
 }
 
 nav a:hover {
-  color:  #e99d7b !important;
+  color: #e99d7b !important;
 }
 
 .logo {
@@ -137,7 +107,6 @@ nav a:hover {
     display: none;
   }
 }
- 
 
 @media all and (max-width: 994px) {
 
@@ -154,7 +123,7 @@ nav a:hover {
   }
 
   .ShopIcon {
-    width: 40px;  
+    width: 40px;
     background-color: #e99d7b;
     border-radius: 40%;
     padding: 9px;
@@ -168,22 +137,17 @@ nav a:hover {
   }
 }
 
- ::placeholder {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-   opacity: 1 !important;
- }
+.SearchFormLabel {
+  position: absolute;
+  color: #a1a2a1;
+  top: 10px;
+  right: 75%;
+  font-family: 'Open Sans';
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
 
-input:focus {
-  width: 120%;
-  border: 1px solid #e99d7b !important;
 }
-
-input:focus::placeholder {
-  color: #e99d7b;
-  transition: 0.3s;
-}
-
 
 .MobileMenuBack {
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
@@ -191,7 +155,6 @@ input:focus::placeholder {
 
 .MobileMenuIcon {
   margin-top: 30px;
-  cursor: pointer;
 }
 
 .searchbtn {
@@ -201,82 +164,17 @@ input:focus::placeholder {
   height: 37px;
   width: 37px;
   z-index: 1;
-  box-shadow: none;
-  transition: 0.5;
 }
-
-.FocusedBtn {
- background-color: #e99d7b !important;
-  margin-left: 5px !important;
-  margin-top: 0px;
-  height: 37px;
-  width: 37px;
-  z-index: 1;
-  box-shadow: none;
-  animation-name: move;
-  animation-duration: 0.5s; 
-}
-
 
 .searchicon {
- color: #055452;
- position: relative;
- right: 2px;
-}
-
-
-.searchicon:hover {
- color: #fff;
- transition: 0.3s;
-}
-
-.shopicon {
- color: #055452;
- position: relative;
- right: 1px;
-}
-
-.shopicon:hover {
- color: #fff;
- transition: 0.3s;
+  color: #055452;
+  position: relative;
+  right: 2px;
 }
 
 .inputstyle {
   border: 0.5px solid #707070 !important;
   border-radius: 30px !important;
-}
-
-
-.loginbtn {
-  background-color: #e99d7b !important;
-  height: 45px;
-  border-radius: 30px !important;
-  box-shadow: none;
-  margin-top: -4px;
-}
-
-.loginicon {
-  color: #055452;
-  font-size: 15pt;
-}
-
-.loginicon:hover {
-  color: #fff;
-  transition: 0.3s;
-}
-
-.signintext {
-  font-weight: 600;
-  font-size: 16px;
-  color: #055452;
-  font-family: 'Open Sans';
-  font-style: normal;
-  padding: 8px;
-}
-
-.signintext:hover {
-  color: #fff;
-  transition: 0.3s;
 }
 
 .shopbtn {
@@ -285,12 +183,5 @@ input:focus::placeholder {
   margin-right: 10px;
   height: 40px;
   width: 40px;
-  box-shadow: none;
-}
-
-@media all and (max-width: 1200px) {
-  .SearchForm {
-    display: none;
-  }
 }
 </style>
