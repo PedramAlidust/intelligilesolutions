@@ -100,7 +100,6 @@ export default {
             'mediaEmbed'
           ],
         },
-        language: 'en',
       },
     }
   }
