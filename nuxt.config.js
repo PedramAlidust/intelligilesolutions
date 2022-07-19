@@ -71,9 +71,8 @@ export default {
             // ERROR  [CKEditorWebpackPlugin] Error: No translation has been found for the zh language.
             new CKEditorWebpackPlugin({
                 // See https://ckeditor.com/docs/ckeditor5/latest/features/ui-language.html
-                language: "en",
                 additionalLanguages: 'all',
-                addMainLanguageTranslationsToAllAssets: true,
+                addMainLanguageTranslationsToAllAssets: true
             })
         ],
 

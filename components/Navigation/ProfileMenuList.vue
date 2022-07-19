@@ -1,7 +1,7 @@
 <template>
   <div class="menu" :class="{'menu-light':isLight}">
     <div class="menu-header">
-      <img src="~/assets/svg/user.svg" alt="">
+      <img src="~/assets/svg/yuser.svg" alt="">
       <div>
         <h3>{{ user.name }}</h3>
         <span>{{ user.email }}</span>
