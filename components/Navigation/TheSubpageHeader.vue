@@ -1,105 +1,113 @@
 <template>
   <!-- navigation section -->
-  <header class="SubPageMenuBkg mb-4">  
-  <div class="container py-4 d-none d-lg-block">
-    <div class="row">
-      <div class="col-lg-1">
-        <nuxt-link to="/">
-        <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo" />
-        </nuxt-link>
-      </div>
-      <div class="col-lg-5 text-start pe-5">
-        <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
-          <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav">
-              <nuxt-link class="nav-link" to="/">
-                 Home
-              </nuxt-link>
-              <li class="nav-item px-3">
-                <nuxt-link class="nav-link" to="/about">
-                  About
+  <header class="SubPageMenuBkg position-relative mb-4">
+    <div class="container py-4 d-none d-lg-block">
+      <div class="row justify-content-between">
+        <div class="col-lg-1">
+          <img src="~/assets/pictures/logokandaka.svg" alt="logo" class="logo"/>
+        </div>
+        <div class="col-auto col-lg-5 text-start pe-5">
+          <nav class="navbar shadow-0 navbar-expand-lg py-4 pe-2">
+            <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav">
+                <nuxt-link class="nav-link" to="/">
+                  Home
                 </nuxt-link>
-              </li>
-              <li class="nav-item px-3">
-                  <nuxt-link class="nav-link" to="/products">
+                <li class="nav-item px-3">
+                  <nuxt-link class="nav-link" to="/about">
+                    About
+                  </nuxt-link>
+                </li>
+              <li class="DropDownNav nav-item px-3">
+                <nuxt-link class="nav-link" to="/products">
                   Products
                 </nuxt-link>
+                 <div class="DropDown">
+                    <nuxt-link class="nav-link" to="/products">
+                    Lip Care
+                    </nuxt-link>
+                     <nuxt-link class="nav-link" to="/products">
+                    Skin Care
+                    </nuxt-link>
+                     <nuxt-link class="nav-link" to="/products">
+                    Jewelry
+                    </nuxt-link>
+                     <nuxt-link class="nav-link" to="/products">
+                    Nail
+                    </nuxt-link>
+                     <nuxt-link class="nav-link" to="/products">
+                    Perfum
+                    </nuxt-link>
+                 </div>
               </li>
-              <li class="nav-item px-3">
-                <nuxt-link class="nav-link" to="/contact">
-                  Contact
-                </nuxt-link>
-              </li>
-            </ul>
+                <li class="nav-item px-3">
+                  <nuxt-link class="nav-link" to="/contact">
+                    Contact
+                  </nuxt-link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-3 text-end py-4 SearchForm">
+          <!-- search form -->
+          <div class="d-flex flex-row">
+            <div class="form-outline">
+              <input @blur="OnBlur" @focus="OnFocus" placeholder="Search..." type="search" id="form1" class="form-control inputstyle" />
+            </div>
+            <button type="button" :class="OnFocusCss" class="btn searchbtn rounded-circle">
+              <i class="bi bi-search searchicon"></i>
+            </button>
           </div>
-        </nav>
-      </div>
-      <div class="col-lg-3 text-end py-4 SearchForm">
-        <!-- search form --> 
-        <div class="d-flex flex-row">
-          <div class="form-outline">
-            <input @blur="OnBlur" @focus="OnFocus" placeholder="Search..." type="search" id="form1" class="form-control inputstyle" />
-          </div>
-          <button type="button" :class="OnFocusCss" class="btn rounded-circle">
-            <i class="bi bi-search searchicon"></i>
+        </div>
+        <div class="col-lg-3 text-start py-4 d-flex flex-row flex-row-reverse">
+          <TheNavMenu/>
+          <button type="button" class="btn shopbtn">
+            <i class="bi bi-bag shopicon"></i>
           </button>
         </div>
       </div>
-      <div class="col-lg-3 text-start py-4 d-flex flex-row  flex-row-reverse">
-        <nuxt-link to="/login">
-        <button type="button" class="btn loginbtn">
-            <i class="bi bi-box-arrow-right loginicon">
-              <span class="signintext">sign in</span>
-            </i>         
-        </button>
-        </nuxt-link>
-        <button type="button" class="btn shopbtn">
-            <i class="bi bi-bag shopicon"></i>         
-        </button>      
-      </div>
     </div>
-  </div>
-  <!-- menu responsive -->
-  <div class="container-full d-lg-none py-3 MobileMenuBack px-5">
-    <div class="row g-0">
-       <div class="col-4">
+    <!-- menu responsive -->
+    <div class="container-full d-lg-none pt-3 px-4">
+      <div class="row g-0 border-bottom pb-3">
+        <div class="col-4">
           <div class="d-flex flex-row align-items-center mt-3">
             <img src="~/assets/pictures/search.svg" class="SearchIcon" alt="search">
             <div class="px-1"></div>
             <img src="~/assets/pictures/shop.svg" class="ShopIcon" alt="search">
           </div>
-       </div>
-       <div class="col-4 text-center">
-          <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo" />
-       </div>
-       <div class="col-4 text-start">
+        </div>
+        <div class="col-4 text-center">
+          <img src="~/assets/pictures/logokandaka.png" alt="logo" class="logo"/>
+        </div>
+        <div class="col-4 text-start">
           <img @click="EnableMobileMenu" src="~/assets/pictures/menu.svg" alt="menu" class="MobileMenuIcon">
-       </div>
+        </div>
+      </div>
     </div>
-  </div>
-      <TheMobileMenuModal @SendModalStatus="DisableMobileMenu" v-if="MobileMenu" :menu_status="MobileMenu" />
+
+    <TheMobileMenuModal @SendModalStatus="DisableMobileMenu" v-if="MobileMenu" :menu_status="MobileMenu" />
+    <!--  sub navigation holder  -->
+    <slot/>
   </header>
 </template>
 
 <script>
-
 import TheMobileMenuModal from "@/components/Navigation/TheMobileMenuModal.vue";
+import TheNavMenu from "./TheNavMenu";
 
 export default {
-  components: {
-    TheMobileMenuModal
-  },
   name: "TheHeader",
+  components: {TheNavMenu, TheMobileMenuModal},
   props: ["menu_data"],
-
-  data() {
+   data() {
     return {
       Focused: false,
       MobileMenu: false,
     }
   },
-
-  methods: {
+   methods: {
     OnFocus() {
       this.Focused = true;
     },
@@ -119,13 +127,43 @@ export default {
       return this.Focused ? 'FocusedBtn' : 'searchbtn';
     }
   }
-
 };
-
 </script>
 
-
 <style scoped>
+
+.DropDownNav:hover .DropDown {
+  display: block;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.DropDown {
+  display: none;
+  font-family: 'Open Sans';
+  font-size: 10pt !important;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 13px;
+  width: 60%;
+  position: absolute;
+  right: 5%;
+  margin-top: 1px;
+  padding: 20px;
+  z-index: 2;
+}
+
+.DropDown a {
+  font-size: 12pt !important;
+  padding-left: 20px !important;
+}
+
+
+.DropDown a:hover {
+  font-size: 12pt !important;
+  background-color: #e99d7b!important;
+  color: #fff!important;
+}
 
 /* navbar component style */
 nav a {
@@ -309,5 +347,4 @@ input:focus::placeholder {
  .SubPageMenuBkg {
   box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
  }
-
 </style>

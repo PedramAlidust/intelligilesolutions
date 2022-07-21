@@ -1,3 +1,5 @@
+
+
 <template>
   <div>
     <TheHeader />
@@ -77,19 +79,18 @@
           </form>
         </div>
         <div class="col-md-6 col-lg-6">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79041.6241066565!2d-1.317627087803903!3d51.75039548720793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48713380adc41faf%3A0xc820dba8cb547402!2sOxford%2C%20UK!5e0!3m2!1sen!2s!4v1657945325020!5m2!1sen!2s" style="border:0; width: 100%; height: 50%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="d-none d-md-block d-lg-block MapColor text-center" style="width: 100%; height: 50%; position: relative;">
+               <img class="LogoImgStyle w-50" src="~/assets/pictures/logokandaka.svg" alt="logo" />
+          </div>
          <!-- info text -->
          <div class="container pt-3">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-
-                </div>
-                <div class="col-lg-6 col-md-6 ps-5">
-                </div>
+                <div class="col-lg-6 col-md-6"></div>
+                <div class="col-lg-6 col-md-6 ps-5"></div>
             </div>
          </div>
          <!-- mail and media -->
-          <div class="container">
+          <div class="container-full">
             <div class="row gx-5">
                 <div class="col-lg-6">
                     <p class="MapTxt">Contact Information</p>
@@ -98,12 +99,11 @@
                     <p class="FooterSubMenu ps-lg-2 px-lg-2 px-2 pt-2 pt-lg-2">kandakacollections@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5 pt-lg-2 pt-md-4 pt-4">
-                    <p class="MapTxt">Social Media</p>
+                <div class="col-lg-6 ps-lg-5 pt-lg-0 pt-md-4">
+                    <p class="pt-2 pt-md-0 pt-lg-0 MapTxt pb-md-2 pb-lg-2">Social Media</p>
                     <i class="SocialIcons bi bi-facebook px-2"></i>
                     <i class="SocialIcons bi bi-tiktok px-2"></i>
                     <i class="SocialIcons bi bi-youtube px-2"></i>
-                    <i class="SocialIcons bi bi-whatsapp px-2"></i>
                     <i class="SocialIcons bi bi-instagram px-2"></i>
                 </div>
             </div>
@@ -119,7 +119,6 @@
 <script>
 import TheHeader from "@/components/Navigation/TheSubpageHeader";
 import TheFooter from "@/components/TheFooter";
-
 export default {
   components: {
     TheHeader,
@@ -130,6 +129,24 @@ export default {
 
 <style scoped>
 
+.LogoImgStyle {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.MapColor {
+  background-color: #055452;
+  border-radius: 12px;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none !important;
@@ -139,39 +156,32 @@ select {
   background-position-x: 96% !important;
   background-position-y: 20px !important;
 }
-
-
  .GmailIcon {
   padding: 8px 10px;
   border-radius: 50%;  
   background-color: #e99d7b;
   color: #055452;
  }
-
 .SocialIcons {
   color: #e99d7b;
   font-size: 14pt;
  }
-
 .MapTxt {
     color: #055452;
     font-family: 'Open Sans';
     font-size: 14pt;
     font-weight: 800;
 }
-
 label {
     color: #055452;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-
 /* form style */
 ::placeholder {
   color: #6e7689;
   opacity: 1 !important;
 }
-
 .BtnStyle {
     font-family: 'Open Sans';
     font-weight: 600;
@@ -182,14 +192,12 @@ label {
     border-radius: 30px;
     width: 30%;
 }
-
 @media screen and (max-width: 768px) {
   .BtnStyle {
     width: 100%;
   }
 }
     
-
 .InputStyle {
     padding: 13px;
     font-family: 'Open Sans';
@@ -199,7 +207,6 @@ label {
     border-radius: 10px;
     color: #6e7689;
 }
-
 /*contact title */
 .CtCTitle {
   color: #055452;
@@ -208,27 +215,23 @@ label {
   font-weight: 800;
   line-height: 1.47;
 }
-
 .CtCTitleDesc {
   color: #616161;
   font-family: "Open Sans";
   font-size: 12pt;
 }
-
 .PageTitle {
   color: #231942;
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 20pt;
 }
-
 .PageBkg {
   background-image: url("~assets/pictures/PageBack.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
-
 .BroadHome {
   color: #055452;
   font-family: "Open Sans";
@@ -236,7 +239,6 @@ label {
   line-height: 1.25;
   font-size: 14pt;
 }
-
 .BroadSub {
   color: #055452;
   font-family: "Open Sans";

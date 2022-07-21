@@ -53,6 +53,7 @@ export default {
   border-radius: 24px;
   margin-right: 10px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 10px;
 }
 
 .selected {
@@ -108,7 +109,6 @@ export default {
   position: absolute;
   right: 40px;
   top: 20px;
-  opacity: 80%;
 }
 
 .bank-info {
