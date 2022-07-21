@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae1c3ec8-1c9e-4f25-b7e2-ad65f7155399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/svg/yuser.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navigation/ProfileMenuList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/ProfileMenuList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="ae1c3ec8-1c9e-4f25-b7e2-ad65f7155399" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +77,7 @@
       <workItem from="1658231231222" duration="94000" />
       <workItem from="1658231363974" duration="202000" />
       <workItem from="1658231591962" duration="6860000" />
-      <workItem from="1658242560277" duration="174000" />
+      <workItem from="1658242560277" duration="363000" />
     </task>
     <servers />
   </component>
