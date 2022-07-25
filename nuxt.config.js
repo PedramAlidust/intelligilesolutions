@@ -17,7 +17,7 @@ export default {
         ],
         link: [
             {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-            {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Playfair+Display:wght@400;600;700&display=swap'},
+            {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro&display=swap'},
             {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css'},
             {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css'},
             {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css'},
@@ -26,7 +26,8 @@ export default {
         script: [
             {src: '/js/bootstrap/bootstrap.bundle.min.js', body: true},
             {src: ' https://code.jquery.com/jquery-3.6.0.min.js', body: true},
-            {src: 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', body: true}
+            {src: 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', body: true},
+            {src: 'https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js', body: true},
         ]
     },
 
@@ -56,7 +57,7 @@ export default {
     /*
     ** Nuxt.js modules
     */
-    modules: ['portal-vue/nuxt'],
+    modules: ['portal-vue/nuxt', '@nuxtjs/vuetify'],
 
     /*
     ** Build configuration

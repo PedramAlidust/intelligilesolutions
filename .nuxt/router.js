@@ -16,6 +16,10 @@ const _b8f75a94 = () => interopDefault(import('../pages/profile/index.vue' /* we
 const _0c58de94 = () => interopDefault(import('../pages/saved/index.vue' /* webpackChunkName: "pages/saved/index" */))
 const _4489cac1 = () => interopDefault(import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */))
 const _5a87dca6 = () => interopDefault(import('../pages/supports/index.vue' /* webpackChunkName: "pages/supports/index" */))
+const _cf1936e4 = () => interopDefault(import('../pages/admin/orders/index.vue' /* webpackChunkName: "pages/admin/orders/index" */))
+const _9f2df666 = () => interopDefault(import('../pages/admin/products/index.vue' /* webpackChunkName: "pages/admin/products/index" */))
+const _fb27f290 = () => interopDefault(import('../pages/admin/subadmin/index.vue' /* webpackChunkName: "pages/admin/subadmin/index" */))
+const _03bc8e34 = () => interopDefault(import('../pages/admin/tickets/index.vue' /* webpackChunkName: "pages/admin/tickets/index" */))
 const _3d26204e = () => interopDefault(import('../pages/profile/edit/index.vue' /* webpackChunkName: "pages/profile/edit/index" */))
 const _f6aae3d0 = () => interopDefault(import('../pages/supports/_id/index.vue' /* webpackChunkName: "pages/supports/_id/index" */))
 const _531c959c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -79,6 +83,22 @@ export const routerOptions = {
     path: "/supports",
     component: _5a87dca6,
     name: "supports"
+  }, {
+    path: "/admin/orders",
+    component: _cf1936e4,
+    name: "admin-orders"
+  }, {
+    path: "/admin/products",
+    component: _9f2df666,
+    name: "admin-products"
+  }, {
+    path: "/admin/subadmin",
+    component: _fb27f290,
+    name: "admin-subadmin"
+  }, {
+    path: "/admin/tickets",
+    component: _03bc8e34,
+    name: "admin-tickets"
   }, {
     path: "/profile/edit",
     component: _3d26204e,

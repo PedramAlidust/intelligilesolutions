@@ -3,6 +3,10 @@
   "files": {
     "pages/about/index.js": "pages/about/index.js",
     "pages/admin/index.js": "pages/admin/index.js",
+    "pages/admin/orders/index.js": "pages/admin/orders/index.js",
+    "pages/admin/products/index.js": "pages/admin/products/index.js",
+    "pages/admin/subadmin/index.js": "pages/admin/subadmin/index.js",
+    "pages/admin/tickets/index.js": "pages/admin/tickets/index.js",
     "pages/cart/index.js": "pages/cart/index.js",
     "pages/comments/index.js": "pages/comments/index.js",
     "pages/contact/index.js": "pages/contact/index.js",
@@ -21,6 +25,10 @@
   "maps": {
     "pages/about/index.js": "pages/about/index.js.map",
     "pages/admin/index.js": "pages/admin/index.js.map",
+    "pages/admin/orders/index.js": "pages/admin/orders/index.js.map",
+    "pages/admin/products/index.js": "pages/admin/products/index.js.map",
+    "pages/admin/subadmin/index.js": "pages/admin/subadmin/index.js.map",
+    "pages/admin/tickets/index.js": "pages/admin/tickets/index.js.map",
     "pages/cart/index.js": "pages/cart/index.js.map",
     "pages/comments/index.js": "pages/comments/index.js.map",
     "pages/contact/index.js": "pages/contact/index.js.map",

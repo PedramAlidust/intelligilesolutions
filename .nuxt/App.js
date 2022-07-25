@@ -11,10 +11,11 @@ import '../assets/bootstrap/css/bootstrap.min.css'
 
 import '../assets/bootstrap/css/bootstrap.rtl.min.css'
 
+import _77068119 from '../layouts/admin.vue'
 import _6f6c098b from '../layouts/default.vue'
 import _00e6bcf3 from '../layouts/profile.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b),"_profile": sanitizeComponent(_00e6bcf3) }
+const layouts = { "_admin": sanitizeComponent(_77068119),"_default": sanitizeComponent(_6f6c098b),"_profile": sanitizeComponent(_00e6bcf3) }
 
 export default {
   render (h, props) {
