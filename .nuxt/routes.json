@@ -72,6 +72,12 @@
     "chunkName": "pages/supports/index"
   },
   {
+    "name": "admin-contact",
+    "path": "/admin/contact",
+    "component": "/home/pedram/Projects/lab.intelligilesolutions.com/pages/admin/contact/index.vue",
+    "chunkName": "pages/admin/contact/index"
+  },
+  {
     "name": "admin-orders",
     "path": "/admin/orders",
     "component": "/home/pedram/Projects/lab.intelligilesolutions.com/pages/admin/orders/index.vue",

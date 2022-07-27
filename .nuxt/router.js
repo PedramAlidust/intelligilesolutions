@@ -16,6 +16,7 @@ const _b8f75a94 = () => interopDefault(import('../pages/profile/index.vue' /* we
 const _0c58de94 = () => interopDefault(import('../pages/saved/index.vue' /* webpackChunkName: "pages/saved/index" */))
 const _4489cac1 = () => interopDefault(import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */))
 const _5a87dca6 = () => interopDefault(import('../pages/supports/index.vue' /* webpackChunkName: "pages/supports/index" */))
+const _1726482d = () => interopDefault(import('../pages/admin/contact/index.vue' /* webpackChunkName: "pages/admin/contact/index" */))
 const _cf1936e4 = () => interopDefault(import('../pages/admin/orders/index.vue' /* webpackChunkName: "pages/admin/orders/index" */))
 const _9f2df666 = () => interopDefault(import('../pages/admin/products/index.vue' /* webpackChunkName: "pages/admin/products/index" */))
 const _fb27f290 = () => interopDefault(import('../pages/admin/subadmin/index.vue' /* webpackChunkName: "pages/admin/subadmin/index" */))
@@ -83,6 +84,10 @@ export const routerOptions = {
     path: "/supports",
     component: _5a87dca6,
     name: "supports"
+  }, {
+    path: "/admin/contact",
+    component: _1726482d,
+    name: "admin-contact"
   }, {
     path: "/admin/orders",
     component: _cf1936e4,

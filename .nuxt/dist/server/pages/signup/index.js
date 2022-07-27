@@ -1,5 +1,5 @@
 
-exports.ids = [17];
+exports.ids = [18];
 exports.modules = {
 
 /***/ 114:
@@ -22,7 +22,7 @@ module.exports = __webpack_require__.p + "img/LoginBkgPic.8184d67.jpeg";
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(206);
+var content = __webpack_require__(208);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -34,14 +34,14 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 204:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/SignUpRight.f052275.svg";
 
 /***/ }),
 
-/***/ 205:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -53,7 +53,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 206:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -70,7 +70,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 246:
+/***/ 254:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -88,7 +88,7 @@ var render = function render() {
     }
   }, [_c('p', {
     staticClass: "SignUpTxt pe-2 text-muted"
-  }, [_vm._v("Log in")])])], 2), _vm._ssrNode(" <div class=\"Devider\" data-v-041ed1c2></div> <p class=\"DeviderTxt text-muted text-center\" data-v-041ed1c2>\n                                        OR\n                                    </p> <div class=\"text-center mt-5\" data-v-041ed1c2><a role=\"button\" class=\"btn GoogleBtn\" data-v-041ed1c2><img width=\"40px\"" + _vm._ssrAttr("src", __webpack_require__(114)) + " class=\"pe-2\" data-v-041ed1c2>\n                                        Continue with Google\n                                    </a></div>")], 2)], 2), _vm._ssrNode(" <div class=\"col-lg-6 col-md-6 LeftBkg text-center py-5\" data-v-041ed1c2><img" + _vm._ssrAttr("src", __webpack_require__(204)) + " alt=\"logo\" class=\"w-100\" data-v-041ed1c2></div>")], 2)])])])]), _vm._ssrNode(" "), _vm._ssrNode("<section class=\"d-md-none d-lg-none container MobileBkg pb-5\" data-v-041ed1c2>", "</section>", [_vm._ssrNode("<div class=\"text-center py-2\" data-v-041ed1c2><img" + _vm._ssrAttr("src", __webpack_require__(38)) + " alt=\"logo\" class=\"MobileLogo\" data-v-041ed1c2></div> "), _vm._ssrNode("<div class=\"py-4 bg-white px-3 FormMobileBkgStyle\" data-v-041ed1c2>", "</div>", [_vm._ssrNode("<p class=\"mt-3 LoginTitle text-center\" data-v-041ed1c2>Sign up</p> <p class=\"text-center text-muted\" data-v-041ed1c2>Please register by completing the information below</p> "), _vm._ssrNode("<form class=\"my-4\" data-v-041ed1c2>", "</form>", [_vm._ssrNode("<div class=\"form-outline mb-2\" data-v-041ed1c2><input placeholder=\"Your Name\" type=\"text\" id=\"input1\"" + _vm._ssrAttr("value", _vm.name) + " class=\"InputStyle form-control\" data-v-041ed1c2> " + (_vm.NameCheck ? "<p class=\"text-danger\" data-v-041ed1c2>No Empty Name Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-041ed1c2><input placeholder=\"kandaka@example.com\" type=\"email\" id=\"input2\"" + _vm._ssrAttr("value", _vm.email) + " class=\"InputStyle form-control\" data-v-041ed1c2> " + (_vm.MailCheck ? "<p class=\"text-danger\" data-v-041ed1c2>No Empty Email Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-041ed1c2><input placeholder=\"Password\" type=\"password\" id=\"input3\"" + _vm._ssrAttr("value", _vm.password) + " class=\"InputStyle form-control\" data-v-041ed1c2> " + (_vm.PassCheck ? "<p class=\"text-danger\" data-v-041ed1c2>No Empty Password Field</p>" : "<!---->") + "</div> <p class=\"my-4 text-center terms\" data-v-041ed1c2>\n                                        By pressing “Create Account” you agree to our \n                                        <span class=\"TermSpan\" data-v-041ed1c2> terms &amp; conditions </span></p> <button type=\"submit\" class=\"btn BtnStyle btn-block mb-4 SubmitBtnStyle\" data-v-041ed1c2>\n                                        Create Account\n                                    </button> "), _vm._ssrNode("<div class=\"d-flex flex-row pb-4\" data-v-041ed1c2>", "</div>", [_vm._ssrNode("<p class=\"SignUpTxt\" data-v-041ed1c2>Already have account?</p> "), _c('nuxt-link', {
+  }, [_vm._v("Log in")])])], 2), _vm._ssrNode(" <div class=\"Devider\" data-v-041ed1c2></div> <p class=\"DeviderTxt text-muted text-center\" data-v-041ed1c2>\n                                        OR\n                                    </p> <div class=\"text-center mt-5\" data-v-041ed1c2><a role=\"button\" class=\"btn GoogleBtn\" data-v-041ed1c2><img width=\"40px\"" + _vm._ssrAttr("src", __webpack_require__(114)) + " class=\"pe-2\" data-v-041ed1c2>\n                                        Continue with Google\n                                    </a></div>")], 2)], 2), _vm._ssrNode(" <div class=\"col-lg-6 col-md-6 LeftBkg text-center py-5\" data-v-041ed1c2><img" + _vm._ssrAttr("src", __webpack_require__(206)) + " alt=\"logo\" class=\"w-100\" data-v-041ed1c2></div>")], 2)])])])]), _vm._ssrNode(" "), _vm._ssrNode("<section class=\"d-md-none d-lg-none container MobileBkg pb-5\" data-v-041ed1c2>", "</section>", [_vm._ssrNode("<div class=\"text-center py-2\" data-v-041ed1c2><img" + _vm._ssrAttr("src", __webpack_require__(38)) + " alt=\"logo\" class=\"MobileLogo\" data-v-041ed1c2></div> "), _vm._ssrNode("<div class=\"py-4 bg-white px-3 FormMobileBkgStyle\" data-v-041ed1c2>", "</div>", [_vm._ssrNode("<p class=\"mt-3 LoginTitle text-center\" data-v-041ed1c2>Sign up</p> <p class=\"text-center text-muted\" data-v-041ed1c2>Please register by completing the information below</p> "), _vm._ssrNode("<form class=\"my-4\" data-v-041ed1c2>", "</form>", [_vm._ssrNode("<div class=\"form-outline mb-2\" data-v-041ed1c2><input placeholder=\"Your Name\" type=\"text\" id=\"input1\"" + _vm._ssrAttr("value", _vm.name) + " class=\"InputStyle form-control\" data-v-041ed1c2> " + (_vm.NameCheck ? "<p class=\"text-danger\" data-v-041ed1c2>No Empty Name Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-041ed1c2><input placeholder=\"kandaka@example.com\" type=\"email\" id=\"input2\"" + _vm._ssrAttr("value", _vm.email) + " class=\"InputStyle form-control\" data-v-041ed1c2> " + (_vm.MailCheck ? "<p class=\"text-danger\" data-v-041ed1c2>No Empty Email Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-041ed1c2><input placeholder=\"Password\" type=\"password\" id=\"input3\"" + _vm._ssrAttr("value", _vm.password) + " class=\"InputStyle form-control\" data-v-041ed1c2> " + (_vm.PassCheck ? "<p class=\"text-danger\" data-v-041ed1c2>No Empty Password Field</p>" : "<!---->") + "</div> <p class=\"my-4 text-center terms\" data-v-041ed1c2>\n                                        By pressing “Create Account” you agree to our \n                                        <span class=\"TermSpan\" data-v-041ed1c2> terms &amp; conditions </span></p> <button type=\"submit\" class=\"btn BtnStyle btn-block mb-4 SubmitBtnStyle\" data-v-041ed1c2>\n                                        Create Account\n                                    </button> "), _vm._ssrNode("<div class=\"d-flex flex-row pb-4\" data-v-041ed1c2>", "</div>", [_vm._ssrNode("<p class=\"SignUpTxt\" data-v-041ed1c2>Already have account?</p> "), _c('nuxt-link', {
     attrs: {
       "to": "/login"
     }
@@ -152,7 +152,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(205)
+  var style0 = __webpack_require__(207)
 if (style0.__inject__) style0.__inject__(context)
 
 }

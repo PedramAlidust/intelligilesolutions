@@ -1,5 +1,5 @@
 <template>
-                <section>
+            <section>
                    <!-- dashboard states section -->
                     <div class="container-full mt-4 px-4">
                         <div class="row">
@@ -83,7 +83,6 @@
 import Chart from 'chart.js/auto';
 import axios from 'axios';
 export default {
-
 name: "admin",
 layout: 'admin',    
     

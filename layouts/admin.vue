@@ -41,7 +41,9 @@
                   <!-- Dashborad Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">
                     <img src="~/assets/svg/contact.svg" class="DashBoardIcon" alt="DashBoardIcon">
+                    <nuxt-link to="/admin/contact">
                     <p class="m-0 ItemsColor px-3">Contact</p>
+                    </nuxt-link>
                 </div>
                   <!-- Dashborad Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">
