@@ -3,55 +3,11 @@ exports.ids = [5];
 exports.modules = {
 
 /***/ 100:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(103);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to SSR context
-var add = __webpack_require__(4).default
-module.exports.__inject__ = function (context) {
-  add("6cd8b96c", content, true, context)
-};
-
-/***/ }),
-
-/***/ 102:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(100);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".page-link[data-v-71559e4e]{color:#4d4f5c;padding:8px 15px}.page-link[data-v-71559e4e]:focus{background-color:#055452;color:#fff;box-shadow:none}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
-// CONCATENATED MODULE: ./node_modules/vuetify-loader/lib/loader.js??ref--4!./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--7!./node_modules/vue-loader/lib??vue-loader-options!./components/AdminPagination.vue?vue&type=template&id=71559e4e&scoped=true&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/AdminPagination.vue?vue&type=template&id=71559e4e&scoped=true&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -78,7 +34,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(102)
+  var style0 = __webpack_require__(97)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -100,27 +56,27 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 115:
+/***/ 110:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij4KICAgIDxnIGRhdGEtbmFtZT0iRWxsaXBzZSAxNzkiIHN0eWxlPSJzdHJva2U6I2ZmNjU2NTtzdHJva2Utd2lkdGg6MnB4O2ZpbGw6bm9uZSI+CiAgICAgICAgPGNpcmNsZSBjeD0iOS41IiBjeT0iOS41IiByPSI5LjUiIHN0eWxlPSJzdHJva2U6bm9uZSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjkuNSIgY3k9IjkuNSIgcj0iOC41IiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
 
 /***/ }),
 
-/***/ 119:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductOne.3cad331.jpg";
 
 /***/ }),
 
-/***/ 168:
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(224);
+var content = __webpack_require__(219);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -132,19 +88,19 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 223:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_0bced8e7_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(168);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_0bced8e7_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(163);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_0bced8e7_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_0bced8e7_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_0bced8e7_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_0bced8e7_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 224:
+/***/ 219:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -158,21 +114,21 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 257:
+/***/ 252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vuetify-loader/lib/loader.js??ref--4!./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--7!./node_modules/vue-loader/lib??vue-loader-options!./pages/admin/products/index.vue?vue&type=template&id=0bced8e7&scoped=true&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/admin/products/index.vue?vue&type=template&id=0bced8e7&scoped=true&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _c('div', {
     staticClass: "container-full"
-  }, [_vm._ssrNode("<div class=\"row\" data-v-0bced8e7>", "</div>", [_vm._ssrNode("<div class=\"col-lg-3 col-md-3\" data-v-0bced8e7><section class=\"CatSec mt-4 py-2 px-4\" data-v-0bced8e7><div class=\"d-flex flex-row align-items-center py-3\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt=\"categorie\" class=\"CatImg\" data-v-0bced8e7> <p class=\"px-2 CatTxt m-0\" data-v-0bced8e7> Categories</p></div> <div class=\"d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Accesories</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Face care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Lip care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Skin care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Nail care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Blusher</p> <p data-v-0bced8e7>(5)</p></div></section> <section class=\"CatSec mt-4 py-2 px-4\" data-v-0bced8e7><div class=\"d-flex flex-row align-items-center py-3\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt=\"categorie\" class=\"CatImg\" data-v-0bced8e7> <p class=\"px-2 CatTxt m-0\" data-v-0bced8e7>Popular Tags</p></div> <hr data-v-0bced8e7> <div class=\"d-flex align-items-center justify-content-center\" data-v-0bced8e7><button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Beauty</button> <button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>MakeupArtist</button></div> <div class=\"py-3 d-flex align-items-center justify-content-center\" data-v-0bced8e7><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Makeup</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Hair</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Nails</button></div> <div class=\"pb-3 d-flex align-items-center justify-content-center\" data-v-0bced8e7><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Hairstyle</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Skincare</button></div></section></div> "), _vm._ssrNode("<div class=\"col-lg-9 col-md-9 mt-3\" data-v-0bced8e7>", "</div>", [_vm._ssrNode("<div class=\"d-flex justify-content-between align-items-center\" data-v-0bced8e7>", "</div>", [_c('AdminPagination'), _vm._ssrNode(" <div class=\"d-flex align-items-center\" data-v-0bced8e7><button type=\"button\" class=\"BtnStyleGroup btn btn-sm mx-3\" data-v-0bced8e7>Add New Grouping</button> <button type=\"button\" class=\"BtnStyleProd btn btn-sm\" data-v-0bced8e7>Add New Products</button></div>")], 2), _vm._ssrNode(" <div class=\"AdminProd container-ful mt-2 px-4\" data-v-0bced8e7><div class=\"d-flex align-items-center justify-content-between pt-4\" data-v-0bced8e7><div data-v-0bced8e7><p data-v-0bced8e7>Showing 08 Results</p></div> <div class=\"d-flex align-items-center\" data-v-0bced8e7><p class=\"sort\" data-v-0bced8e7>Sort</p> <p class=\"SortStatus px-2\" data-v-0bced8e7>Last Opened</p></div></div> <div class=\"container-full\" data-v-0bced8e7><div class=\"row\" data-v-0bced8e7><div class=\"col-lg-6 col-md-6 p-0 mt-5 px-2\" data-v-0bced8e7><section class=\"ProductBkg\" data-v-0bced8e7><div class=\"d-flex justify-content-between product\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(119)) + " alt=\"product\" class=\"ProductImg\" data-v-0bced8e7> <div class=\"ps-2\" data-v-0bced8e7><p class=\"mt-1\" data-v-0bced8e7>Sella body butter</p> <p class=\"py-2\" data-v-0bced8e7>Lip Care</p> <p class=\"pb-4\" data-v-0bced8e7>$2000</p> <div class=\"d-flex justify-content-between\" data-v-0bced8e7><p data-v-0bced8e7>inactive</p> <div class=\"form-check form-switch\" data-v-0bced8e7><input type=\"checkbox\" role=\"switch\" id=\"flexSwitchCheckChecked\" checked=\"checked\" class=\"InputStyle form-check-input\" data-v-0bced8e7></div> <p class=\"ps-3\" data-v-0bced8e7>Active</p></div></div></div></section></div> <div class=\"col-lg-6 col-md-6 p-0 mt-5 px-2\" data-v-0bced8e7><section class=\"ProductBkg\" data-v-0bced8e7><div class=\"d-flex justify-content-between product\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(119)) + " alt=\"product\" class=\"ProductImg\" data-v-0bced8e7> <div class=\"ps-2\" data-v-0bced8e7><p class=\"mt-1\" data-v-0bced8e7>Sella body butter</p> <p class=\"py-2\" data-v-0bced8e7>Lip Care</p> <p class=\"pb-4\" data-v-0bced8e7>$2000</p> <div class=\"d-flex justify-content-between\" data-v-0bced8e7><p data-v-0bced8e7>inactive</p> <div class=\"form-check form-switch\" data-v-0bced8e7><input type=\"checkbox\" role=\"switch\" id=\"flexSwitchCheckChecked\" checked=\"checked\" class=\"InputStyle form-check-input\" data-v-0bced8e7></div> <p class=\"ps-3\" data-v-0bced8e7>Active</p></div></div></div></section></div></div></div></div>")], 2)], 2)]);
+  }, [_vm._ssrNode("<div class=\"row\" data-v-0bced8e7>", "</div>", [_vm._ssrNode("<div class=\"col-lg-3 col-md-3\" data-v-0bced8e7><section class=\"CatSec mt-4 py-2 px-4\" data-v-0bced8e7><div class=\"d-flex flex-row align-items-center py-3\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(110)) + " alt=\"categorie\" class=\"CatImg\" data-v-0bced8e7> <p class=\"px-2 CatTxt m-0\" data-v-0bced8e7> Categories</p></div> <div class=\"d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Accesories</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Face care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Lip care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Skin care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Nail care</p> <p data-v-0bced8e7>(5)</p></div> <hr data-v-0bced8e7> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-0bced8e7><p class=\"CategorieTxt\" data-v-0bced8e7>Blusher</p> <p data-v-0bced8e7>(5)</p></div></section> <section class=\"CatSec mt-4 py-2 px-4\" data-v-0bced8e7><div class=\"d-flex flex-row align-items-center py-3\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(110)) + " alt=\"categorie\" class=\"CatImg\" data-v-0bced8e7> <p class=\"px-2 CatTxt m-0\" data-v-0bced8e7>Popular Tags</p></div> <hr data-v-0bced8e7> <div class=\"d-flex align-items-center justify-content-center\" data-v-0bced8e7><button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Beauty</button> <button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>MakeupArtist</button></div> <div class=\"py-3 d-flex align-items-center justify-content-center\" data-v-0bced8e7><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Makeup</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Hair</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Nails</button></div> <div class=\"pb-3 d-flex align-items-center justify-content-center\" data-v-0bced8e7><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Hairstyle</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-0bced8e7>Skincare</button></div></section></div> "), _vm._ssrNode("<div class=\"col-lg-9 col-md-9 mt-3\" data-v-0bced8e7>", "</div>", [_vm._ssrNode("<div class=\"d-flex justify-content-between align-items-center\" data-v-0bced8e7>", "</div>", [_c('AdminPagination'), _vm._ssrNode(" <div class=\"d-flex align-items-center\" data-v-0bced8e7><button type=\"button\" class=\"BtnStyleGroup btn btn-sm mx-3\" data-v-0bced8e7>Add New Grouping</button> <button type=\"button\" class=\"BtnStyleProd btn btn-sm\" data-v-0bced8e7>Add New Products</button></div>")], 2), _vm._ssrNode(" <div class=\"AdminProd container-ful mt-2 px-4\" data-v-0bced8e7><div class=\"d-flex align-items-center justify-content-between pt-4\" data-v-0bced8e7><div data-v-0bced8e7><p data-v-0bced8e7>Showing 08 Results</p></div> <div class=\"d-flex align-items-center\" data-v-0bced8e7><p class=\"sort\" data-v-0bced8e7>Sort</p> <p class=\"SortStatus px-2\" data-v-0bced8e7>Last Opened</p></div></div> <div class=\"container-full\" data-v-0bced8e7><div class=\"row\" data-v-0bced8e7><div class=\"col-lg-6 col-md-6 p-0 mt-5 px-2\" data-v-0bced8e7><section class=\"ProductBkg\" data-v-0bced8e7><div class=\"d-flex justify-content-between product\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(114)) + " alt=\"product\" class=\"ProductImg\" data-v-0bced8e7> <div class=\"ps-2\" data-v-0bced8e7><p class=\"mt-1\" data-v-0bced8e7>Sella body butter</p> <p class=\"py-2\" data-v-0bced8e7>Lip Care</p> <p class=\"pb-4\" data-v-0bced8e7>$2000</p> <div class=\"d-flex justify-content-between\" data-v-0bced8e7><p data-v-0bced8e7>inactive</p> <div class=\"form-check form-switch\" data-v-0bced8e7><input type=\"checkbox\" role=\"switch\" id=\"flexSwitchCheckChecked\" checked=\"checked\" class=\"InputStyle form-check-input\" data-v-0bced8e7></div> <p class=\"ps-3\" data-v-0bced8e7>Active</p></div></div></div></section></div> <div class=\"col-lg-6 col-md-6 p-0 mt-5 px-2\" data-v-0bced8e7><section class=\"ProductBkg\" data-v-0bced8e7><div class=\"d-flex justify-content-between product\" data-v-0bced8e7><img" + _vm._ssrAttr("src", __webpack_require__(114)) + " alt=\"product\" class=\"ProductImg\" data-v-0bced8e7> <div class=\"ps-2\" data-v-0bced8e7><p class=\"mt-1\" data-v-0bced8e7>Sella body butter</p> <p class=\"py-2\" data-v-0bced8e7>Lip Care</p> <p class=\"pb-4\" data-v-0bced8e7>$2000</p> <div class=\"d-flex justify-content-between\" data-v-0bced8e7><p data-v-0bced8e7>inactive</p> <div class=\"form-check form-switch\" data-v-0bced8e7><input type=\"checkbox\" role=\"switch\" id=\"flexSwitchCheckChecked\" checked=\"checked\" class=\"InputStyle form-check-input\" data-v-0bced8e7></div> <p class=\"ps-3\" data-v-0bced8e7>Active</p></div></div></div></section></div></div></div></div>")], 2)], 2)]);
 };
 
 var staticRenderFns = [];
@@ -180,7 +136,7 @@ var staticRenderFns = [];
 // CONCATENATED MODULE: ./pages/admin/products/index.vue?vue&type=template&id=0bced8e7&scoped=true&
 
 // EXTERNAL MODULE: ./components/AdminPagination.vue + 4 modules
-var AdminPagination = __webpack_require__(105);
+var AdminPagination = __webpack_require__(100);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/admin/products/index.vue?vue&type=script&lang=js&
 
@@ -202,7 +158,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(223)
+  var style0 = __webpack_require__(218)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -221,6 +177,50 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var products = __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ 95:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(98);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to SSR context
+var add = __webpack_require__(4).default
+module.exports.__inject__ = function (context) {
+  add("6cd8b96c", content, true, context)
+};
+
+/***/ }),
+
+/***/ 97:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(95);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AdminPagination_vue_vue_type_style_index_0_id_71559e4e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ 98:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".page-link[data-v-71559e4e]{color:#4d4f5c;padding:8px 15px}.page-link[data-v-71559e4e]:focus{background-color:#055452;color:#fff;box-shadow:none}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
 
 /***/ })
 

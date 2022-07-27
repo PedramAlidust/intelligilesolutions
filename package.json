@@ -37,7 +37,6 @@
     "woocommerce-api": "^1.5.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3",
     "cross-env": "^5.0.1"
   }
 }

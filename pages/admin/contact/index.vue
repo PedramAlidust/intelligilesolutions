@@ -91,7 +91,7 @@
                 <!-- chat section -->
                 <div class="col-lg-6 col-md-6 p-0">
                         <div class="container ChatBkg px-0">
-                            <div class="container CurrentChatBkg">
+                            <div class="container CurrentChatBkg py-4">
                                 <div class="ps-3 d-flex align-items-center justify-content-start">
                             <!-- profile image -->
                                     <div>
@@ -151,7 +151,6 @@ layout: 'admin',
 <style scoped>
 
 /*chat section */
-
 .CurrentChatBkg {
      border-bottom: 1px solid #f1f1f3;
 }
@@ -165,6 +164,7 @@ layout: 'admin',
     font-weight: bold;
     border-radius: 5px;
     margin-left: 0px;  
+    box-shadow: none;
 }
 
 .ReplyMessage {
@@ -192,6 +192,7 @@ layout: 'admin',
     font-weight: bold;
     border-radius: 5px;
     margin-left: 65px;
+    box-shadow: none;
 }
 
 /* contact section profiles */

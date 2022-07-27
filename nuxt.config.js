@@ -57,7 +57,7 @@ export default {
     /*
     ** Nuxt.js modules
     */
-    modules: ['portal-vue/nuxt', '@nuxtjs/vuetify'],
+    modules: [],
 
     /*
     ** Build configuration
