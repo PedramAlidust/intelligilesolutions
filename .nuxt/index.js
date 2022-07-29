@@ -13,6 +13,7 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
+import nuxt_plugin_cookieuniversalnuxt_f858b3ac from 'nuxt_plugin_cookieuniversalnuxt_f858b3ac' // Source: ./cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_ckeditor_01e62ccc from 'nuxt_plugin_ckeditor_01e62ccc' // Source: ../plugins/ckeditor.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -209,6 +210,10 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (typeof nuxt_plugin_cookieuniversalnuxt_f858b3ac === 'function') {
+    await nuxt_plugin_cookieuniversalnuxt_f858b3ac(app.context, inject)
+  }
 
   if (process.client && typeof nuxt_plugin_ckeditor_01e62ccc === 'function') {
     await nuxt_plugin_ckeditor_01e62ccc(app.context, inject)

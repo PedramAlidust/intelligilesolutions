@@ -11,7 +11,7 @@
         <!-- end pagination -->
         <!-- sort section -->
         <div class="d-flex align-items-center">
-           <button type="button" class="BtnStyleProd btn btn-sm">Add New Admin</button>
+           <button @click="RegisterModal" type="button" class="BtnStyleProd btn btn-sm">Add New Admin</button>
         </div>
         <!-- end sort section -->
       </div>
@@ -74,19 +74,177 @@
         </table>
       </div>
     </div>
-  </section>
+    <!-- New Admin Modal -->
+    <div v-if="NewAdminModal" class="BackDrop">
+      <div class="FormModal bg-white">
+          <div class="d-flex justify-content-between">
+            <p>New Admin</p>
+            <i @click="CloseModal" class="bi bi-x-square"></i>
+          </div>
+          <p style="font-size: 8pt;" class="mt-4">Please fill in the following forms carefully to add a new admin to the sub panel.</p>
+          <!-- form Input -->
+                <form class="bg-white px-2 p-5 my-2">
+                   <!-- Name input -->
+                    <div class="form-outline mb-4">
+                      <input v-model="Name" style="border: 1px solid black;" type="text" id="form1Example3" class="form-control" />
+                      <label class="form-label" for="form1Example3">Name</label>
+                    </div>
+                    <!-- UserName input -->
+                    <div class="form-outline mb-4">
+                      <input v-model="UserName" style="border: 1px solid black;" type="text" id="form1Example4" class="form-control" />
+                      <label class="form-label" for="form1Example4">UserName</label>
+                    </div>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input v-model="Email" style="border: 1px solid black;" type="email" id="form1Example1" class="form-control" />
+                      <label class="form-label" for="form1Example1">Email address</label>
+                    </div>
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input v-model="Password" style="border: 1px solid black;" type="password" id="form1Example2" class="border-secondary form-control" />
+                      <label class="form-label" for="form1Example2">Password</label>
+                    </div>              
+                </form>
+          <!-- end form Input -->
+          <div class="d-flex align-items-center">
+            <div @click="CloseModal" class="mt-4 btm btn-sm">Cancel</div>
+            <a @click="PostData" class="mt-4 btn btn-sm" role="button">Save</a>
+          </div>
+      </div>
+    </div>
+
+{{ GetSubAdminUser }}
+{{ GetSubAdminPass }}
+{{ GetSubAdminEmail }}
+
+
+</section>
 </template>
 
 <script>
 import AdminPagination from "@/components/AdminPagination";
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
 name: "admin",
 layout: 'admin', 
 components: { AdminPagination },
+data() {
+  return {
+    Name: '', 
+    Email: '',
+    Password: '',
+    UserName: '',    
+    NewAdminModal: false,
+  }
+}, 
+
+methods: {
+  RegisterModal() {
+    this.NewAdminModal = true;
+  },
+  CloseModal() {
+    this.NewAdminModal = false;
+  },
+  ...mapActions(['SetSubAdmin']),
+  PostData() {
+    this.SetSubAdmin({
+      username: this.Name,
+      email: this.Email,
+      password: this.Password,
+    });
+  },
+},
+
+computed: {
+  ...mapGetters(['GetSubAdminUser', 'GetSubAdminPass', 'GetSubAdminEmail' ]),
 }
+
+
+/*
+  asyncData(context) {        
+  var data = JSON.stringify({
+  "name": "samad",
+  "username": "samadbb",
+  "email": "samad@gmail.com",
+  "password": "123456",
+  "roles": [
+    "editor"
+  ],
+  "acf": {
+    "FullName": "jak2",
+    "email": "jak2@gmail.com",
+    "password": "jak1234566",
+    "firstname": "jak",
+    "lastname": "jaki",
+    "streetaddress": "mayamei",
+    "aptsuite": "apartment",
+    "city": "beverlihilz",
+    "state": "masachoset",
+    "zipcode": "45869",
+    "phonenum": "095686354",
+    "deliveryinstruction": "that is awsome",
+    "paymentmethod": "visa",
+    "cardfirstname": "jak",
+    "cardlastname": "jak obst",
+    "cardnumber": "566824",
+    "cvv": "45",
+    "card_exp_month": "11/05/",
+    "card_exp_year": "2025"
+  }
+});
+
+var config = {
+  method: 'post',
+  url: 'https://api.intelligilesolutions.com/wp-json/wp/v2/userprofile',
+  headers: { 
+    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY', 
+    'Content-Type': 'application/json'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+},
+
+*/
+}
+
+
+
 </script>
 
 <style scoped>
+
+/*Form Modal */
+
+.FormModal {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  z-index: 3;
+  width: 300px;
+  background-color: rgb(223, 220, 220) !important;
+  padding: 20px;
+}
+
+/* filterd blur backdrop */
+.BackDrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: 2;
+  backdrop-filter: blur(5px);
+}
 
 .form-switch {
   padding-right: 15;

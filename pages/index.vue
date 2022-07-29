@@ -6,25 +6,17 @@
   <section class="d-none d-md-block d-lg-block pt-md-3">
         <div class="container px-5">
           <div class="row">
-            <div class="col-12">
-                <img style="height: 70vh;" src="~/assets/pictures/sliderback.jpg" class="w-100" alt="">
+            <div class="col-12 MainSlider">
+                <div class="col-lg-4 text-white pt-5 mt-5 ms-5">
+                    <p class="SliderTxt pt-5">HEALTHY CARE</p>
+                    <p class="SliderDesc">
+                      Kandaka Company is proud to provide its cosmetic products with the latest technology methods to its consumers.
+                    </p>
+                    <button type="button" class="btn btn-warning SliderBtn">shop now</button>
+                </div>
             </div>
           </div>
         </div>
-      <!-- slider text section -->
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 text-white">
-            <p class="SliderTxt">HEALTHY CARE</p>
-            <p class="SliderDesc">
-              Kandaka Company is proud to provide its cosmetic products with the latest technology methods to its consumers.
-            </p>
-            <button type="button" class="btn btn-warning SliderBtn">shop now</button>
-          </div>
-          <div class="col-lg-8 text-center">
-          </div>
-        </div>
-      </div>
   </section>
   <!-- slider section mobile -->
     <div class="container g-lg-none d-md-none text-center mt-5 SliderMbBkg p-5">
@@ -523,11 +515,18 @@ export default {
 
 <style scoped>
 
+.MainSlider {
+  background-image: url("~/assets/pictures/sliderback.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 30px;
+}
+
 .OffRightArrow, .OffLeftArrow  {
   cursor: pointer;
 }
-
-
 
 .SlideBtn {
   cursor: pointer;
@@ -554,8 +553,6 @@ export default {
 }
 
 .SliderTxt {
-  margin-top: -110%;
-  margin-left: 20%;
   font-family: Playfair Display;
   font-weight: 800;
   font-size: 25pt;
@@ -565,14 +562,12 @@ export default {
 
 .SliderDesc {
   text-align: left;
-  margin-left: 20%;
 }
 
 .SliderBtn {
   font-family: 'Open Sans';
   font-weight: 400 !important;
   font-size: 10pt !important;
-  margin-left: 20%;
   border-radius: 30px !important;
   background-color: #f0b86c !important;
   color: #492e25;

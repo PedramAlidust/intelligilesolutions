@@ -4,6 +4,7 @@ const CKEditorWebpackPlugin = require("@ckeditor/ckeditor5-dev-webpack-plugin")
 const CKEditorStyles = require("@ckeditor/ckeditor5-dev-utils").styles
 
 export default {
+    ssr: true,
     telemetry: false,
     /*
     ** Headers of the page
@@ -57,8 +58,12 @@ export default {
     /*
     ** Nuxt.js modules
     */
-    modules: [],
+    modules: [
+        
+    //Cookies With options
+    ['cookie-universal-nuxt', { alias: 'cookiz' }],
 
+    ],  
     /*
     ** Build configuration
     */

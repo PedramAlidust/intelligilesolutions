@@ -2,7 +2,9 @@
   "entry": "server.js",
   "files": {
     "pages/about/index.js": "pages/about/index.js",
+    "pages/admin/comments/index.js": "pages/admin/comments/index.js",
     "pages/admin/contact/index.js": "pages/admin/contact/index.js",
+    "pages/admin/discount/index.js": "pages/admin/discount/index.js",
     "pages/admin/index.js": "pages/admin/index.js",
     "pages/admin/orders/index.js": "pages/admin/orders/index.js",
     "pages/admin/products/index.js": "pages/admin/products/index.js",
@@ -25,7 +27,9 @@
   },
   "maps": {
     "pages/about/index.js": "pages/about/index.js.map",
+    "pages/admin/comments/index.js": "pages/admin/comments/index.js.map",
     "pages/admin/contact/index.js": "pages/admin/contact/index.js.map",
+    "pages/admin/discount/index.js": "pages/admin/discount/index.js.map",
     "pages/admin/index.js": "pages/admin/index.js.map",
     "pages/admin/orders/index.js": "pages/admin/orders/index.js.map",
     "pages/admin/products/index.js": "pages/admin/products/index.js.map",

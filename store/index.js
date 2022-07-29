@@ -3,41 +3,47 @@ import Vuex from "vuex";
 const createStore = () => {
     return new Vuex.Store({
         state: {
-            loadedPosts: [],
             user: {
                 name: 'Jack Dorsi',
                 email: 'jack.dorsi@gmail.com',
-                avatar: ''
-            }
+            },
+            SubAdminPass: null , 
+            SubAdminUser: null ,
+            SubAdminEmail: null,
         },
         mutations: {
-            setPosts(state, posts) {
-                state.loadedPosts = posts;
+            SetSubAdmin(state, payload) {
+                state.SubAdminUser = payload.username;
+                state.SubAdminPass = payload.password;
+                state.SubAdminEmail = payload.email;
             }
         },
-        actions: {
-            /*
-            nuxtServerInit(vuexContext, context) {
-              return axios.get('https://nuxt-blog.firebaseio.com/posts.json')
-                .then(res => {
-                  const postsArray = []
-                  for (const key in res.data) {
-                    postsArray.push({ ...res.data[key], id: key })
-                  }
-                  vuexContext.commit('setPosts', postsArray)
-                })
-                .catch(e => context.error(e));
-            },
-            */
-
-            setPosts(vuexContext, posts) {
-                vuexContext.commit("setPosts", posts);
-            }
+        actions: {          
+            async nuxtServerInit({state},{app}) {
+                if(state.SubAdminPass) {
+                    app.$cookiz.set('SubAdminPass', state.SubAdminPass)
+                    app.$cookiz.set('SubAdminUser', state.SubAdminUser)
+                    app.$cookiz.set('SubAdminEmail', state.SubAdminEmail)
+                } else {
+                    state.SubAdminUser = app.$cookiz.get('SubAdminUser')
+                    state.SubAdminPass = app.$cookiz.get('SubAdminPass')
+                    state.SubAdminEmail = app.$cookiz.get('SubAdminEmail')                   
+                } 
+            }, 
+            SetSubAdmin({commit}, payload) {
+                commit('SetSubAdmin', payload);
+            }            
         },
         getters: {
-            loadedPosts(state) {
-                return state.loadedPosts;
-            }
+            GetSubAdminUser(state) {
+                return state.SubAdminUser;
+            }, 
+            GetSubAdminPass(state) {
+                return state.SubAdminPass;
+            },
+            GetSubAdminEmail(state) {
+                return state.SubAdminEmail;
+            },
         }
     });
 };

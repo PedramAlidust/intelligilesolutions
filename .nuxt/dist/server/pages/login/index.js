@@ -1,5 +1,5 @@
 
-exports.ids = [12];
+exports.ids = [14];
 exports.modules = {
 
 /***/ 109:
@@ -16,13 +16,13 @@ module.exports = __webpack_require__.p + "img/LoginBkgPic.8184d67.jpeg";
 
 /***/ }),
 
-/***/ 151:
+/***/ 152:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(188);
+var content = __webpack_require__(191);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -34,19 +34,19 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 187:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_c5eda8da_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(151);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_c5eda8da_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(152);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_c5eda8da_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_c5eda8da_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_c5eda8da_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_c5eda8da_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 188:
+/***/ 191:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -63,7 +63,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 245:
+/***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -75,13 +75,13 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c('div', [_vm._ssrNode("<div class=\"container-full background d-none d-md-block d-lg-block\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<div class=\"row gx-0\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<div class=\"col-lg-6 col-md-6 LeftBkg text-center py-5\" data-v-c5eda8da><img" + _vm._ssrAttr("src", __webpack_require__(37)) + " alt=\"logo\" class=\"w-100\" data-v-c5eda8da></div> "), _vm._ssrNode("<div class=\"pt-5 col-lg-6 col-md-6 bg-white px-5\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"LoginTitle text-center\" data-v-c5eda8da>Login</p> <p class=\"text-center text-muted\" data-v-c5eda8da>Please login to your account.</p> "), _vm._ssrNode("<form class=\"my-5\" data-v-c5eda8da>", "</form>", [_vm._ssrNode("<div class=\"form-outline mb-3\" data-v-c5eda8da><input placeholder=\"Email Address\" type=\"email\" id=\"input1\"" + _vm._ssrAttr("value", _vm.email) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.MailCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty email Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-c5eda8da><input placeholder=\"Password\" type=\"password\" id=\"input2\"" + _vm._ssrAttr("value", _vm.password) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.PassCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty Password Field</p>" : "<!---->") + "</div> <p class=\"mb-4 text-muted\" data-v-c5eda8da>Forgot password?</p> <button type=\"submit\" class=\"btn BtnStyle btn-block mb-4 SubmitBtnStyle\" data-v-c5eda8da>\n                                      Continue\n                                  </button> "), _vm._ssrNode("<div class=\"d-flex flex-row pb-4\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"SignUpTxt\" data-v-c5eda8da>Need an account?</p> "), _c('nuxt-link', {
+  return _c('div', [_vm._ssrNode("<div class=\"container-full background d-none d-md-block d-lg-block\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<div class=\"row gx-0\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<div class=\"col-lg-6 col-md-6 LeftBkg text-center py-5\" data-v-c5eda8da><img" + _vm._ssrAttr("src", __webpack_require__(38)) + " alt=\"logo\" class=\"w-100\" data-v-c5eda8da></div> "), _vm._ssrNode("<div class=\"pt-5 col-lg-6 col-md-6 bg-white px-5\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"LoginTitle text-center\" data-v-c5eda8da>Login</p> <p class=\"text-center text-muted\" data-v-c5eda8da>Please login to your account.</p> "), _vm._ssrNode("<form class=\"my-5\" data-v-c5eda8da>", "</form>", [_vm._ssrNode("<div class=\"form-outline mb-3\" data-v-c5eda8da><input placeholder=\"Email Address\" type=\"email\" id=\"input1\"" + _vm._ssrAttr("value", _vm.email) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.MailCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty email Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-c5eda8da><input placeholder=\"Password\" type=\"password\" id=\"input2\"" + _vm._ssrAttr("value", _vm.password) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.PassCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty Password Field</p>" : "<!---->") + "</div> <p class=\"mb-4 text-muted\" data-v-c5eda8da>Forgot password?</p> <button type=\"submit\" class=\"btn BtnStyle btn-block mb-4 SubmitBtnStyle\" data-v-c5eda8da>\n                                      Continue\n                                  </button> "), _vm._ssrNode("<div class=\"d-flex flex-row pb-4\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"SignUpTxt\" data-v-c5eda8da>Need an account?</p> "), _c('nuxt-link', {
     attrs: {
       "to": "/signup"
     }
   }, [_c('p', {
     staticClass: "SignUpTxt pe-2 text-muted"
-  }, [_vm._v("Sign Up")])])], 2), _vm._ssrNode(" <div class=\"Devider\" data-v-c5eda8da></div> <p class=\"DeviderTxt text-muted text-center\" data-v-c5eda8da>\n                                      OR\n                                  </p> <div class=\"text-center mt-5\" data-v-c5eda8da><a role=\"button\" class=\"btn GoogleBtn\" data-v-c5eda8da><img width=\"40px\"" + _vm._ssrAttr("src", __webpack_require__(109)) + " class=\"pe-2\" data-v-c5eda8da>\n                                      Continue with Google\n                                  </a></div>")], 2)], 2)], 2)]), _vm._ssrNode(" "), _vm._ssrNode("<section class=\"d-md-none d-lg-none container MobileBkg pb-5\" data-v-c5eda8da>", "</section>", [_vm._ssrNode("<div class=\"text-center py-2\" data-v-c5eda8da><img" + _vm._ssrAttr("src", __webpack_require__(37)) + " alt=\"logo\" class=\"MobileLogo\" data-v-c5eda8da></div> "), _vm._ssrNode("<div class=\"py-4 bg-white px-3 FormMobileBkgStyle\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"mt-3 LoginTitle text-center\" data-v-c5eda8da>Login</p> <p class=\"text-center text-muted\" data-v-c5eda8da>Please login to your account.</p> "), _vm._ssrNode("<form class=\"my-4\" data-v-c5eda8da>", "</form>", [_vm._ssrNode("<div class=\"form-outline mb-3\" data-v-c5eda8da><input placeholder=\"Email Address\" type=\"email\" id=\"input1\"" + _vm._ssrAttr("value", _vm.email) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.MailCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty email Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-c5eda8da><input placeholder=\"Password\" type=\"password\" id=\"input2\"" + _vm._ssrAttr("value", _vm.password) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.PassCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty Password Field</p>" : "<!---->") + "</div> <p class=\"mb-4 text-muted\" data-v-c5eda8da>Forgot password?</p> <button type=\"submit\" class=\"btn BtnStyle btn-block mb-4 SubmitBtnStyle\" data-v-c5eda8da>\n                                      Continue\n                                  </button> "), _vm._ssrNode("<div class=\"d-flex flex-row pb-4\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"SignUpTxt\" data-v-c5eda8da>Need an account?</p> "), _c('nuxt-link', {
+  }, [_vm._v("Sign Up")])])], 2), _vm._ssrNode(" <div class=\"Devider\" data-v-c5eda8da></div> <p class=\"DeviderTxt text-muted text-center\" data-v-c5eda8da>\n                                      OR\n                                  </p> <div class=\"text-center mt-5\" data-v-c5eda8da><a role=\"button\" class=\"btn GoogleBtn\" data-v-c5eda8da><img width=\"40px\"" + _vm._ssrAttr("src", __webpack_require__(109)) + " class=\"pe-2\" data-v-c5eda8da>\n                                      Continue with Google\n                                  </a></div>")], 2)], 2)], 2)]), _vm._ssrNode(" "), _vm._ssrNode("<section class=\"d-md-none d-lg-none container MobileBkg pb-5\" data-v-c5eda8da>", "</section>", [_vm._ssrNode("<div class=\"text-center py-2\" data-v-c5eda8da><img" + _vm._ssrAttr("src", __webpack_require__(38)) + " alt=\"logo\" class=\"MobileLogo\" data-v-c5eda8da></div> "), _vm._ssrNode("<div class=\"py-4 bg-white px-3 FormMobileBkgStyle\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"mt-3 LoginTitle text-center\" data-v-c5eda8da>Login</p> <p class=\"text-center text-muted\" data-v-c5eda8da>Please login to your account.</p> "), _vm._ssrNode("<form class=\"my-4\" data-v-c5eda8da>", "</form>", [_vm._ssrNode("<div class=\"form-outline mb-3\" data-v-c5eda8da><input placeholder=\"Email Address\" type=\"email\" id=\"input1\"" + _vm._ssrAttr("value", _vm.email) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.MailCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty email Field</p>" : "<!---->") + "</div> <div class=\"form-outline mb-2\" data-v-c5eda8da><input placeholder=\"Password\" type=\"password\" id=\"input2\"" + _vm._ssrAttr("value", _vm.password) + " class=\"InputStyle form-control\" data-v-c5eda8da> " + (_vm.PassCheck ? "<p class=\"text-danger\" data-v-c5eda8da>No Empty Password Field</p>" : "<!---->") + "</div> <p class=\"mb-4 text-muted\" data-v-c5eda8da>Forgot password?</p> <button type=\"submit\" class=\"btn BtnStyle btn-block mb-4 SubmitBtnStyle\" data-v-c5eda8da>\n                                      Continue\n                                  </button> "), _vm._ssrNode("<div class=\"d-flex flex-row pb-4\" data-v-c5eda8da>", "</div>", [_vm._ssrNode("<p class=\"SignUpTxt\" data-v-c5eda8da>Need an account?</p> "), _c('nuxt-link', {
     attrs: {
       "to": "/signup"
     }
@@ -137,7 +137,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(187)
+  var style0 = __webpack_require__(190)
 if (style0.__inject__) style0.__inject__(context)
 
 }

@@ -48,12 +48,16 @@
                   <!-- Dashborad Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">
                     <img src="~/assets/svg/discounts.svg" class="DashBoardIcon" alt="DashBoardIcon">
+                    <nuxt-link to="/admin/discount">
                     <p class="m-0 ItemsColor px-3">Discounts</p>
+                    </nuxt-link>
                 </div>
                   <!-- Dashborad Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">
                     <img src="~/assets/svg/comments.svg" class="DashBoardIcon" alt="DashBoardIcon">
+                    <nuxt-link to="/admin/comments">
                     <p class="m-0 ItemsColor px-3">Comments</p>
+                    </nuxt-link>
                 </div>
                 <!-- Exit Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">
