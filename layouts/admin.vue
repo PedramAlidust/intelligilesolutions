@@ -34,9 +34,9 @@
                   <!-- Dashborad Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">
                     <img src="~/assets/svg/subadmin.svg" class="DashBoardIcon" alt="DashBoardIcon">
-                    <nuxt-link to="/admin/subadmin">
+                    <a href="/admin/subadmin">
                     <p class="m-0 ItemsColor px-3">Sub Admin</p>
-                    </nuxt-link>
+                    </a>
                 </div>
                   <!-- Dashborad Items -->
                 <div class="d-flex align-items-center justify-content-start px-4 IconDist">

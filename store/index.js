@@ -16,20 +16,36 @@ const createStore = () => {
                 state.SubAdminUser = payload.username;
                 state.SubAdminPass = payload.password;
                 state.SubAdminEmail = payload.email;
-            }
-        },
-        actions: {          
-            async nuxtServerInit({state},{app}) {
+
+                /* Remove Old Cookies */
+                this.$cookiz.remove('SubAdminPass')
+                this.$cookiz.remove('SubAdminUser')
+                this.$cookiz.remove('SubAdminEmail')
+
+                /* Set New Cookies */
                 if(state.SubAdminPass) {
-                    app.$cookiz.set('SubAdminPass', state.SubAdminPass)
-                    app.$cookiz.set('SubAdminUser', state.SubAdminUser)
-                    app.$cookiz.set('SubAdminEmail', state.SubAdminEmail)
-                } else {
-                    state.SubAdminUser = app.$cookiz.get('SubAdminUser')
-                    state.SubAdminPass = app.$cookiz.get('SubAdminPass')
-                    state.SubAdminEmail = app.$cookiz.get('SubAdminEmail')                   
-                } 
+                    this.$cookiz.set('SubAdminPass', state.SubAdminPass)
+                    this.$cookiz.set('SubAdminUser', state.SubAdminUser)
+                    this.$cookiz.set('SubAdminEmail', state.SubAdminEmail)
+                }             
+            },
+            StoreUserName(state, payload) {
+                state.SubAdminUser = payload;
             }, 
+            StoreUserPass(state, payload) {
+                state.SubAdminPass = payload;
+            },
+            StoreUserEmail(state, payload) {
+                state.SubAdminEmail = payload;
+            }, 
+        },
+        actions: {              
+            nuxtServerInit({ commit }) {
+                commit('StoreUserName', this.$cookiz.get('SubAdminUser')),
+                commit('StoreUserPass', this.$cookiz.get('SubAdminPass')),
+                commit('StoreUserEmail', this.$cookiz.get('SubAdminEmail')) 
+           },
+
             SetSubAdmin({commit}, payload) {
                 commit('SetSubAdmin', payload);
             }            

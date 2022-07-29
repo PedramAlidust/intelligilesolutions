@@ -2,19 +2,37 @@
 exports.ids = [16];
 exports.modules = {
 
-/***/ 101:
+/***/ 100:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(103);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to SSR context
+var add = __webpack_require__(4).default
+module.exports.__inject__ = function (context) {
+  add("441905c9", content, true, context)
+};
+
+/***/ }),
+
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSubpageHeader_vue_vue_type_style_index_0_id_2b8ed65e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(99);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSubpageHeader_vue_vue_type_style_index_0_id_2b8ed65e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(100);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSubpageHeader_vue_vue_type_style_index_0_id_2b8ed65e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSubpageHeader_vue_vue_type_style_index_0_id_2b8ed65e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSubpageHeader_vue_vue_type_style_index_0_id_2b8ed65e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSubpageHeader_vue_vue_type_style_index_0_id_2b8ed65e_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -28,14 +46,14 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 110:
+/***/ 111:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDE5IDE5Ij4KICAgIDxnIGRhdGEtbmFtZT0iRWxsaXBzZSAxNzkiIHN0eWxlPSJzdHJva2U6I2ZmNjU2NTtzdHJva2Utd2lkdGg6MnB4O2ZpbGw6bm9uZSI+CiAgICAgICAgPGNpcmNsZSBjeD0iOS41IiBjeT0iOS41IiByPSI5LjUiIHN0eWxlPSJzdHJva2U6bm9uZSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjkuNSIgY3k9IjkuNSIgcj0iOC41IiBzdHlsZT0iZmlsbDpub25lIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
 
 /***/ }),
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -166,7 +184,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(101)
+  var style0 = __webpack_require__(102)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -188,27 +206,27 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 114:
+/***/ 115:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductOne.3cad331.jpg";
 
 /***/ }),
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9Ikdyb3VwIDExNjI3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOS41NTkiIGhlaWdodD0iMzkuNTU5IiB2aWV3Qm94PSIwIDAgMzkuNTU5IDM5LjU1OSI+CiAgICA8ZyBkYXRhLW5hbWU9IkNpcmNsZSBCRyIgc3R5bGU9ImZpbGw6I2U0ZTRlNDtzdHJva2U6I2U0ZTRlNDtzdHJva2UtbGluZWpvaW46cm91bmQiPgogICAgICAgIDxjaXJjbGUgY3g9IjE5Ljc3OSIgY3k9IjE5Ljc3OSIgcj0iMTkuNzc5IiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxOS43NzkiIGN5PSIxOS43NzkiIHI9IjE5LjI3OSIgc3R5bGU9ImZpbGw6bm9uZSIvPgogICAgPC9nPgogICAgPHBhdGggZD0iTTYuNTc5IDE3LjI4NGgxMy4wNzJhMS4xNjkgMS4xNjkgMCAwIDAgLjgxOC0yTDEzLjk0NSA4Ljc2YTEuMTY5IDEuMTY5IDAgMCAwLTEuNjYgMEw1Ljc2IDE1LjI4NWExLjE2OSAxLjE2OSAwIDAgMCAuODE4IDJ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2LjY2NCA1LjkzNikiIHN0eWxlPSJmaWxsOiMzYTNhM2EiLz4KPC9zdmc+Cg=="
 
 /***/ }),
 
-/***/ 155:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(201);
+var content = __webpack_require__(202);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -220,39 +238,39 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductTwo.ad4a802.jpg";
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductThree.cbf6bb5.jpg";
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_ff2045de_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(155);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_ff2045de_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(156);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_ff2045de_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_ff2045de_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_ff2045de_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_ff2045de_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(6);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(118);
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(119);
 var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(42);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
@@ -265,7 +283,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 252:
+/***/ 253:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -277,7 +295,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c('div', [_c('TheHeader'), _vm._ssrNode(" <section class=\"PageBkg\" data-v-ff2045de><div class=\"container px-4 px-md-4 px-lg-4 pt-4\" data-v-ff2045de><div class=\"d-flex flex-row\" data-v-ff2045de><p class=\"BroadHome\" data-v-ff2045de>Home</p> <p class=\"px-2\" data-v-ff2045de>/</p> <p class=\"BroadSub\" data-v-ff2045de>Products</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4 pb-3\" data-v-ff2045de><div class=\"d-flex flex-row justify-content-between\" data-v-ff2045de><p class=\"PageTitle\" data-v-ff2045de>Products</p> <p class=\"ResultsTxt\" data-v-ff2045de>Showing 09 Results</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4\" data-v-ff2045de><div class=\"row gx-5\" data-v-ff2045de><div class=\"col-lg-4 div col-md-4 pb-4 py-md-0 py-lg-0\" data-v-ff2045de><div class=\"input-group rounded\" data-v-ff2045de><input type=\"search\" placeholder=\"Search Here\" aria-label=\"Search\" aria-describedby=\"search-addon\" class=\"ProductsForm form-control rounded\" data-v-ff2045de> <span id=\"search-addon\" class=\"input-group-text search\" data-v-ff2045de><i class=\"bi bi-search\" data-v-ff2045de></i></span></div> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(110)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de> Categories</p></div> <div class=\"d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Accesories</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Face care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Lip care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Skin care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Nail care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Blusher</p> <p data-v-ff2045de>(5)</p></div></section> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(110)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de>Popular Tags</p></div> <hr data-v-ff2045de> <div class=\"d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Beauty</button> <button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>MakeupArtist</button></div> <div class=\"py-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Makeup</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hair</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Nails</button></div> <div class=\"pb-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hairstyle</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Skincare</button></div></section></div> <div class=\"col-lg-8 div col-md-8\" data-v-ff2045de><div class=\"container px-0\" data-v-ff2045de><div class=\"row\" data-v-ff2045de><div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(198)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(199)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(114)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div></div></div></div></div></div></section> "), _c('TheFooter')], 2);
+  return _c('div', [_c('TheHeader'), _vm._ssrNode(" <section class=\"PageBkg\" data-v-ff2045de><div class=\"container px-4 px-md-4 px-lg-4 pt-4\" data-v-ff2045de><div class=\"d-flex flex-row\" data-v-ff2045de><p class=\"BroadHome\" data-v-ff2045de>Home</p> <p class=\"px-2\" data-v-ff2045de>/</p> <p class=\"BroadSub\" data-v-ff2045de>Products</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4 pb-3\" data-v-ff2045de><div class=\"d-flex flex-row justify-content-between\" data-v-ff2045de><p class=\"PageTitle\" data-v-ff2045de>Products</p> <p class=\"ResultsTxt\" data-v-ff2045de>Showing 09 Results</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4\" data-v-ff2045de><div class=\"row gx-5\" data-v-ff2045de><div class=\"col-lg-4 div col-md-4 pb-4 py-md-0 py-lg-0\" data-v-ff2045de><div class=\"input-group rounded\" data-v-ff2045de><input type=\"search\" placeholder=\"Search Here\" aria-label=\"Search\" aria-describedby=\"search-addon\" class=\"ProductsForm form-control rounded\" data-v-ff2045de> <span id=\"search-addon\" class=\"input-group-text search\" data-v-ff2045de><i class=\"bi bi-search\" data-v-ff2045de></i></span></div> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(111)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de> Categories</p></div> <div class=\"d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Accesories</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Face care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Lip care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Skin care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Nail care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Blusher</p> <p data-v-ff2045de>(5)</p></div></section> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(111)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de>Popular Tags</p></div> <hr data-v-ff2045de> <div class=\"d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Beauty</button> <button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>MakeupArtist</button></div> <div class=\"py-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Makeup</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hair</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Nails</button></div> <div class=\"pb-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hairstyle</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Skincare</button></div></section></div> <div class=\"col-lg-8 div col-md-8\" data-v-ff2045de><div class=\"container px-0\" data-v-ff2045de><div class=\"row\" data-v-ff2045de><div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(199)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(200)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div></div></div></div></div></div></section> "), _c('TheFooter')], 2);
 };
 
 var staticRenderFns = [];
@@ -285,7 +303,7 @@ var staticRenderFns = [];
 // CONCATENATED MODULE: ./pages/products/index.vue?vue&type=template&id=ff2045de&scoped=true&
 
 // EXTERNAL MODULE: ./components/Navigation/TheSubpageHeader.vue + 4 modules
-var TheSubpageHeader = __webpack_require__(113);
+var TheSubpageHeader = __webpack_require__(114);
 
 // EXTERNAL MODULE: ./components/TheFooter.vue + 4 modules
 var TheFooter = __webpack_require__(13);
@@ -310,7 +328,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(200)
+  var style0 = __webpack_require__(201)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -329,24 +347,6 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var products = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(102);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to SSR context
-var add = __webpack_require__(4).default
-module.exports.__inject__ = function (context) {
-  add("441905c9", content, true, context)
-};
 
 /***/ })
 

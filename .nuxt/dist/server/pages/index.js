@@ -2,69 +2,69 @@
 exports.ids = [13];
 exports.modules = {
 
-/***/ 115:
+/***/ 116:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/categorie1.17d94af.png";
 
 /***/ }),
 
-/***/ 116:
+/***/ 117:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/categorie2.455baaf.png";
 
 /***/ }),
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/categorie3.e131405.png";
 
 /***/ }),
 
-/***/ 139:
+/***/ 140:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/off2.8e3ee16.jpg";
 
 /***/ }),
 
-/***/ 140:
+/***/ 141:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/categorie4.64e1739.png";
 
 /***/ }),
 
-/***/ 141:
+/***/ 142:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/categorie5.91fc38a.png";
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/LeftArrow.83bc993.svg";
 
 /***/ }),
 
-/***/ 172:
+/***/ 173:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/RightArrow.6c05bc4.svg";
 
 /***/ }),
 
-/***/ 173:
+/***/ 174:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(237);
+var content = __webpack_require__(238);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -76,38 +76,38 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 235:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/offimg.0eb2451.svg";
 
 /***/ }),
 
-/***/ 236:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_7d9652f2_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(173);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_7d9652f2_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(174);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_7d9652f2_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_7d9652f2_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_7d9652f2_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_7d9652f2_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 237:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(6);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(238);
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(239);
-var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(240);
-var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(241);
-var ___CSS_LOADER_URL_IMPORT_4___ = __webpack_require__(139);
-var ___CSS_LOADER_URL_IMPORT_5___ = __webpack_require__(242);
-var ___CSS_LOADER_URL_IMPORT_6___ = __webpack_require__(243);
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(239);
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(240);
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(241);
+var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(242);
+var ___CSS_LOADER_URL_IMPORT_4___ = __webpack_require__(140);
+var ___CSS_LOADER_URL_IMPORT_5___ = __webpack_require__(243);
+var ___CSS_LOADER_URL_IMPORT_6___ = __webpack_require__(244);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
@@ -124,49 +124,49 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 238:
+/***/ 239:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sliderback.f6c91be.jpg";
 
 /***/ }),
 
-/***/ 239:
+/***/ 240:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/SliderMbBkg.c8967e3.png";
 
 /***/ }),
 
-/***/ 240:
+/***/ 241:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkxOS43MzEiIGhlaWdodD0iNjE2IiB2aWV3Qm94PSIwIDAgMTkxOS43MzEgNjE2Ij4NCiAgPGRlZnM+DQogICAgPGNsaXBQYXRoIGlkPSJjbGlwLXBhdGgiPg0KICAgICAgPHJlY3QgeD0iMjEiIHdpZHRoPSIxOTE5LjczMSIgaGVpZ2h0PSI2MTYiIGZpbGw9Im5vbmUiLz4NCiAgICA8L2NsaXBQYXRoPg0KICA8L2RlZnM+DQogIDxnIGlkPSJTY3JvbGxfR3JvdXBfMiIgZGF0YS1uYW1lPSJTY3JvbGwgR3JvdXAgMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxKSIgY2xpcC1wYXRoPSJ1cmwoI2NsaXAtcGF0aCkiIHN0eWxlPSJpc29sYXRpb246IGlzb2xhdGUiPg0KICAgIDxwYXRoIGlkPSJQYXRoXzM2ODA0IiBkYXRhLW5hbWU9IlBhdGggMzY4MDQiIGQ9Ik0wLDBIMTkyMFY2MTZTODExLjQsMjUzLjc4NywzMzEuNCwyNTMuNzg3LDAsNjE2LDAsNjE2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEuNzMxKSIgZmlsbD0iI2YwYjg2YyIvPg0KICA8L2c+DQo8L3N2Zz4NCg=="
 
 /***/ }),
 
-/***/ 241:
+/***/ 242:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/off1.b7de98e.jpg";
 
 /***/ }),
 
-/***/ 242:
+/***/ 243:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/off3.7490d62.jpg";
 
 /***/ }),
 
-/***/ 243:
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/OffSinglePicBackground.b00305b.svg";
 
 /***/ }),
 
-/***/ 265:
+/***/ 266:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -180,7 +180,7 @@ var render = function render() {
 
   return _c('div', {
     staticClass: "BodyBackground"
-  }, [_c('TheHeader'), _vm._ssrNode(" <section class=\"d-none d-md-block d-lg-block pt-md-3\" data-v-7d9652f2><div class=\"container px-5\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-12 MainSlider\" data-v-7d9652f2><div class=\"col-lg-4 text-white pt-5 mt-5 ms-5\" data-v-7d9652f2><p class=\"SliderTxt pt-5\" data-v-7d9652f2>HEALTHY CARE</p> <p class=\"SliderDesc\" data-v-7d9652f2>\n                    Kandaka Company is proud to provide its cosmetic products with the latest technology methods to its consumers.\n                  </p> <button type=\"button\" class=\"btn btn-warning SliderBtn\" data-v-7d9652f2>shop now</button></div></div></div></div></section> <div class=\"container g-lg-none d-md-none text-center mt-5 SliderMbBkg p-5\" data-v-7d9652f2><p class=\"MobileSliderTxtTitle text-white text-end px-5\" data-v-7d9652f2>HEALTHY CARE</p> <p class=\"MobileSliderTxtDesc text-white text-end px-5\" data-v-7d9652f2>\n        Kandaka Company is proud to provide its \n        cosmetic products with the latest technology \n        methods to its consumers.\n      </p> <button type=\"button\" class=\"btn btn-warning SliderMobileBtn\" data-v-7d9652f2>shop now</button></div> <section class=\"d-none d-lg-block\" data-v-7d9652f2><div class=\"container px-lg-5 py-4 px-5\" data-v-7d9652f2><div class=\"container px-lg-5 pt-3\" data-v-7d9652f2><div class=\"row px-5\" data-v-7d9652f2><div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Hair Care</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Lip Care</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Skin Care</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(140)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Accessories</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(141)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Perfume</p></div></div></div></div></section> <section class=\"d-lg-none pt-4\" data-v-7d9652f2><div class=\"container px-lg-5 px-5 pt-md-0\" data-v-7d9652f2><div class=\"container px-lg-5\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col col-md-4\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Hair Care</p></div> <div class=\"col col-md-4\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Lip Care</p></div> <div class=\"col col-md-4\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Skin Care</p></div></div></div></div></section> <section class=\"offbackground\" data-v-7d9652f2><div class=\"container\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-lg-4\" data-v-7d9652f2><p class=\"OffTxt\" data-v-7d9652f2>Trending Discounts</p> <p class=\"OffDesc\" data-v-7d9652f2>\n            The best discount code for \n            the customers of the cosmetics company.\n          </p> " + (_vm.DspPrimeArrow ? "<div class=\"d-flex flex-row align-items-center\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(171)) + " alt=\"LeftArrow\" class=\"OffLeftArrow ArrowsPosition px-4\" data-v-7d9652f2> <img" + _vm._ssrAttr("src", __webpack_require__(172)) + " alt=\"RightArrow\" class=\"OffRightArrow\" data-v-7d9652f2></div>" : "<!---->") + " " + (!_vm.DspPrimeArrow ? "<div class=\"d-flex flex-row align-items-center\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(172)) + " alt=\"RightArrow\" class=\"OffLeftArrow px-4 ArrowsPosition\" style=\"transform: rotate(180deg);\" data-v-7d9652f2> <img" + _vm._ssrAttr("src", __webpack_require__(171)) + " alt=\"LeftArrow\" class=\"OffRightArrow\" style=\"transform: rotate(180deg);\" data-v-7d9652f2></div>" : "<!---->") + " <img" + _vm._ssrAttr("src", __webpack_require__(235)) + " alt class=\"offimg d-none d-lg-block\" data-v-7d9652f2></div> <div class=\"col-lg-8 OffCarousel\" data-v-7d9652f2><div class=\"OffProdSlider\" data-v-7d9652f2><div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner3\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner2\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner4\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div></div></div></div></div></section> <section class=\"py-lg-5 mt-5 mt-lg-0 pt-5 pt-lg-0\" data-v-7d9652f2><div class=\"container py-lg-4\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-lg-12 text-center\" data-v-7d9652f2><p class=\"hr TopProducts text-dark\" data-v-7d9652f2><span class=\"toptextback\" data-v-7d9652f2>\n              Top Products\n            </span></p></div> <p class=\"text-center pt-5 pb-3 text-muted\" data-v-7d9652f2>\n          List of the newest and best-selling cosmetic <br data-v-7d9652f2> products of our company\n        </p> <div class=\"TopProdSlider\" data-v-7d9652f2><div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(140)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(141)) + " alt class=\"w-100\" data-v-7d9652f2></div></div> <div class=\"SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5\" data-v-7d9652f2><div class=\"TopProdRight\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-left\" data-v-7d9652f2></i></div> <div class=\"TopProdLeft\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-right\" data-v-7d9652f2></i></div></div></div></div></section> <section class=\"py-lg-5 mt-lg-0 pt-5 pt-lg-0\" data-v-7d9652f2><div class=\"container py-lg-4\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-lg-12 text-center\" data-v-7d9652f2><p class=\"hr text-dark\" data-v-7d9652f2><span class=\"BestProducts\" data-v-7d9652f2>\n              Best Products\n            </span></p></div> <p class=\"text-center pt-5 text-muted\" data-v-7d9652f2>\n          List of the newest and best-selling cosmetic <br data-v-7d9652f2> products of our company\n        </p> <div class=\"BestProdSlider\" data-v-7d9652f2><div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(140)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(141)) + " alt class=\"w-100\" data-v-7d9652f2></div></div> <div class=\"SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5\" data-v-7d9652f2><div class=\"BestProdLeft\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-left\" data-v-7d9652f2></i></div> <div class=\"BestProdRight\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-right\" data-v-7d9652f2></i></div></div></div></div></section> "), _c('TheFooter')], 2);
+  }, [_c('TheHeader'), _vm._ssrNode(" <section class=\"d-none d-md-block d-lg-block pt-md-3\" data-v-7d9652f2><div class=\"container px-5\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-12 MainSlider\" data-v-7d9652f2><div class=\"col-lg-4 text-white pt-5 mt-5 ms-5\" data-v-7d9652f2><p class=\"SliderTxt pt-5\" data-v-7d9652f2>HEALTHY CARE</p> <p class=\"SliderDesc\" data-v-7d9652f2>\n                    Kandaka Company is proud to provide its cosmetic products with the latest technology methods to its consumers.\n                  </p> <button type=\"button\" class=\"btn btn-warning SliderBtn\" data-v-7d9652f2>shop now</button></div></div></div></div></section> <div class=\"container g-lg-none d-md-none text-center mt-5 SliderMbBkg p-5\" data-v-7d9652f2><p class=\"MobileSliderTxtTitle text-white text-end px-5\" data-v-7d9652f2>HEALTHY CARE</p> <p class=\"MobileSliderTxtDesc text-white text-end px-5\" data-v-7d9652f2>\n        Kandaka Company is proud to provide its \n        cosmetic products with the latest technology \n        methods to its consumers.\n      </p> <button type=\"button\" class=\"btn btn-warning SliderMobileBtn\" data-v-7d9652f2>shop now</button></div> <section class=\"d-none d-lg-block\" data-v-7d9652f2><div class=\"container px-lg-5 py-4 px-5\" data-v-7d9652f2><div class=\"container px-lg-5 pt-3\" data-v-7d9652f2><div class=\"row px-5\" data-v-7d9652f2><div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Hair Care</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Lip Care</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(118)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Skin Care</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(141)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Accessories</p></div> <div class=\"col-lg\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(142)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Perfume</p></div></div></div></div></section> <section class=\"d-lg-none pt-4\" data-v-7d9652f2><div class=\"container px-lg-5 px-5 pt-md-0\" data-v-7d9652f2><div class=\"container px-lg-5\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col col-md-4\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Hair Care</p></div> <div class=\"col col-md-4\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Lip Care</p></div> <div class=\"col col-md-4\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(118)) + " alt class=\"w-100\" data-v-7d9652f2> <p class=\"CategorieTxt text-center mt-3\" data-v-7d9652f2>Skin Care</p></div></div></div></div></section> <section class=\"offbackground\" data-v-7d9652f2><div class=\"container\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-lg-4\" data-v-7d9652f2><p class=\"OffTxt\" data-v-7d9652f2>Trending Discounts</p> <p class=\"OffDesc\" data-v-7d9652f2>\n            The best discount code for \n            the customers of the cosmetics company.\n          </p> " + (_vm.DspPrimeArrow ? "<div class=\"d-flex flex-row align-items-center\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(172)) + " alt=\"LeftArrow\" class=\"OffLeftArrow ArrowsPosition px-4\" data-v-7d9652f2> <img" + _vm._ssrAttr("src", __webpack_require__(173)) + " alt=\"RightArrow\" class=\"OffRightArrow\" data-v-7d9652f2></div>" : "<!---->") + " " + (!_vm.DspPrimeArrow ? "<div class=\"d-flex flex-row align-items-center\" data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(173)) + " alt=\"RightArrow\" class=\"OffLeftArrow px-4 ArrowsPosition\" style=\"transform: rotate(180deg);\" data-v-7d9652f2> <img" + _vm._ssrAttr("src", __webpack_require__(172)) + " alt=\"LeftArrow\" class=\"OffRightArrow\" style=\"transform: rotate(180deg);\" data-v-7d9652f2></div>" : "<!---->") + " <img" + _vm._ssrAttr("src", __webpack_require__(236)) + " alt class=\"offimg d-none d-lg-block\" data-v-7d9652f2></div> <div class=\"col-lg-8 OffCarousel\" data-v-7d9652f2><div class=\"OffProdSlider\" data-v-7d9652f2><div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner3\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner2\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner4\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div> <div class=\"container px-5 px-lg-2 px-md-2\" data-v-7d9652f2><div class=\"container-full OffBaner\" data-v-7d9652f2></div> <div class=\"container-full OffCard\" data-v-7d9652f2><p class=\"text-center OffCardTxt\" data-v-7d9652f2>\n                        Get $ 50.00 off your next full price purchase!\n                      </p> <hr data-v-7d9652f2> <div class=\"d-flex flex-row align-items-center justify-content-between\" data-v-7d9652f2><p class=\"CardPrice\" data-v-7d9652f2>$ 50.00</p> <button type=\"button\" class=\"CardButton btn btn-sm\" data-v-7d9652f2>Get Offer</button></div></div></div></div></div></div></div></section> <section class=\"py-lg-5 mt-5 mt-lg-0 pt-5 pt-lg-0\" data-v-7d9652f2><div class=\"container py-lg-4\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-lg-12 text-center\" data-v-7d9652f2><p class=\"hr TopProducts text-dark\" data-v-7d9652f2><span class=\"toptextback\" data-v-7d9652f2>\n              Top Products\n            </span></p></div> <p class=\"text-center pt-5 pb-3 text-muted\" data-v-7d9652f2>\n          List of the newest and best-selling cosmetic <br data-v-7d9652f2> products of our company\n        </p> <div class=\"TopProdSlider\" data-v-7d9652f2><div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(118)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(141)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(142)) + " alt class=\"w-100\" data-v-7d9652f2></div></div> <div class=\"SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5\" data-v-7d9652f2><div class=\"TopProdRight\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-left\" data-v-7d9652f2></i></div> <div class=\"TopProdLeft\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-right\" data-v-7d9652f2></i></div></div></div></div></section> <section class=\"py-lg-5 mt-lg-0 pt-5 pt-lg-0\" data-v-7d9652f2><div class=\"container py-lg-4\" data-v-7d9652f2><div class=\"row\" data-v-7d9652f2><div class=\"col-lg-12 text-center\" data-v-7d9652f2><p class=\"hr text-dark\" data-v-7d9652f2><span class=\"BestProducts\" data-v-7d9652f2>\n              Best Products\n            </span></p></div> <p class=\"text-center pt-5 text-muted\" data-v-7d9652f2>\n          List of the newest and best-selling cosmetic <br data-v-7d9652f2> products of our company\n        </p> <div class=\"BestProdSlider\" data-v-7d9652f2><div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(117)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(118)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(141)) + " alt class=\"w-100\" data-v-7d9652f2></div> <div data-v-7d9652f2><img" + _vm._ssrAttr("src", __webpack_require__(142)) + " alt class=\"w-100\" data-v-7d9652f2></div></div> <div class=\"SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5\" data-v-7d9652f2><div class=\"BestProdLeft\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-left\" data-v-7d9652f2></i></div> <div class=\"BestProdRight\" data-v-7d9652f2><i class=\"SlideBtn bi bi-caret-right\" data-v-7d9652f2></i></div></div></div></div></section> "), _c('TheFooter')], 2);
 };
 
 var staticRenderFns = [];
@@ -333,7 +333,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(236)
+  var style0 = __webpack_require__(237)
 if (style0.__inject__) style0.__inject__(context)
 
 }

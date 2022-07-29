@@ -32,24 +32,24 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr v-for="user in GetSubAdmins" :key="user.id">
               <td>
-                <p>1</p>
+                <p>{{ user.id }}</p>
               </td>
               <td>
-                <p>jack Dorsi</p>
+                <p>{{ user.name }}</p>
               </td>
               <td>
-                <p>Dorsi.jack220@gmail.com</p>
+                <p>{{ user.acf.zipcode }}</p>
               </td>
               <td>
-                <p>+00131521455</p>
+                <p>{{ user.acf.phonenum }}</p>
               </td>
               <td>
-                <p>Dorsi_jack220</p>
+                <p> {{ user.acf.FullName }}</p>
               </td>
                <td>
-                <p>Dorsi1234</p>
+                <p>pass</p>
               </td>
                <td>
                 <i class="bi bi-eye"></i>
@@ -78,52 +78,44 @@
     <div v-if="NewAdminModal" class="BackDrop">
       <div class="FormModal bg-white">
           <div class="d-flex justify-content-between">
-            <p>New Admin</p>
-            <i @click="CloseModal" class="bi bi-x-square"></i>
+            <p class="RegisterModal">New Admin</p>
+            <i @click="CloseModal" class="CloseBtn bi bi-x-lg"></i>
           </div>
-          <p style="font-size: 8pt;" class="mt-4">Please fill in the following forms carefully to add a new admin to the sub panel.</p>
+          <p class="RegisterDesc mt-3">Please fill in the following forms carefully to add a new admin to the sub panel.</p>
           <!-- form Input -->
-                <form class="bg-white px-2 p-5 my-2">
+                <form class="bg-white mt-4">
                    <!-- Name input -->
-                    <div class="form-outline mb-4">
-                      <input v-model="Name" style="border: 1px solid black;" type="text" id="form1Example3" class="form-control" />
-                      <label class="form-label" for="form1Example3">Name</label>
+                    <div class="form-outline mb-3">
+                      <input placeholder="Name" v-model="Name"  type="text" id="form1Example3" class="RegInput form-control" />
                     </div>
                     <!-- UserName input -->
                     <div class="form-outline mb-4">
-                      <input v-model="UserName" style="border: 1px solid black;" type="text" id="form1Example4" class="form-control" />
-                      <label class="form-label" for="form1Example4">UserName</label>
+                      <input placeholder="UserName" v-model="UserName" type="text" id="form1Example4" class="RegInput form-control" />
                     </div>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                      <input v-model="Email" style="border: 1px solid black;" type="email" id="form1Example1" class="form-control" />
-                      <label class="form-label" for="form1Example1">Email address</label>
+                      <input placeholder="Email address" v-model="Email" type="email" id="form1Example1" class="RegInput form-control" />
                     </div>
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                      <input v-model="Password" style="border: 1px solid black;" type="password" id="form1Example2" class="border-secondary form-control" />
-                      <label class="form-label" for="form1Example2">Password</label>
+                      <input placeholder="Password" v-model="Password" type="password" id="form1Example2" class="RegInput border-secondary form-control" />
                     </div>              
                 </form>
           <!-- end form Input -->
-          <div class="d-flex align-items-center">
-            <div @click="CloseModal" class="mt-4 btm btn-sm">Cancel</div>
-            <a @click="PostData" class="mt-4 btn btn-sm" role="button">Save</a>
+          <div class="d-flex align-items-center justify-content-center">
+            <div @click="CloseModal" class="mx-2 CancelBtn mt-2 btm btn-sm">Cancel</div>
+            <a href="/admin/subadmin" @click="PostData" class="SaveBtn mt-2 btn btn-sm" role="button">Save</a>
           </div>
       </div>
     </div>
-
-{{ GetSubAdminUser }}
-{{ GetSubAdminPass }}
-{{ GetSubAdminEmail }}
-
-
+ 
 </section>
 </template>
 
 <script>
 import AdminPagination from "@/components/AdminPagination";
 import { mapGetters, mapActions } from 'vuex';
+import axios from "axios";
 
 export default {
 name: "admin",
@@ -138,6 +130,7 @@ data() {
     NewAdminModal: false,
   }
 }, 
+
 
 methods: {
   RegisterModal() {
@@ -157,24 +150,32 @@ methods: {
 },
 
 computed: {
-  ...mapGetters(['GetSubAdminUser', 'GetSubAdminPass', 'GetSubAdminEmail' ]),
-}
+  ...mapGetters(['GetSubAdminUser', 'GetSubAdminPass', 'GetSubAdminEmail']),
+  /* filter the data */
+  GetSubAdmins() {
+    /* filter all users if acf is not false */
+    return this.AllUsers.filter(user => {
+      return user.acf !== false;
+    });
+  },
+  
+},
 
 
-/*
-  asyncData(context) {        
-  var data = JSON.stringify({
-  "name": "samad",
-  "username": "samadbb",
-  "email": "samad@gmail.com",
-  "password": "123456",
+async asyncData({store}) {      
+
+/* Register a User Through AsyncDta */  
+  
+var data = JSON.stringify({
+  "name": store.getters.GetSubAdminUser,
+  "username": store.getters.GetSubAdminUser,
+  "email": store.getters.GetSubAdminEmail,
+  "password": store.getters.GetSubAdminPass,
   "roles": [
     "editor"
   ],
   "acf": {
-    "FullName": "jak2",
-    "email": "jak2@gmail.com",
-    "password": "jak1234566",
+    "FullName": "AlisaBecker",
     "firstname": "jak",
     "lastname": "jaki",
     "streetaddress": "mayamei",
@@ -189,14 +190,14 @@ computed: {
     "cardlastname": "jak obst",
     "cardnumber": "566824",
     "cvv": "45",
-    "card_exp_month": "11/05/",
-    "card_exp_year": "2025"
+    "cardexpmonth": "11/05/2021",
+    "cardexpyear": "2025"
   }
 });
 
 var config = {
   method: 'post',
-  url: 'https://api.intelligilesolutions.com/wp-json/wp/v2/userprofile',
+  url: 'https://api.intelligilesolutions.com/wp-json/wp/v2/users',
   headers: { 
     'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY', 
     'Content-Type': 'application/json'
@@ -204,35 +205,109 @@ var config = {
   data : data
 };
 
-axios(config)
+await axios(config)
 .then(function (response) {
   console.log(JSON.stringify(response.data));
 })
 .catch(function (error) {
-  console.log(error);
+  console.log(error.response.data);
 });
 
+
+/* Get All SubAdmin Data */
+
+var config = {
+  method: 'get',
+  url: 'https://api.intelligilesolutions.com/wp-json/wp/v2/users',
+  headers: { 
+    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY', 
+    'Content-Type': 'application/json'
+  }
+};
+
+ return await axios(config)
+.then(function (response) {
+  return{
+    AllUsers: response.data,
+  }
+})
+.catch(function (error) {
+  console.log(error.response.data);
+});
+
+
 },
-
-*/
 }
-
-
 
 </script>
 
 <style scoped>
 
-/*Form Modal */
+::placeholder {
+  opacity: 1 !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  color: #231942;
+}
 
+.RegInput {
+  border: solid 0.5px #c9c6d1 !important;
+  border-radius: 4px !important;
+  height: 45px;
+}
+
+.CancelBtn {
+  background-color: #fff;
+  color: #231942 !important;
+  border: solid 0.8px #a3a6b4;
+  padding: 10px 53px;
+  box-shadow: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.SaveBtn {
+  background-color: #65a79f;
+  padding: 10px 53px;
+  color: #fff !important;
+  box-shadow: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.RegisterDesc {
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
+  color: #4d4f5c;
+}
+
+.CloseBtn {
+  color: #a4afb7;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+.RegisterModal {
+  font-family: 'Open Sans', sans-serif;
+  color: #231942;
+  font-size: 18pt;
+}
+
+/*Form Modal */
 .FormModal {
   position: fixed;
   top: 20%;
-  left: 40%;
+  left: 35%;
   z-index: 3;
-  width: 300px;
-  background-color: rgb(223, 220, 220) !important;
-  padding: 20px;
+  width: 400px;
+  background-color: #fff !important;
+  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
 }
 
 /* filterd blur backdrop */
