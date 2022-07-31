@@ -8,7 +8,7 @@ exports.modules = {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(183);
+var content = __webpack_require__(184);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -20,42 +20,42 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 177:
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/TotalProd.5d3161a.svg";
 
 /***/ }),
 
-/***/ 178:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/Users.3bfb401.png";
 
 /***/ }),
 
-/***/ 179:
+/***/ 180:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/Support.4509baf.png";
 
 /***/ }),
 
-/***/ 180:
+/***/ 181:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/Bell.a4b1063.png";
 
 /***/ }),
 
-/***/ 181:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/Shop.0d8f8a6.png";
 
 /***/ }),
 
-/***/ 182:
+/***/ 183:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -67,7 +67,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 183:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -84,7 +84,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 249:
+/***/ 253:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -96,7 +96,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c('section', [_vm._ssrNode("<div class=\"container-full mt-4 px-4\" data-v-607bc508><div class=\"row\" data-v-607bc508><div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Products</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>123,456</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"ProdNum\" data-v-607bc508>1000</span>\n              New Products\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(177)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Users</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>5800</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"UserNum\" data-v-607bc508>1000</span>\n              New Users\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(178)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Tickets</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>20000</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"TicketNum\" data-v-607bc508>180</span>\n              Current tickets\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(179)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Overview</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>250,000</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"OverviewNum\" data-v-607bc508>2714</span>\n              Last day\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(180)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Orders</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>1400</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"TotalOrders\" data-v-607bc508>125</span>\n              Last new Orders\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(181)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div></div></div> <div class=\"container-full mt-4 px-4\" data-v-607bc508><canvas id=\"myChart\" data-v-607bc508></canvas></div>")]);
+  return _c('section', [_vm._ssrNode("<div class=\"container-full mt-4 px-4\" data-v-607bc508><div class=\"row\" data-v-607bc508><div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Products</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>123,456</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"ProdNum\" data-v-607bc508>1000</span>\n              New Products\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(178)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Users</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>5800</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"UserNum\" data-v-607bc508>1000</span>\n              New Users\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(179)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Tickets</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>20000</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"TicketNum\" data-v-607bc508>180</span>\n              Current tickets\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(180)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Overview</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>250,000</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"OverviewNum\" data-v-607bc508>2714</span>\n              Last day\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(181)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div> <div class=\"col\" data-v-607bc508><div class=\"d-flex DashState align-items-center\" data-v-607bc508><div data-v-607bc508><p class=\"m-0 StateTitle\" data-v-607bc508>Total Orders</p> <p class=\"pt-1 ps-3 m-0\" data-v-607bc508>1400</p> <p class=\"pt-1 ps-3 ProdCount\" data-v-607bc508><span class=\"TotalOrders\" data-v-607bc508>125</span>\n              Last new Orders\n            </p></div> <img" + _vm._ssrAttr("src", __webpack_require__(182)) + " alt=\"TotalProd\" class=\"TotalProd\" data-v-607bc508></div></div></div></div> <div class=\"container-full mt-4 px-4\" data-v-607bc508><canvas id=\"myChart\" data-v-607bc508></canvas></div>")]);
 };
 
 var staticRenderFns = [];
@@ -203,7 +203,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(182)
+  var style0 = __webpack_require__(183)
 if (style0.__inject__) style0.__inject__(context)
 
 }

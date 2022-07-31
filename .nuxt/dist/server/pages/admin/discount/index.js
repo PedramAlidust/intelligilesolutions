@@ -2,7 +2,7 @@
 exports.ids = [4];
 exports.modules = {
 
-/***/ 140:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/off2.8e3ee16.jpg";
@@ -15,7 +15,7 @@ module.exports = __webpack_require__.p + "img/off2.8e3ee16.jpg";
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(223);
+var content = __webpack_require__(224);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -27,7 +27,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 222:
+/***/ 223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39,7 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 223:
+/***/ 224:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -53,7 +53,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 259:
+/***/ 263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65,7 +65,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c('section', [_vm._ssrNode("<div class=\"container-full mt-4 px-4\" data-v-e6b99be8></div> "), _vm._ssrNode("<div class=\"container-full mt-4 px-4 TableBkg\" data-v-e6b99be8>", "</div>", [_vm._ssrNode("<div class=\"d-flex justify-content-between pt-5 px-3\" data-v-e6b99be8>", "</div>", [_c('AdminPagination'), _vm._ssrNode(" <div class=\"d-flex align-items-center\" data-v-e6b99be8><button type=\"button\" class=\"BtnStyleProd btn btn-sm\" data-v-e6b99be8>\n          Add New Discount\n        </button></div>")], 2), _vm._ssrNode(" <div class=\"container-full px-3 table-responsive\" data-v-e6b99be8><table class=\"table align-middle mb-0 bg-white\" data-v-e6b99be8><thead class=\"bg-light\" data-v-e6b99be8><tr data-v-e6b99be8><th data-v-e6b99be8>#</th> <th data-v-e6b99be8>Image</th> <th data-v-e6b99be8>Percent</th> <th data-v-e6b99be8>Code</th> <th data-v-e6b99be8>Text</th> <th data-v-e6b99be8>Expiration date</th> <th data-v-e6b99be8></th> <th data-v-e6b99be8></th></tr></thead> <tbody data-v-e6b99be8><tr data-v-e6b99be8><td data-v-e6b99be8><p data-v-e6b99be8>1</p></td> <td data-v-e6b99be8><img" + _vm._ssrAttr("src", __webpack_require__(140)) + " alt=\"DiscountBaner\" class=\"DiscountImage\" data-v-e6b99be8></td> <td data-v-e6b99be8><p data-v-e6b99be8>%50</p></td> <td data-v-e6b99be8><p data-v-e6b99be8>Kandaka-discount</p></td> <td data-v-e6b99be8><p data-v-e6b99be8>Get $ 50.00 off your next full price purchase!</p></td> <td data-v-e6b99be8><p data-v-e6b99be8>September30,2022</p></td> <td data-v-e6b99be8><div class=\"d-flex justify-content-between\" data-v-e6b99be8><p data-v-e6b99be8>inactive</p> <div class=\"ps-4 pe-3 form-check form-switch\" data-v-e6b99be8><input type=\"checkbox\" role=\"switch\" id=\"flexSwitchCheckChecked\" checked=\"checked\" class=\"InputStyle form-check-input\" style=\"margin:0; margin-top:3px;\" data-v-e6b99be8></div> <p data-v-e6b99be8>Active</p></div></td> <td data-v-e6b99be8><i class=\"bi bi-three-dots-vertical\" data-v-e6b99be8></i></td></tr></tbody></table></div>")], 2)], 2);
+  return _c('section', [_vm._ssrNode("<div class=\"container-full mt-4 px-4\" data-v-e6b99be8></div> "), _vm._ssrNode("<div class=\"container-full mt-4 px-4 TableBkg\" data-v-e6b99be8>", "</div>", [_vm._ssrNode("<div class=\"d-flex justify-content-between pt-5 px-3\" data-v-e6b99be8>", "</div>", [_c('AdminPagination'), _vm._ssrNode(" <div class=\"d-flex align-items-center\" data-v-e6b99be8><button type=\"button\" class=\"BtnStyleProd btn btn-sm\" data-v-e6b99be8>\n          Add New Discount\n        </button></div>")], 2), _vm._ssrNode(" <div class=\"container-full px-3 table-responsive\" data-v-e6b99be8><table class=\"table align-middle mb-0 bg-white\" data-v-e6b99be8><thead class=\"bg-light\" data-v-e6b99be8><tr data-v-e6b99be8><th data-v-e6b99be8>#</th> <th data-v-e6b99be8>Image</th> <th data-v-e6b99be8>Percent</th> <th data-v-e6b99be8>Code</th> <th data-v-e6b99be8>Text</th> <th data-v-e6b99be8>Expiration date</th> <th data-v-e6b99be8></th> <th data-v-e6b99be8></th></tr></thead> <tbody data-v-e6b99be8><tr data-v-e6b99be8><td data-v-e6b99be8><p data-v-e6b99be8>1</p></td> <td data-v-e6b99be8><img" + _vm._ssrAttr("src", __webpack_require__(114)) + " alt=\"DiscountBaner\" class=\"DiscountImage\" data-v-e6b99be8></td> <td data-v-e6b99be8><p data-v-e6b99be8>%50</p></td> <td data-v-e6b99be8><p data-v-e6b99be8>Kandaka-discount</p></td> <td data-v-e6b99be8><p data-v-e6b99be8>Get $ 50.00 off your next full price purchase!</p></td> <td data-v-e6b99be8><p data-v-e6b99be8>September30,2022</p></td> <td data-v-e6b99be8><div class=\"d-flex justify-content-between\" data-v-e6b99be8><p data-v-e6b99be8>inactive</p> <div class=\"ps-4 pe-3 form-check form-switch\" data-v-e6b99be8><input type=\"checkbox\" role=\"switch\" id=\"flexSwitchCheckChecked\" checked=\"checked\" class=\"InputStyle form-check-input\" style=\"margin:0; margin-top:3px;\" data-v-e6b99be8></div> <p data-v-e6b99be8>Active</p></div></td> <td data-v-e6b99be8><i class=\"bi bi-three-dots-vertical\" data-v-e6b99be8></i></td></tr></tbody></table></div>")], 2)], 2);
 };
 
 var staticRenderFns = [];
@@ -95,7 +95,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(222)
+  var style0 = __webpack_require__(223)
 if (style0.__inject__) style0.__inject__(context)
 
 }

@@ -97,29 +97,76 @@
                 <p>Deliverd</p>
               </td>
                <td>
-                <button type="button" class="DetailBtn btn btn-sm">Details</button>
+                <!-- change details modal -->
+                <div id="CollapseState1" aria-expanded="false" class="ChangeState bg-white collapse">
+                    <p role="button" class="StatusDevider py-2 text-danger text-center">Check</p>
+                    <p role="button" class="StatusDevider py-2 text-warning text-center">Send</p>
+                    <p role="button" class="StatusDevider py-2 text-success text-center">Delivered</p>
+                    <p role="button" class="py-2 text-primary text-center">Preparation</p>
+                </div>
+                <!-- Show Details Btn -->
+                <button @click="DetailsState('pedram', '09194160419')" type="button" class="DetailBtn btn btn-sm">Details</button>
               </td>
-               <td>
+               <td data-bs-toggle="collapse" data-bs-target="#CollapseState1" role="button" @click="ChangeStateAction">
                 <i class="bi bi-three-dots-vertical"></i>
-              </td>
+              </td>        
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+  <TheDetailModal v-if="DspDetails" @CloseEvent="CloseDetail" :name="this.ModalName" :phone="this.ModalPhone" />
   </section>
 </template>
 
 <script>
+import TheDetailModal from "@/components/admin/DetailModal";
 import AdminPagination from "@/components/AdminPagination";
 export default {
 name: "admin",
 layout: 'admin', 
-components: { AdminPagination },
+components: { AdminPagination, TheDetailModal },
+data() {
+  return {
+    ChangeState: false,
+    DspDetails: false,
+    ModalName: '',
+    ModalPhone: ''
+  }
+}, 
+computed: {},
+methods: {
+    ChangeStateAction() {
+      this.ChangeState = !this.ChangeState;
+    }, 
+    DetailsState(name, phone) {
+      this.DspDetails = !this.DspDetails;
+      this.ModalName = name;
+      this.ModalPhone = phone;
+    },
+    CloseDetail() {
+      this.DspDetails = !this.DspDetails;
+    },
+}
 }
 </script>
 
 <style scoped>
+
+.StatusDevider {
+  border-bottom: 1px solid #f1f1f3;
+  width: 100%;
+}
+
+.ChangeState {
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.09);
+    background-color: #e99d7b;
+    border-radius: 4px;
+    width: 110px;
+    z-index: 999;
+    position: absolute;
+    right: 110px;
+}
 
 .DetailBtn {
   background-color: #e99d7b;

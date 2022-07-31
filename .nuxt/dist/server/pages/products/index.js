@@ -53,7 +53,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 
 /***/ }),
 
-/***/ 114:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -206,14 +206,14 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 115:
+/***/ 116:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductOne.3cad331.jpg";
 
 /***/ }),
 
-/***/ 119:
+/***/ 120:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9Ikdyb3VwIDExNjI3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOS41NTkiIGhlaWdodD0iMzkuNTU5IiB2aWV3Qm94PSIwIDAgMzkuNTU5IDM5LjU1OSI+CiAgICA8ZyBkYXRhLW5hbWU9IkNpcmNsZSBCRyIgc3R5bGU9ImZpbGw6I2U0ZTRlNDtzdHJva2U6I2U0ZTRlNDtzdHJva2UtbGluZWpvaW46cm91bmQiPgogICAgICAgIDxjaXJjbGUgY3g9IjE5Ljc3OSIgY3k9IjE5Ljc3OSIgcj0iMTkuNzc5IiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxOS43NzkiIGN5PSIxOS43NzkiIHI9IjE5LjI3OSIgc3R5bGU9ImZpbGw6bm9uZSIvPgogICAgPC9nPgogICAgPHBhdGggZD0iTTYuNTc5IDE3LjI4NGgxMy4wNzJhMS4xNjkgMS4xNjkgMCAwIDAgLjgxOC0yTDEzLjk0NSA4Ljc2YTEuMTY5IDEuMTY5IDAgMCAwLTEuNjYgMEw1Ljc2IDE1LjI4NWExLjE2OSAxLjE2OSAwIDAgMCAuODE4IDJ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2LjY2NCA1LjkzNikiIHN0eWxlPSJmaWxsOiMzYTNhM2EiLz4KPC9zdmc+Cg=="
@@ -226,7 +226,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9Ikdyb3VwIDExNjI3
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(202);
+var content = __webpack_require__(203);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -238,21 +238,21 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductTwo.ad4a802.jpg";
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ProductThree.cbf6bb5.jpg";
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -264,13 +264,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(6);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(119);
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(120);
 var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(42);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
@@ -283,7 +283,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 253:
+/***/ 257:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -295,7 +295,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c('div', [_c('TheHeader'), _vm._ssrNode(" <section class=\"PageBkg\" data-v-ff2045de><div class=\"container px-4 px-md-4 px-lg-4 pt-4\" data-v-ff2045de><div class=\"d-flex flex-row\" data-v-ff2045de><p class=\"BroadHome\" data-v-ff2045de>Home</p> <p class=\"px-2\" data-v-ff2045de>/</p> <p class=\"BroadSub\" data-v-ff2045de>Products</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4 pb-3\" data-v-ff2045de><div class=\"d-flex flex-row justify-content-between\" data-v-ff2045de><p class=\"PageTitle\" data-v-ff2045de>Products</p> <p class=\"ResultsTxt\" data-v-ff2045de>Showing 09 Results</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4\" data-v-ff2045de><div class=\"row gx-5\" data-v-ff2045de><div class=\"col-lg-4 div col-md-4 pb-4 py-md-0 py-lg-0\" data-v-ff2045de><div class=\"input-group rounded\" data-v-ff2045de><input type=\"search\" placeholder=\"Search Here\" aria-label=\"Search\" aria-describedby=\"search-addon\" class=\"ProductsForm form-control rounded\" data-v-ff2045de> <span id=\"search-addon\" class=\"input-group-text search\" data-v-ff2045de><i class=\"bi bi-search\" data-v-ff2045de></i></span></div> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(111)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de> Categories</p></div> <div class=\"d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Accesories</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Face care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Lip care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Skin care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Nail care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Blusher</p> <p data-v-ff2045de>(5)</p></div></section> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(111)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de>Popular Tags</p></div> <hr data-v-ff2045de> <div class=\"d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Beauty</button> <button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>MakeupArtist</button></div> <div class=\"py-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Makeup</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hair</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Nails</button></div> <div class=\"pb-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hairstyle</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Skincare</button></div></section></div> <div class=\"col-lg-8 div col-md-8\" data-v-ff2045de><div class=\"container px-0\" data-v-ff2045de><div class=\"row\" data-v-ff2045de><div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(199)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(200)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(115)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div></div></div></div></div></div></section> "), _c('TheFooter')], 2);
+  return _c('div', [_c('TheHeader'), _vm._ssrNode(" <section class=\"PageBkg\" data-v-ff2045de><div class=\"container px-4 px-md-4 px-lg-4 pt-4\" data-v-ff2045de><div class=\"d-flex flex-row\" data-v-ff2045de><p class=\"BroadHome\" data-v-ff2045de>Home</p> <p class=\"px-2\" data-v-ff2045de>/</p> <p class=\"BroadSub\" data-v-ff2045de>Products</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4 pb-3\" data-v-ff2045de><div class=\"d-flex flex-row justify-content-between\" data-v-ff2045de><p class=\"PageTitle\" data-v-ff2045de>Products</p> <p class=\"ResultsTxt\" data-v-ff2045de>Showing 09 Results</p></div></div> <div class=\"container px-4 px-md-4 px-lg-4\" data-v-ff2045de><div class=\"row gx-5\" data-v-ff2045de><div class=\"col-lg-4 div col-md-4 pb-4 py-md-0 py-lg-0\" data-v-ff2045de><div class=\"input-group rounded\" data-v-ff2045de><input type=\"search\" placeholder=\"Search Here\" aria-label=\"Search\" aria-describedby=\"search-addon\" class=\"ProductsForm form-control rounded\" data-v-ff2045de> <span id=\"search-addon\" class=\"input-group-text search\" data-v-ff2045de><i class=\"bi bi-search\" data-v-ff2045de></i></span></div> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(111)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de> Categories</p></div> <div class=\"d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Accesories</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Face care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Lip care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Skin care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Nail care</p> <p data-v-ff2045de>(5)</p></div> <hr data-v-ff2045de> <div class=\"pt-3 d-flex align-items-center justify-content-between\" data-v-ff2045de><p class=\"CategorieTxt\" data-v-ff2045de>Blusher</p> <p data-v-ff2045de>(5)</p></div></section> <section class=\"CatSec mt-4 py-2 px-4\" data-v-ff2045de><div class=\"d-flex flex-row align-items-center py-3\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(111)) + " alt=\"categorie\" class=\"CatImg\" data-v-ff2045de> <p class=\"px-2 CatTxt m-0\" data-v-ff2045de>Popular Tags</p></div> <hr data-v-ff2045de> <div class=\"d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Beauty</button> <button type=\"button\" class=\"mt-3 mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>MakeupArtist</button></div> <div class=\"py-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Makeup</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hair</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Nails</button></div> <div class=\"pb-3 d-flex align-items-center justify-content-center\" data-v-ff2045de><button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Hairstyle</button> <button type=\"button\" class=\"mx-2 btn btn-sm btn-light btn-rounded\" data-v-ff2045de>Skincare</button></div></section></div> <div class=\"col-lg-8 div col-md-8\" data-v-ff2045de><div class=\"container px-0\" data-v-ff2045de><div class=\"row\" data-v-ff2045de><div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(200)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(201)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div> <div class=\"col-6 col-lg-4 col-md-4\" data-v-ff2045de><img" + _vm._ssrAttr("src", __webpack_require__(116)) + " alt=\"ProductTwo\" class=\"pb-2 w-100\" data-v-ff2045de> <div class=\"d-lg-flex\" data-v-ff2045de><div data-v-ff2045de><i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star-fill starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i> <i class=\"bi bi-star starbi\" data-v-ff2045de></i></div> <div data-v-ff2045de><p class=\"m-0 my-1 StartCount px-1\" data-v-ff2045de>(5000)</p></div> <div class=\"ms-auto\" data-v-ff2045de><p class=\"m-0 mb-2 mt-lg-1 mb-md-1 reviews text-muted\" data-v-ff2045de>150 reviews</p></div></div> <p class=\"pt-2 ProductTitle\" data-v-ff2045de>Sella body butter</p> <p class=\"ProductTitle\" data-v-ff2045de>$350.00</p></div></div></div></div></div></div></section> "), _c('TheFooter')], 2);
 };
 
 var staticRenderFns = [];
@@ -303,7 +303,7 @@ var staticRenderFns = [];
 // CONCATENATED MODULE: ./pages/products/index.vue?vue&type=template&id=ff2045de&scoped=true&
 
 // EXTERNAL MODULE: ./components/Navigation/TheSubpageHeader.vue + 4 modules
-var TheSubpageHeader = __webpack_require__(114);
+var TheSubpageHeader = __webpack_require__(115);
 
 // EXTERNAL MODULE: ./components/TheFooter.vue + 4 modules
 var TheFooter = __webpack_require__(13);
@@ -328,7 +328,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(201)
+  var style0 = __webpack_require__(202)
 if (style0.__inject__) style0.__inject__(context)
 
 }

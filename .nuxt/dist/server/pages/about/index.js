@@ -46,7 +46,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 114:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -199,7 +199,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 119:
+/***/ 120:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9Ikdyb3VwIDExNjI3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOS41NTkiIGhlaWdodD0iMzkuNTU5IiB2aWV3Qm94PSIwIDAgMzkuNTU5IDM5LjU1OSI+CiAgICA8ZyBkYXRhLW5hbWU9IkNpcmNsZSBCRyIgc3R5bGU9ImZpbGw6I2U0ZTRlNDtzdHJva2U6I2U0ZTRlNDtzdHJva2UtbGluZWpvaW46cm91bmQiPgogICAgICAgIDxjaXJjbGUgY3g9IjE5Ljc3OSIgY3k9IjE5Ljc3OSIgcj0iMTkuNzc5IiBzdHlsZT0ic3Ryb2tlOm5vbmUiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxOS43NzkiIGN5PSIxOS43NzkiIHI9IjE5LjI3OSIgc3R5bGU9ImZpbGw6bm9uZSIvPgogICAgPC9nPgogICAgPHBhdGggZD0iTTYuNTc5IDE3LjI4NGgxMy4wNzJhMS4xNjkgMS4xNjkgMCAwIDAgLjgxOC0yTDEzLjk0NSA4Ljc2YTEuMTY5IDEuMTY5IDAgMCAwLTEuNjYgMEw1Ljc2IDE1LjI4NWExLjE2OSAxLjE2OSAwIDAgMCAuODE4IDJ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2LjY2NCA1LjkzNikiIHN0eWxlPSJmaWxsOiMzYTNhM2EiLz4KPC9zdmc+Cg=="
@@ -212,7 +212,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9Ikdyb3VwIDExNjI3
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(176);
+var content = __webpack_require__(177);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -224,7 +224,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 175:
+/***/ 176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -236,13 +236,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 176:
+/***/ 177:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(3);
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(6);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(119);
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(120);
 var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(42);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
@@ -255,7 +255,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 248:
+/***/ 252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -275,7 +275,7 @@ var staticRenderFns = [];
 // CONCATENATED MODULE: ./pages/about/index.vue?vue&type=template&id=5de0c48e&scoped=true&
 
 // EXTERNAL MODULE: ./components/Navigation/TheSubpageHeader.vue + 4 modules
-var TheSubpageHeader = __webpack_require__(114);
+var TheSubpageHeader = __webpack_require__(115);
 
 // EXTERNAL MODULE: ./components/TheFooter.vue + 4 modules
 var TheFooter = __webpack_require__(13);
@@ -300,7 +300,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(175)
+  var style0 = __webpack_require__(176)
 if (style0.__inject__) style0.__inject__(context)
 
 }

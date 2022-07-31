@@ -81,7 +81,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(122);
+var content = __webpack_require__(123);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -93,14 +93,14 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 120:
+/***/ 121:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi4wNzkiIGhlaWdodD0iMTkuMjk1IiB2aWV3Qm94PSIwIDAgMTYuMDc5IDE5LjI5NSI+CiAgICA8cGF0aCBkYXRhLW5hbWU9IlBhdGggNDcxODEiIGQ9Ik0xNy4yNzUgMy4yMTZoLTIuNDkyQTQuMDI3IDQuMDI3IDAgMCAwIDEwLjg0NCAwSDkuMjM2QTQuMDI3IDQuMDI3IDAgMCAwIDUuMyAzLjIxNkgyLjhhLjguOCAwIDEgMCAwIDEuNjA4aC44djEwLjQ1MWE0LjAyNSA0LjAyNSAwIDAgMCA0LjAyIDQuMDJoNC44MjRhNC4wMjUgNC4wMjUgMCAwIDAgNC4wMi00LjAyVjQuODI0aC44YS44LjggMCAwIDAgMC0xLjYwOHpNOS4yMzYgMS42MDhoMS42MDhhMi40MTcgMi40MTcgMCAwIDEgMi4yNzQgMS42MDhINi45NjFhMi40MTcgMi40MTcgMCAwIDEgMi4yNzUtMS42MDh6bTUuNjI4IDEzLjY2N2EyLjQxMiAyLjQxMiAwIDAgMS0yLjQxMiAyLjQxMkg3LjYyOGEyLjQxMiAyLjQxMiAwIDAgMS0yLjQxMi0yLjQxMlY0LjgyNGg5LjY0OHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yKSIgc3R5bGU9ImZpbGw6I2Q2NDU1MyIvPgo8L3N2Zz4K"
 
 /***/ }),
 
-/***/ 121:
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -112,7 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 122:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -142,7 +142,7 @@ var render = function render() {
     attrs: {
       "score": _vm.score
     }
-  })], 2)], 2), _vm._ssrNode(" <div class=\"box-buttons\" data-v-2818a01e><button class=\"button-add\" data-v-2818a01e>Add To Cart</button> <button class=\"button-remove\" data-v-2818a01e><img" + _vm._ssrAttr("src", __webpack_require__(120)) + " width=\"12\" alt data-v-2818a01e>\n        Delete\n      </button></div>")], 2)]);
+  })], 2)], 2), _vm._ssrNode(" <div class=\"box-buttons\" data-v-2818a01e><button class=\"button-add\" data-v-2818a01e>Add To Cart</button> <button class=\"button-remove\" data-v-2818a01e><img" + _vm._ssrAttr("src", __webpack_require__(121)) + " width=\"12\" alt data-v-2818a01e>\n        Delete\n      </button></div>")], 2)]);
 };
 
 var staticRenderFns = [];
@@ -172,7 +172,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(121)
+  var style0 = __webpack_require__(122)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -194,7 +194,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 255:
+/***/ 259:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
