@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from '../layouts/error.vue'
+import NuxtError from '..\\layouts\\error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -13,8 +13,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_cookieuniversalnuxt_f858b3ac from 'nuxt_plugin_cookieuniversalnuxt_f858b3ac' // Source: ./cookie-universal-nuxt.js (mode: 'all')
-import nuxt_plugin_ckeditor_01e62ccc from 'nuxt_plugin_ckeditor_01e62ccc' // Source: ../plugins/ckeditor.js (mode: 'client')
+import nuxt_plugin_cookieuniversalnuxt_0d05125a from 'nuxt_plugin_cookieuniversalnuxt_0d05125a' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
+import nuxt_plugin_ckeditor_01e62ccc from 'nuxt_plugin_ckeditor_01e62ccc' // Source: ..\\plugins\\ckeditor.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -211,8 +211,8 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_cookieuniversalnuxt_f858b3ac === 'function') {
-    await nuxt_plugin_cookieuniversalnuxt_f858b3ac(app.context, inject)
+  if (typeof nuxt_plugin_cookieuniversalnuxt_0d05125a === 'function') {
+    await nuxt_plugin_cookieuniversalnuxt_0d05125a(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_ckeditor_01e62ccc === 'function') {
