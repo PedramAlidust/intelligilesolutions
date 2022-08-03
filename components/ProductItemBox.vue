@@ -82,7 +82,7 @@ export default {
 }
 
 .box h4 {
-  font-size: 20px;
+  font-size: 17px;
   color: #055452;
 }
 
@@ -113,10 +113,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
   border: 1px solid #c6c6c6;
-  border-radius: 28px;
+  border-radius: 10px;
   box-shadow: inset 5px 2px 9px 4px #e0e0e0;
 }
 
@@ -159,15 +159,14 @@ export default {
 
 .close {
   position: absolute;
-  right: 10px;
-  top: 0;
+  right: 4px;
+  top: -10px;
 }
 
 .close span {
   cursor: pointer;
   color: #d90f0f;
-  font-size: 40px;
-  padding: 10px;
+  font-size: 35px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -193,10 +192,34 @@ export default {
 
   .close {
     position: relative;
+    right: 10;
+  }
+  .close span {
+    cursor: pointer;
+    color: #d90f0f;
+    font-size: 40px;
+    padding: 10px;
   }
 
   .title {
     display: block;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .box h4 {
+    font-size: 20px;
+    color: #055452;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #c6c6c6;
+    border-radius: 28px;
+    box-shadow: inset 5px 2px 9px 4px #e0e0e0;
   }
 }
 </style>

@@ -453,42 +453,14 @@
             products of our company
           </p>
           <div class="BestProdSlider">
-            <div>
+            <div v-for="item in resaults">
               <div>
                 <ProductCard
-                  price="$350.00"
-                  name="Sella body butter"
-                  img="/_nuxt/assets/pictures/categorie2.png"
+                  :price="item.acf.productprice"
+                  :name="item.title.rendered"
+                  :img="item.acf.productimage"
                 />
               </div>
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie2.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie3.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie4.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie5.png"
-                class="w-100"
-                alt=""
-              />
             </div>
           </div>
           <!-- arrows inside flex -->
@@ -510,8 +482,8 @@
 </template>
 
 <script>
-/* 
-import axios from "axios"; 
+/*
+import axios from "axios";
 */
 import TheHeader from "@/components/Navigation/TheHeader";
 import TheFooter from "@/components/TheFooter";
@@ -526,7 +498,20 @@ export default {
   data() {
     return {
       DspPrimeArrow: true,
+      resaults: [],
     };
+  },
+  async fetch() {
+    this.resaults = await fetch(
+      "https://api.intelligilesolutions.com/wp-json/wp/v2/products",
+      {
+        headers: {
+          Authorization:
+            "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY",
+        },
+        "Content-Type": "application/json",
+      }
+    ).then((res) => res.json());
   },
   methods: {
     ChangeArrowState() {

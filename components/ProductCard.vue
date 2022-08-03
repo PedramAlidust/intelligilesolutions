@@ -50,7 +50,7 @@
       </div>
     </div>
     <p class="pt-2 ProductTitle">{{ name }}</p>
-    <p class="ProductTitle">{{ price }}</p>
+    <p class="ProductTitle">${{ price }}</p>
   </div>
 </template>
 

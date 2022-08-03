@@ -19,7 +19,7 @@
         <div class="d-flex justify-content-end mb-4">
           <div class="btn">
             <span>Update cart</span>
-            <img src="~/assets/svg/circle1.svg" alt="" />
+            <img src="~/assets/svg/refresh.svg" alt="" />
           </div>
         </div>
         <div class="free-shipping">
@@ -27,7 +27,7 @@
             <h2>Free delivery</h2>
             <p>Purchases over $100 will be sent for free</p>
           </div>
-          <img src="~/assets/pictures/bitcoin.svg" alt="" />
+          <img src="~/assets/pictures/FreeShipping.png" alt="" />
         </div>
 
         <!-- Cart Form -->
@@ -35,21 +35,33 @@
           <div class="w-100">
             <div class="v-input">
               <label for="address">Your Address</label>
-              <input
-                type="text"
-                id="address"
-                v-model="address"
-                placeholder="Please enter your adress here..."
-              />
+              <div class="w-100 position-relative">
+                <input
+                  type="text"
+                  id="address"
+                  v-model="address"
+                  placeholder="Please enter your adress here..."
+                />
+                <button
+                  class="bi bi-pencil position-absolute bg-transparent border-0 text-danger bottom-0 fs-4"
+                  style="width: fit-content; right: 5px; top: -20px"
+                />
+              </div>
             </div>
             <div class="v-input">
               <label for="phone">Phone Num</label>
-              <input
-                type="text"
-                id="phone"
-                v-model="phone"
-                placeholder="Please enter your phone number here..."
-              />
+              <div class="w-100 position-relative">
+                <input
+                  type="text"
+                  id="phone"
+                  v-model="phone"
+                  placeholder="Please enter your phone number here..."
+                />
+                <button
+                  class="bi bi-pencil position-absolute bg-transparent border-0 text-danger bottom-0 fs-4"
+                  style="width: fit-content; right: 5px; top: -20px"
+                />
+              </div>
             </div>
             <div class="v-input">
               <label for="coupon">COUPON Code</label>
@@ -208,11 +220,15 @@ export default {
 }
 
 .free-shipping h2 {
+  font-size: 20px;
   color: #055452;
+}
+.free-shipping p {
+  font-size: 16px;
 }
 
 .free-shipping img {
-  width: 180px;
+  width: 100px;
 }
 
 .link {
@@ -232,6 +248,9 @@ export default {
 .btn span {
   padding-right: 10px;
   text-transform: capitalize;
+}
+.btn img {
+  width: 20px;
 }
 
 .v-input {
@@ -306,5 +325,16 @@ export default {
 .cart-total .selection .form-check-input:checked::after {
   background-color: #e99d7b;
   border-color: #eee;
+}
+@media screen and (min-width: 1200px) {
+  .free-shipping img {
+    width: 100px;
+  }
+  .free-shipping h2 {
+    font-size: 30px;
+  }
+  .free-shipping p {
+    font-size: 15px;
+  }
 }
 </style>
