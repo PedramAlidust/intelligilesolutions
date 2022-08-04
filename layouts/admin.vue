@@ -8,18 +8,138 @@
             class="DashLogo"
             alt="KandakaLogo"
           />
-          <div
-            v-for="(item, index) in navbarItems"
-            :key="index"
-            class="w-100 pt-2"
-          >
+          <div class="w-100 pt-2">
             <nuxt-link
               class="w-100 d-flex py-2 px-4"
-              :class="item.to == $route.path ? 'navItems' : ''"
-              :to="item.to"
+              :class="$route.path == '/admin' ? 'navItems' : ''"
+              to="/admin"
             >
-              <img :src="item.icon" class="DashBoardIcon" alt="DashBoardIcon" />
-              <p class="m-0 ItemsColor px-3 py-2">{{ item.name }}</p>
+              <img
+                src="~/assets/svg/DashBoardIcon.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Dashboards</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/orders' ? 'navItems' : ''"
+              to="/admin/orders"
+            >
+              <img
+                src="~/assets/svg/Orders.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Orders</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/tickets' ? 'navItems' : ''"
+              to="/admin/tickets"
+            >
+              <img
+                src="~/assets/svg/tickets.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Tickets</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/products' ? 'navItems' : ''"
+              to="/admin/products"
+            >
+              <img
+                src="~/assets/svg/shop.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Products</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/subadmin' ? 'navItems' : ''"
+              to="/admin/subadmin"
+            >
+              <img
+                src="~/assets/svg/subadmin.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Sub Admin</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/contact' ? 'navItems' : ''"
+              to="/admin/contact"
+            >
+              <img
+                src="~/assets/svg/contact.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Contact</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/discount' ? 'navItems' : ''"
+              to="/admin/discount"
+            >
+              <img
+                src="~/assets/svg/discounts.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Discounts</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/admin/comments' ? 'navItems' : ''"
+              to="/admin/comments"
+            >
+              <img
+                src="~/assets/svg/comments.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">comments</p>
+            </nuxt-link>
+          </div>
+
+          <div class="w-100 pt-2">
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="$route.path == '/' ? 'navItems' : ''"
+              to="/"
+            >
+              <img
+                src="~/assets/svg/exit.svg"
+                class="DashBoardIcon"
+                alt="DashBoardIcon"
+              />
+              <p class="m-0 ItemsColor px-3 py-2">Exit</p>
             </nuxt-link>
           </div>
         </div>
