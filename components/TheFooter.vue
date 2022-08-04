@@ -299,6 +299,9 @@ export default {
   opacity: 1 !important;
 }
 /* Footer section */
+a {
+  text-decoration: none;
+}
 .FooterBkg {
   background-image: url("~assets/pictures/footerbkg.svg");
   background-position: top;

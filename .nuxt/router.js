@@ -25,7 +25,6 @@ const _6b72acc9 = () => interopDefault(import('..\\pages\\admin\\orders\\index.v
 const _75b0c02c = () => interopDefault(import('..\\pages\\admin\\products\\index.vue' /* webpackChunkName: "pages/admin/products/index" */))
 const _3384db5f = () => interopDefault(import('..\\pages\\admin\\subadmin\\index.vue' /* webpackChunkName: "pages/admin/subadmin/index" */))
 const _56332782 = () => interopDefault(import('..\\pages\\admin\\tickets\\index.vue' /* webpackChunkName: "pages/admin/tickets/index" */))
-const _1155f0b3 = () => interopDefault(import('..\\pages\\products\\cart\\index.vue' /* webpackChunkName: "pages/products/cart/index" */))
 const _210e61aa = () => interopDefault(import('..\\pages\\profile\\edit\\index.vue' /* webpackChunkName: "pages/profile/edit/index" */))
 const _22cca7f2 = () => interopDefault(import('..\\pages\\supports\\_id\\index.vue' /* webpackChunkName: "pages/supports/_id/index" */))
 const _81406492 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
@@ -125,10 +124,6 @@ export const routerOptions = {
     path: "/admin/tickets",
     component: _56332782,
     name: "admin-tickets"
-  }, {
-    path: "/products/cart",
-    component: _1155f0b3,
-    name: "products-cart"
   }, {
     path: "/profile/edit",
     component: _210e61aa,

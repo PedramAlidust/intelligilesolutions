@@ -1,6 +1,6 @@
 <template>
   <section class="AdminBkg">
-    <div class="container-full d-none d-md-block d-lg-block">
+    <div class="container-full">
       <div class="row gx-0">
         <div class="col-md-2 col-lg-2 SideBkg text-center">
           <img
@@ -9,107 +9,18 @@
             alt="KandakaLogo"
           />
           <div
-            class="w-100 d-flex align-items-center justify-content-start pt-4"
+            v-for="(item, index) in navbarItems"
+            :key="index"
+            class="w-100 pt-2"
           >
-            <nuxt-link class="w-100 d-flex py-2 px-4" to="/admin">
-              <img
-                src="~/assets/svg/DashBoardIcon.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Dashboards</p>
-            </nuxt-link>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <nuxt-link class="w-100 d-flex py-2 px-4" to="/admin/orders">
-              <img
-                src="~/assets/svg/Orders.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Orders</p>
-            </nuxt-link>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <nuxt-link to="/admin/tickets" class="w-100 d-flex py-2 px-4">
-              <img
-                src="~/assets/svg/Tickets.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Tickets</p>
-            </nuxt-link>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <nuxt-link to="/admin/products" class="w-100 d-flex py-2 px-4">
-              <img
-                src="~/assets/svg/shop.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Products</p>
-            </nuxt-link>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <a
-              href="/admin/subadmin"
-              class="w-100 d-flex align-items-center py-2 px-4"
+            <nuxt-link
+              class="w-100 d-flex py-2 px-4"
+              :class="item.to == $route.path ? 'navItems' : ''"
+              :to="item.to"
             >
-              <img
-                src="~/assets/svg/subadmin.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3">Sub Admin</p>
-            </a>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <nuxt-link to="/admin/contact" class="w-100 d-flex py-2 px-4">
-              <img
-                src="~/assets/svg/contact.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Contact</p>
+              <img :src="item.icon" class="DashBoardIcon" alt="DashBoardIcon" />
+              <p class="m-0 ItemsColor px-3 py-2">{{ item.name }}</p>
             </nuxt-link>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <nuxt-link to="/admin/discount" class="w-100 d-flex py-2 px-4">
-              <img
-                src="~/assets/svg/discounts.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Discounts</p>
-            </nuxt-link>
-          </div>
-          <!-- Dashborad Items -->
-          <div class="d-flex align-items-center justify-content-start IconDist">
-            <nuxt-link to="/admin/comments" class="w-100 d-flex py-2 px-4">
-              <img
-                src="~/assets/svg/comments.svg"
-                class="DashBoardIcon"
-                alt="DashBoardIcon"
-              />
-              <p class="m-0 ItemsColor px-3 py-2">Comments</p>
-            </nuxt-link>
-          </div>
-          <!-- Exit Items -->
-          <div
-            class="d-flex align-items-center justify-content-start px-4 IconDist"
-          >
-            <img
-              src="~/assets/svg/exit.svg"
-              class="DashBoardIcon"
-              alt="DashBoardIcon"
-            />
-            <p class="m-0 ItemsColor px-3">Exit</p>
           </div>
         </div>
         <!-- search section -->
@@ -166,20 +77,71 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      navbarItems: [
+        {
+          name: "Dashboards",
+          to: "/admin",
+          icon: "/assets/svg/DashBoardIcon.svg",
+        },
+        {
+          name: "Orders",
+          to: "/admin/orders",
+          icon: "~/assets/svg/Orders.svg",
+        },
+        {
+          name: "Tickets",
+          to: "/admin/tickets",
+          icon: "~/assets/svg/Tickets.svg",
+        },
+        {
+          name: "Products",
+          to: "/admin/products",
+          icon: "~/assets/svg/shop.svg",
+        },
+        {
+          name: "Sub Admin",
+          to: "/admin/subadmin",
+          icon: "~/assets/svg/subadmin.svg",
+        },
+        {
+          name: "Contact",
+          to: "/admin/contact",
+          icon: "~/assets/svg/contact.svg",
+        },
+        {
+          name: "Discounts",
+          to: "/admin/discount",
+          icon: "~/assets/svg/discounts.svg",
+        },
+        {
+          name: "Comments",
+          to: "/admin/comments",
+          icon: "~/assets/svg/comments.svg",
+        },
+        {
+          name: "Exit",
+          to: "/",
+          icon: "~/assets/svg/exit.svg",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
 a {
   text-decoration: none;
 }
-
-a.nuxt-link-active {
+.navItems {
   background-color: #f0f0f7;
-  color: black;
 }
-a.nuxt-link-active p {
-  color: black;
+.navItems p {
+  color: #4d4f5c;
+  font-weight: 700;
 }
 canvas {
   width: 100%;

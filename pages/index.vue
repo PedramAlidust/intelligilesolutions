@@ -387,41 +387,9 @@
             products of our company
           </p>
           <!-- top products slider -->
-          <div class="TopProdSlider">
-            <div>
-              <ProductCard
-                price="$350.00"
-                name="Sella body butter"
-                img="/_nuxt/assets/pictures/ProductOne.jpg"
-              />
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie2.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie3.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="~/assets/pictures/categorie4.png"
-                class="w-100"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                src="src/assets/pictures/categorie5.png"
-                class="w-100"
-                alt=""
-              />
+          <div class="TopProdSlider d-flex justify-content-center">
+            <div v-for="card in resaults" class="px-2">
+              <ProductCard :details="card" />
             </div>
           </div>
           <!-- arrows inside flex -->
@@ -452,25 +420,19 @@
             List of the newest and best-selling cosmetic <br />
             products of our company
           </p>
-          <div class="BestProdSlider">
-            <div v-for="item in resaults">
-              <div>
-                <ProductCard
-                  :price="item.acf.productprice"
-                  :name="item.title.rendered"
-                  :img="item.acf.productimage"
-                />
-              </div>
+          <div class="BestProdSlider d-flex justify-content-center">
+            <div v-for="card in resaults" class="px-2">
+              <ProductCard :details="card" />
             </div>
           </div>
           <!-- arrows inside flex -->
           <div
             class="SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5"
           >
-            <div class="BestProdLeft">
+            <div class="TopProdRight">
               <i class="SlideBtn bi bi-caret-left"></i>
             </div>
-            <div class="BestProdRight">
+            <div class="TopProdLeft">
               <i class="SlideBtn bi bi-caret-right"></i>
             </div>
           </div>
@@ -489,6 +451,7 @@ import TheHeader from "@/components/Navigation/TheHeader";
 import TheFooter from "@/components/TheFooter";
 import ProductCard from "@/components/ProductCard.vue";
 export default {
+  modules: ["@nuxtjs/axios"],
   components: {
     TheHeader,
     TheFooter,
@@ -501,25 +464,25 @@ export default {
       resaults: [],
     };
   },
-  async fetch() {
-    this.resaults = await fetch(
-      "https://api.intelligilesolutions.com/wp-json/wp/v2/products",
-      {
-        headers: {
-          Authorization:
-            "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY",
-        },
-        "Content-Type": "application/json",
-      }
-    ).then((res) => res.json());
-  },
+
   methods: {
     ChangeArrowState() {
       this.DspPrimeArrow = !this.DspPrimeArrow;
     },
   },
-
   mounted() {
+    var axios = require("axios");
+    var config = {
+      method: "get",
+      url: "https://api.intelligilesolutions.com/wp-json/wp/v2/products",
+    };
+    axios(config)
+      .then((response) => {
+        this.resaults = response.data;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     $(function () {
       // top products slider
       $(".TopProdSlider").slick({
@@ -663,7 +626,8 @@ export default {
 
 .SlideArrowPosition {
   margin-top: -17%;
-  z-index: 1;
+  z-index: 999;
+  height: fit-content;
 }
 
 @media screen and (max-width: 992px) {

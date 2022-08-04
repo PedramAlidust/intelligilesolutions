@@ -1,5 +1,8 @@
 <template>
-  <div class="container-full">
+  <div
+    class="mt-4 position-relative"
+    :class="productFromStatus ? '' : 'container-full'"
+  >
     <div class="row">
       <div class="col-lg-3 col-md-3">
         <!-- Categories -->
@@ -196,24 +199,22 @@
           </div>
         </div>
       </div>
-      <Teleport to="body">
-        <div
-          class="w-100 vh-100 position-absolute top-0 left-0 d-flex flex-column justify-content-center align-items-center modal"
-          style="backdrop-filter: blur(4px); z-index: 1000"
-          v-if="groupingStatus"
-        >
-          <NewGrouping @close="NewGroupingStatus(false)" />
-        </div>
-      </Teleport>
-      <Teleport to="body">
-        <div
-          class="w-100 vh-100 position-absolute top-0 left-0 d-flex flex-column justify-content-center align-items-center modal"
-          style="backdrop-filter: blur(4px); z-index: 1000"
-          v-if="productFromStatus"
-        >
-          <NewProduct @close="productFrom(false)" />
-        </div>
-      </Teleport>
+    </div>
+    <Teleport to="body">
+      <div
+        class="h-100 position-absolute top-0 d-flex flex-column justify-content-center align-items-center modal"
+        style="backdrop-filter: blur(4px); z-index: 1000"
+        v-if="groupingStatus"
+      >
+        <NewGrouping @close="NewGroupingStatus(false)" />
+      </div>
+    </Teleport>
+    <div
+      class="w-100 h-100 position-absolute top-0 left-0 d-flex"
+      v-if="productFromStatus"
+      style="z-index: 999"
+    >
+      <NewProduct @close="productFrom(false)" />
     </div>
   </div>
 </template>

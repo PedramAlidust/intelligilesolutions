@@ -126,12 +126,6 @@
     "chunkName": "pages/admin/tickets/index"
   },
   {
-    "name": "products-cart",
-    "path": "/products/cart",
-    "component": "E:\\\\Projects\\\\intelligilesolutions\\\\pages\\\\products\\\\cart\\\\index.vue",
-    "chunkName": "pages/products/cart/index"
-  },
-  {
     "name": "profile-edit",
     "path": "/profile/edit",
     "component": "E:\\\\Projects\\\\intelligilesolutions\\\\pages\\\\profile\\\\edit\\\\index.vue",

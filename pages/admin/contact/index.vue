@@ -1,320 +1,339 @@
 <template>
-    <main>
-        <!-- title section -->
-        <div class="container-full py-4">
-            <p class="PageTitle">Contact</p>
+  <main>
+    <!-- title section -->
+    <div class="container-full py-4">
+      <p class="PageTitle">Contact</p>
+    </div>
+    <!-- contact section -->
+    <div class="container-full ChatSectionBkg">
+      <div class="row gx-0">
+        <div class="col-lg-3 col-md-3 pt-4 px-0">
+          <div class="ps-5 d-flex align-items-center justify-content-between">
+            <p class="Profiles">Inbox</p>
+            <p class="Profiles">5</p>
+          </div>
+          <div class="ps-5 d-flex align-items-center justify-content-between">
+            <p class="Profiles">Sent</p>
+            <p class="Profiles"></p>
+          </div>
+          <div class="ps-5 d-flex align-items-center justify-content-between">
+            <p class="Profiles">Drafts</p>
+            <p class="Profiles"></p>
+          </div>
+          <div class="ps-5 d-flex align-items-center justify-content-between">
+            <p class="Profiles">Trash</p>
+            <p class="Profiles">2</p>
+          </div>
+          <div class="ps-5 d-flex align-items-center justify-content-between">
+            <p class="Profiles">Important</p>
+            <p class="Profiles"></p>
+          </div>
+          <!-- Devider Section -->
+          <div class="Devider mt-5 mb-3"></div>
+          <!-- Subject Section -->
+          <p class="py-2 ps-5 SubjectTitle">Subject</p>
+          <!-- Subject badges -->
+          <div class="ps-5 d-flex align-items-center justify-content-start">
+            <img src="~/assets/svg/PurpleBadge.svg" alt="Badge" />
+            <p class="RemPMargin ps-3 Profiles">Sales</p>
+          </div>
+          <div
+            class="py-2 px-5 d-flex align-items-center justify-content-start"
+          >
+            <img src="~/assets/svg/BlueBadge.svg" alt="Badge" />
+            <p class="RemPMargin ps-3 Profiles">Login</p>
+          </div>
+          <div class="ps-5 d-flex align-items-center justify-content-start">
+            <img src="~/assets/svg/RedBadge.svg" alt="Badge" />
+            <p class="RemPMargin ps-3 Profiles">Products</p>
+          </div>
         </div>
-        <!-- contact section -->
-        <div class="container-full ChatSectionBkg">
-            <div class="row gx-0">
-                <div class="col-lg-3 col-md-3 pt-4 px-0">
-                    <div class="ps-5 d-flex align-items-center justify-content-between">
-                    <p class="Profiles">Inbox</p>
-                    <p class="Profiles">5</p>
-                    </div>
-                    <div class="ps-5 d-flex align-items-center justify-content-between">
-                    <p class="Profiles">Sent</p>
-                    <p class="Profiles"></p>
-                    </div>
-                    <div class="ps-5 d-flex align-items-center justify-content-between">
-                    <p class="Profiles">Drafts</p>
-                    <p class="Profiles"></p>
-                    </div>
-                    <div class="ps-5 d-flex align-items-center justify-content-between">
-                    <p class="Profiles">Trash</p>
-                    <p class="Profiles">2</p>
-                    </div>
-                    <div class="ps-5 d-flex align-items-center justify-content-between">
-                    <p class="Profiles">Important</p>
-                    <p class="Profiles"></p>
-                    </div>
-                   <!-- Devider Section -->         
-                    <div class="Devider mt-5 mb-3"></div>
-                   <!-- Subject Section -->
-                   <p class="py-2 ps-5 SubjectTitle">Subject</p>
-                    <!-- Subject badges -->
-                    <div class="ps-5 d-flex align-items-center justify-content-start">
-                        <img src="~/assets/svg/PurpleBadge.svg" alt="Badge">
-                        <p class="RemPMargin ps-3 Profiles">Sales</p>
-                    </div>
-                    <div class="py-2 px-5 d-flex align-items-center justify-content-start">
-                        <img src="~/assets/svg/BlueBadge.svg" alt="Badge">
-                        <p class="RemPMargin ps-3 Profiles">Login</p>
-                    </div>
-                    <div class="ps-5 d-flex align-items-center justify-content-start">
-                        <img src="~/assets/svg/RedBadge.svg" alt="Badge">
-                        <p class="RemPMargin ps-3 Profiles">Products</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 ColumnBorder p-0">
-                     <!-- bootstrap form -->
-                        <form class="form-inline ps-3 pt-2">
-                            <div class="d-flex">
-                            <img class="SearchIcon" src="~/assets/pictures/icon_search.svg" alt="SearchIcon">   
-                            <input class="Inputstyle form-control mr-sm-2" type="search" placeholder="Search your favourite">
-                            </div>
-                        </form>
-                    <!-- Contacts -->
-                    <!-- Contact one -->
-                    <div class="container-full ContactBkg py-2 mt-3">
-                        <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <!-- profile image -->
-                            <div>
-                            <img class="ProfileImg" src="~/assets/pictures/profile1.jpg" alt="ContactIcon">                   
-                            </div>
-                            <!-- profile texts -->
-                            <div>
-                                 <p class="ps-2 ProfileName">David James</p>
-                                 <p class="ps-2 ProfileDesc">How can i see you ...</p>
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Contact Two -->
-                    <div class="container-full Contact2Bkg py-2">
-                        <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <!-- profile image -->
-                            <div>
-                            <img class="ProfileImg" src="~/assets/pictures/profile2.jpg" alt="ContactIcon">                   
-                            </div>
-                            <!-- profile texts -->
-                            <div>
-                                <!-- profile name and date -->
-                                <div class="d-flex align-items-center justify-content-between">
-                                 <p class="ps-2 ProfileName">David James</p>
-                                 <p class="ProfileDate">Jan 5</p>
-                                </div>
-                                 <p class="ps-2 ProfileDesc">How can i see you ...</p>
-                            </div>
-                        </div>
-                    </div>               
-                </div>
-                <!-- chat section -->
-                <div class="col-lg-6 col-md-6 p-0">
-                        <div class="container ChatBkg px-0">
-                            <div class="container CurrentChatBkg py-4">
-                                <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <!-- profile image -->
-                                    <div>
-                                        <img class="ProfileImg" src="~/assets/pictures/profile1.jpg" alt="ContactIcon">                   
-                                        </div>
-                                        <!-- profile texts -->
-                                        <div>
-                                            <!-- profile name and date -->
-                                            <div class="d-flex align-items-center justify-content-between">
-                                            <p class="ps-2 ProfileName">David James</p>
-                                            </div>
-                                            <p class="ps-2 ProfileDesc">david@gmail.com</p>
-                                        </div>                                    
-                                    </div>
-                                     <!-- role button -->
-                                    <div class="BtnStyle btn btn-sm mt-2">
-                                            Products & Details
-                                    </div>
-                            </div>
-                            <!-- chat box -->
-                            <p class="ChatText mt-5 ps-5 pe-4">
-                                Hello, good morning 
-                                do not be tired, I am one of your users 
-                                and I have many problems when registering 
-                                and I can not register with the current information.
-                                I also need a large number of your products at 
-                                wholesale prices for sale in foreign markets and 
-                                I do not know how to If you become a party to the contract, 
-                                please email me and let me know how to do this.Also, 
-                                please explain the ways to participate in the production and 
-                                purchase of your products. I need these products for France, Norway, 
-                                Switzerland, Saudi Arabia, Russia, etc. Our market is very wide and 
-                                we are happy to cooperate with you.
-                            </p>
-                            <!-- send message section -->
-                            <div class="ps-5 pe-4 pt-5">
-                                <textarea placeholder="Type Your Reply" class="ReplyMessage form-control" rows="4"></textarea>
-                                <!-- Send Message button -->
-                                <div class="SendMsgBtn btn btn-sm mt-3">
-                                           Reply
-                                </div>
-                            </div>
-                        </div>
-                </div>
+        <div class="col-lg-3 col-md-3 ColumnBorder p-0">
+          <!-- bootstrap form -->
+          <form class="form-inline ps-3 pt-2">
+            <div class="d-flex">
+              <img
+                class="SearchIcon"
+                src="~/assets/pictures/icon_search.svg"
+                alt="SearchIcon"
+              />
+              <input
+                class="Inputstyle form-control mr-sm-2"
+                type="search"
+                placeholder="Search your favourite"
+              />
             </div>
+          </form>
+          <!-- Contacts -->
+          <!-- Contact one -->
+          <div class="container-full ContactBkg py-2 mt-3">
+            <div class="ps-3 d-flex align-items-center justify-content-start">
+              <!-- profile image -->
+              <div>
+                <img
+                  class="ProfileImg"
+                  src="~/assets/pictures/profile1.jpg"
+                  alt="ContactIcon"
+                />
+              </div>
+              <!-- profile texts -->
+              <div>
+                <p class="ps-2 ProfileName">David James</p>
+                <p class="ps-2 ProfileDesc">How can i see you ...</p>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Two -->
+          <div class="container-full Contact2Bkg py-2">
+            <div class="ps-3 d-flex align-items-center justify-content-start">
+              <!-- profile image -->
+              <div>
+                <img
+                  class="ProfileImg"
+                  src="~/assets/pictures/profile2.jpg"
+                  alt="ContactIcon"
+                />
+              </div>
+              <!-- profile texts -->
+              <div>
+                <!-- profile name and date -->
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="ps-2 ProfileName">David James</p>
+                  <p class="ProfileDate">Jan 5</p>
+                </div>
+                <p class="ps-2 ProfileDesc">How can i see you ...</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+        <!-- chat section -->
+        <div class="col-lg-6 col-md-6 p-0">
+          <div class="container ChatBkg px-0">
+            <div class="container CurrentChatBkg py-4">
+              <div class="ps-3 d-flex align-items-center justify-content-start">
+                <!-- profile image -->
+                <div>
+                  <img
+                    class="ProfileImg"
+                    src="~/assets/pictures/profile1.jpg"
+                    alt="ContactIcon"
+                  />
+                </div>
+                <!-- profile texts -->
+                <div>
+                  <!-- profile name and date -->
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="ps-2 ProfileName">David James</p>
+                  </div>
+                  <p class="ps-2 ProfileDesc">david@gmail.com</p>
+                </div>
+              </div>
+              <!-- role button -->
+              <div class="BtnStyle btn btn-sm mt-2">Products & Details</div>
+            </div>
+            <!-- chat box -->
+            <p class="ChatText mt-5 ps-5 pe-4">
+              Hello, good morning do not be tired, I am one of your users and I
+              have many problems when registering and I can not register with
+              the current information. I also need a large number of your
+              products at wholesale prices for sale in foreign markets and I do
+              not know how to If you become a party to the contract, please
+              email me and let me know how to do this.Also, please explain the
+              ways to participate in the production and purchase of your
+              products. I need these products for France, Norway, Switzerland,
+              Saudi Arabia, Russia, etc. Our market is very wide and we are
+              happy to cooperate with you.
+            </p>
+            <!-- send message section -->
+            <div class="ps-5 pe-4 pt-5">
+              <textarea
+                placeholder="Type Your Reply"
+                class="ReplyMessage form-control"
+                rows="4"
+              ></textarea>
+              <!-- Send Message button -->
+              <div class="SendMsgBtn btn btn-sm mt-3">Reply</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script>
 export default {
-name: "admin",
-layout: 'admin', 
-}
+  name: "admin",
+  layout: "admin",
+};
 </script>
 
 <style scoped>
-
 /*chat section */
 .CurrentChatBkg {
-     border-bottom: 1px solid #f1f1f3;
+  border-bottom: 1px solid #f1f1f3;
 }
 
 .SendMsgBtn {
-    background-color: #ff6565;
-    padding: 5px 9px;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 8pt;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-left: 0px;  
-    box-shadow: none;
+  background-color: #ff6565;
+  padding: 5px 9px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 0px;
+  box-shadow: none;
 }
 
 .ReplyMessage {
- box-shadow: none;
- background-color: #f5f6fa;
+  box-shadow: none;
+  background-color: #f5f6fa;
 }
 
 ::placeholder {
-    opacity: 1 !important; 
-    color: #979797 !important;
+  opacity: 1 !important;
+  color: #979797 !important;
 }
 
 .ChatText {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10pt;
-    color: #231942;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  color: #231942;
 }
 
 .BtnStyle {
-    background-color: #ff6565;
-    padding: 5px 9px;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 8pt;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-left: 65px;
-    box-shadow: none;
+  background-color: #ff6565;
+  padding: 5px 9px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 65px;
+  box-shadow: none;
 }
 
 /* contact section profiles */
 
 .ProfileDate {
   color: #43425d;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 8pt;
   padding: 0;
   margin: 0;
 }
 
-
 .ProfileName {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10pt;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 .ProfileDesc {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 9pt;
-    padding: 0;
-    margin: 0;
-    color: #43425d;
- 
+  font-family: "Open Sans", sans-serif;
+  font-size: 9pt;
+  padding: 0;
+  margin: 0;
+  color: #43425d;
 }
 
 .ProfileImg {
-    width: 50px;
-    border-radius: 50%;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .ContactBkg {
-    background-color: #fff;
-    border-left: 3px solid #ff6565;
+  background-color: #fff;
+  border-left: 3px solid #ff6565;
 }
 
 .Contact2Bkg {
-    background-color: #fff;
-    border-left: 3px solid #a3a0fb;
+  background-color: #fff;
+  border-left: 3px solid #a3a0fb;
 }
 
 .Contact2Bkg:hover {
-    background-color: #f0f0f7;
+  background-color: #f0f0f7;
 }
 
 .ContactBkg:hover {
-    background-color: #f0f0f7;
+  background-color: #f0f0f7;
 }
 
 /* contact section form */
 
 .ColumnBorder {
-    border-left: 1px solid #f1f1f3;
-    border-right: 1px solid #f1f1f3;
+  border-left: 1px solid #f1f1f3;
+  border-right: 1px solid #f1f1f3;
 }
 
 .form-control {
-    border: none;
+  border: none;
 }
 
 ::placeholder {
-    font-size: 10pt;
+  font-size: 10pt;
 }
 
 .Inputstyle {
-    border-color: none;
-    box-shadow: none;
+  border-color: none;
+  box-shadow: none;
 }
 
 .Inputstyle:focus {
-    border-color: none;
-    box-shadow: none;
+  border-color: none;
+  box-shadow: none;
 }
 
 .SearchIcon {
-    width: 15px;
- }
+  width: 15px;
+}
 
 /* Left Side Section */
 
 .RemPMargin {
-    margin: 0;
+  margin: 0;
 }
 
 .SubjectTitle {
-    color: #231942;
-    font-family: 'Source Sans Pro'; 
-    font-size: 13pt;
-    font-weight: bold;
+  color: #231942;
+  font-family: "Source Sans Pro";
+  font-size: 13pt;
+  font-weight: bold;
 }
 
 .Devider {
- width: 100%;
- border-bottom: 1px solid #f1f1f3;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f3;
 }
 
 .Profiles {
-    color: #4d4f5c;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 12pt;
+  color: #4d4f5c;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12pt;
 }
 
 .Profiles:hover {
-    color: #055452;
-    transition: 0.5s;
-    font-weight: bold;
+  color: #055452;
+  transition: 0.5s;
+  font-weight: bold;
 }
 
 .PageTitle {
-    font-family: 'open sans', sans-serif;
-    font-size: 16pt;
-    color: #43425d;
-    font-weight: 600;
+  font-family: "open sans", sans-serif;
+  font-size: 16pt;
+  color: #43425d;
+  font-weight: 600;
 }
 
 .ChatSectionBkg {
-    background-color: #fff;
-    height: 80vh;
+  background-color: #fff;
+  height: 80vh;
 }
 </style>

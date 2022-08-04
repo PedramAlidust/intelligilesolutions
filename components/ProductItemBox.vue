@@ -192,7 +192,7 @@ export default {
 
   .close {
     position: relative;
-    right: 10;
+    right: -22px;
   }
   .close span {
     cursor: pointer;

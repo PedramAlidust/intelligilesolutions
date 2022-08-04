@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container px-4 py-4 bg-light border rounded-1"
+    class="w-100 px-4 py-4 bg-light border rounded-1"
     style="overflow-y: auto"
   >
     <div class="d-flex justify-content-between">
@@ -204,7 +204,7 @@
     </div>
     <Teleport to="body">
       <div
-        class="w-100 vh-100 position-absolute top-0 left-0 d-flex flex-column justify-content-center align-items-center modal"
+        class="w-100 position-absolute top-0 left-0 d-flex flex-column justify-content-center align-items-center modal"
         style="backdrop-filter: blur(4px); z-index: 1000"
         v-if="weightFormStatus"
       >
