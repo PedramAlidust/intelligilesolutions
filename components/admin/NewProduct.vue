@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="mt-4">
-      <div class="row-cols-4">
+      <div class="row row-cols-lg-4">
         <div
           class="border rounded-1 d-flex flex-column align-items-center justify-content-center py-2 px-4 bg-white"
         >
@@ -33,8 +33,8 @@
       </div>
 
       <div class="mt-4">
-        <div class="d-flex">
-          <div class="w-50 position-relative">
+        <div class="d-lg-flex flex-column flex-md-row">
+          <div class="w-50 position-relative d-none d-lg-block">
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -46,7 +46,37 @@
               placeholder="Grouping Name"
             />
           </div>
-          <div class="w-50 position-relative" style="margin-left: 25px">
+          <div class="w-100 position-relative d-lg-none">
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Name</label
+            >
+            <input
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="Grouping Name"
+            />
+          </div>
+          <div
+            class="w-50 position-relative d-none d-md-block"
+            style="margin-left: 25px"
+          >
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Grouping</label
+            >
+            <select
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+            >
+              <option value="" defult disabled hidden>Please Select</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="w-100 position-relative d-md-none mt-4">
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -63,7 +93,25 @@
           </div>
         </div>
         <div class="mt-4">
-          <div class="w-50 position-relative" style="margin-right: 25px">
+          <div
+            class="w-50 position-relative d-none d-lg-block"
+            style="margin-right: 25px"
+          >
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Price</label
+            >
+            <input
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="Enter the price of Products"
+            />
+          </div>
+          <div
+            class="w-100 position-relative d-lg-none"
+            style="margin-right: 25px"
+          >
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -95,7 +143,7 @@
         </div>
         <div>
           <div
-            class="d-flex align-items-center border rounded-1 border-warning px-3 py-1"
+            class="d-flex align-items-center border rounded-1 border-warning px-2 px-md-3 py-1"
             @click="formStatus(true)"
           >
             <p class="mt-3">Add Weight</p>
@@ -108,8 +156,8 @@
 
       <div class="mt-4">
         <p class="PageTitle">Product Discription</p>
-        <div class="d-flex">
-          <div class="w-50 position-relative">
+        <div class="d-lg-flex">
+          <div class="w-50 position-relative d-none d-lg-block">
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -121,7 +169,34 @@
               placeholder="Grouping Name"
             />
           </div>
-          <div class="w-50 position-relative" style="margin-left: 25px">
+          <div class="w-100 position-relative d-lg-none">
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Discription</label
+            >
+            <textarea
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="Grouping Name"
+            />
+          </div>
+          <div
+            class="w-50 position-relative d-none d-lg-block"
+            style="margin-left: 25px"
+          >
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >How to use</label
+            >
+            <textarea
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="Enter the How to Use"
+            />
+          </div>
+          <div class="w-100 position-relative d-lg-none mt-4">
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -152,8 +227,8 @@
 
       <div class="mt-4">
         <p class="PageTitle">Product Details</p>
-        <div class="d-flex">
-          <div class="w-50 position-relative">
+        <div class="d-lg-flex">
+          <div class="w-50 position-relative d-none d-lg-block">
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -165,7 +240,34 @@
               placeholder="inter ingrediebts"
             />
           </div>
-          <div class="w-50 position-relative" style="margin-left: 25px">
+          <div class="w-100 position-relative d-lg-none">
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Ingrediebts</label
+            >
+            <textarea
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="inter ingrediebts"
+            />
+          </div>
+          <div
+            class="w-50 position-relative d-none d-lg-block"
+            style="margin-left: 25px"
+          >
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Flavors</label
+            >
+            <textarea
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="enter the flavors"
+            />
+          </div>
+          <div class="w-100 position-relative d-lg-none mt-4">
             <label
               class="bg-light"
               style="position: absolute; top: -12px; left: 10px"
@@ -209,7 +311,70 @@
         v-if="weightFormStatus"
       >
         <div
-          class="d-flex flex-column bg-light py-4 px-4 w-25 border rounded-1"
+          class="d-none d-lg-flex flex-column bg-light py-4 px-4 w-25 border rounded-1"
+        >
+          <div class="d-flex justify-content-between">
+            <p class="PageTitle">New Weight</p>
+            <button
+              @click="formStatus(false)"
+              class="btn-close"
+              aria-label="Close"
+            ></button>
+          </div>
+          <p class="Desc">
+            Please enter the numerical weight of the product along with its
+            unit.
+          </p>
+          <div class="w-100 position-relative" style="margin-right: 25px">
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Weight</label
+            >
+            <input
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="Enter the weight of the product"
+            />
+          </div>
+          <div class="w-100 position-relative mt-4" style="margin-right: 25px">
+            <label
+              class="bg-light"
+              style="position: absolute; top: -12px; left: 10px"
+              >Unit</label
+            >
+            <select
+              type="text"
+              class="w-100 py-3 px-4 rounded-1 border bg-transparent"
+              placeholder="Enter the weight of the product"
+            >
+              <option value="" selected disabled>
+                Enter the product weight unit
+              </option>
+            </select>
+          </div>
+          <div class="mt-4 d-flex">
+            <button class="w-100 btn mt-4 mx-2" @click="formStatus(false)">
+              Cancel
+            </button>
+            <button
+              class="w-100 btn mt-4 text-light mx-2"
+              style="background-color: #65a79f"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </Teleport>
+    <Teleport to="body">
+      <div
+        class="w-100 position-absolute top-0 left-0 d-flex flex-column justify-content-center align-items-center modal"
+        style="backdrop-filter: blur(4px); z-index: 1000"
+        v-if="weightFormStatus"
+      >
+        <div
+          class="w-100 d-lg-none flex-column bg-light py-4 px-4 w-25 border rounded-1"
         >
           <div class="d-flex justify-content-between">
             <p class="PageTitle">New Weight</p>

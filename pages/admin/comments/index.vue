@@ -1,147 +1,249 @@
 <template>
-  <section>
-    <!-- title section -->
+  <div>
+    <section class="d-none d-lg-block">
+      <!-- title section -->
       <div class="container-full py-4">
-            <p class="PageTitle">Comments</p>
+        <p class="PageTitle">Comments</p>
       </div>
-    <div class="container-full mt-4 px-4 TableBkg">
-      <div class="d-flex justify-content-between pt-5 px-3">
-        <!-- pagination -->
-        <AdminPagination />
-        <!-- end pagination -->
-        <!-- sort section -->
-        <div class="d-flex align-items-center">
-          <p class="sort">Sort</p>
-          <p class="SortStatus px-2">Last Opened</p>
+      <div class="container-full mt-4 px-4 TableBkg">
+        <div class="d-flex justify-content-between pt-5 px-3">
+          <!-- pagination -->
+          <AdminPagination />
+          <!-- end pagination -->
+          <!-- sort section -->
+          <div class="d-flex align-items-center">
+            <p class="sort">Sort</p>
+            <p class="SortStatus px-2">Last Opened</p>
+          </div>
+          <!-- end sort section -->
         </div>
-        <!-- end sort section -->
-      </div>
-      <!-- table section -->
-      <div class="container-full px-3">
-        <table class="table align-middle mb-0 bg-white">
-          <thead class="bg-light">
-            <tr>
-              <th>#</th>  
-              <th>Customer</th>
-              <th>Product</th>
-              <th>Date</th>
-              <th>Time</th>
-              <th>Score</th>
-              <th>Comments</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <p>1</p>
-              </td>
-              <td>
-                <p>Jack Dorsi</p>
-              </td>
-              <td>
-                <p>Sella body butter</p>
-              </td>
-              <td>
-                <p>September30,2022</p>
-              </td>
-              <td>
-                <p>at 10:56 am</p>
-              </td>
-               <td>
+        <!-- table section -->
+        <div class="container-full px-3">
+          <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>#</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Score</th>
+                <th>Comments</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>Jack Dorsi</p>
+                </td>
+                <td>
+                  <p style="color: #055452">Sella body butter</p>
+                </td>
+                <td>
+                  <p>September30,2022</p>
+                </td>
+                <td>
+                  <p>at 10:56 am</p>
+                </td>
+                <td style="color: #ed8a19">
                   <i class="bi bi-star-fill starbi"></i>
                   <i class="bi bi-star-fill starbi"></i>
                   <i class="bi bi-star-fill starbi"></i>
                   <i class="bi bi-star starbi"></i>
                   <i class="bi bi-star starbi"></i>
-              </td>
-               <td style="width: 20%;">
-                <p>
-                I really had to prep my face to make it super hydrated.
-                I found the coverage better with a Overall, 
-                it has good coverage
-                </p>
-              </td>
-               <td>
-                <button type="button" class="mx-2 DetailBtn btn btn-sm">
+                </td>
+                <td style="width: 20%">
+                  <p>
+                    I really had to prep my face to make it super hydrated. I
+                    found the coverage better with a Overall, it has good
+                    coverage
+                  </p>
+                </td>
+                <td>
+                  <button type="button" class="mx-2 DetailBtn btn btn-sm">
                     <i class="CheckIcon bi bi-check2"></i>
-                </button>
-                <button type="button" class="DetailBtn btn btn-sm">
+                  </button>
+                  <button type="button" class="DetailBtn btn btn-sm">
                     <i class="CancelIcon bi bi-x-lg"></i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="d-md-none d-lg-none py-4 px-3">
+      <div class="w-100 d-flex justify-content-between">
+        <div><h1>Comments</h1></div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-funnel-fill me-2"></i>
+          <h3>Sort</h3>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">#</p>
+          <p class="RightItemColor">1</p>
+        </div>
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- end devider section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Coustmer</p>
+          <p class="RightItemColor">Jack Dorsi</p>
+        </div>
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Product</p>
+          <p style="color: #055452; border-bottom: 1px solid #055452">
+            Sella body butter
+          </p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Date</p>
+          <p class="RightItemColor">September30,2022 at 10:56 am</p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Time</p>
+          <p class="RightItemColor">at 10:56 am</p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Score</p>
+          <div style="color: #ed8a19">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Comments</p>
+          <p class="RightItemColor w-50">
+            I really had to prep my face to make it super hydrated. I found the
+            coverage better with a Overall, it has good coverage
+          </p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-center"
+        >
+          <button type="button" class="mx-2 DetailBtn btn btn-sm px-2 py-1">
+            <i class="CheckIcon bi bi-check2"></i>
+          </button>
+          <button type="button" class="DetailBtn btn btn-sm px-2 py-1">
+            <i class="CancelIcon bi bi-x-lg"></i>
+          </button>
+        </div>
+        <!-- end item section -->
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
 import AdminPagination from "@/components/AdminPagination";
 export default {
-name: "admin",
-layout: 'admin', 
-components: { AdminPagination },
-}
+  name: "admin",
+  layout: "admin",
+  components: { AdminPagination },
+};
 </script>
 
 <style scoped>
-
 .PageTitle {
-    font-family: 'open sans', sans-serif;
-    font-size: 16pt;
-    color: #43425d;
-    font-weight: 600;
+  font-family: "open sans", sans-serif;
+  font-size: 16pt;
+  color: #43425d;
+  font-weight: 600;
 }
 
 .starbi {
-   color: #ed8a19;
+  color: #ed8a19;
 }
 
 .CheckIcon {
-    color: #fff;
-    font-size: 16pt;
+  color: #fff;
+  font-size: 16pt;
 }
 
 .CancelIcon {
-    color: #000;
-    font-size: 16pt;
+  color: #000;
+  font-size: 16pt;
 }
 
 .DetailBtn {
   background-color: #e99d7b;
   color: #231942;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   padding: 0px 2px !important;
   text-transform: capitalize;
   border-radius: 8px;
   box-shadow: none;
 }
 .DetailBtn:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 th {
-    background-color: #f5f6fa;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 10pt;
-    color: #212529;
-    padding: 10px 15px;
-    border-bottom: 0;
+  background-color: #f5f6fa;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  color: #212529;
+  padding: 10px 15px;
+  border-bottom: 0;
 }
 
 td {
-    color: black;
-    font-weight: 400;
-    font-family: "Source Sans Pro", sans-serif;
-    vertical-align: top;
+  color: black;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  vertical-align: top;
 }
 
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .DetailBtn {

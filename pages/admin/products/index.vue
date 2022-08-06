@@ -1,12 +1,12 @@
 <template>
   <div
-    class="mt-4 position-relative"
+    class="mt-lg-4 position-relative"
     :class="productFromStatus ? '' : 'container-full'"
   >
     <div class="row">
       <div class="col-lg-3 col-md-3">
         <!-- Categories -->
-        <section class="CatSec mt-4 py-2 px-4">
+        <section class="CatSec mt-4 py-2 px-4 d-none d-lg-block">
           <div class="d-flex flex-row align-items-center py-3">
             <img
               src="~/assets/pictures/categorie.svg"
@@ -47,7 +47,7 @@
           </div>
         </section>
         <!-- Popular Tags -->
-        <section class="CatSec mt-4 py-2 px-4">
+        <section class="CatSec mt-4 py-2 px-4 d-none d-lg-block">
           <div class="d-flex flex-row align-items-center py-3">
             <img
               src="~/assets/pictures/categorie.svg"
@@ -93,31 +93,49 @@
           </div>
         </section>
       </div>
-      <div class="col-lg-9 col-md-9 mt-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <AdminPagination />
-          <!-- categorie and product btn -->
-          <div class="d-flex align-items-center">
-            <button
-              type="button"
-              @click="NewGroupingStatus(true)"
-              class="BtnStyleGroup btn btn-sm mx-3"
-            >
-              Add New Grouping
-            </button>
-            <button
-              type="button"
-              @click="productFrom(true)"
-              class="BtnStyleProd btn btn-sm"
-            >
-              Add New Products
-            </button>
+      <div class="col-lg-9 col-md-9 mt-lg-3 py-2 bg-white bg-lg-transparent">
+        <div class="">
+          <div
+            class="d-flex justify-content-between align-items-center pt-4 pt-lg-0"
+          >
+            <div class="d-none d-lg-block"><AdminPagination /></div>
+            <!-- categorie and product btn -->
+            <div class="d-flex ms-4 ms-lg-0">
+              <button
+                type="button"
+                @click="NewGroupingStatus(true)"
+                class="BtnStyleGroup btn btn-sm me-2"
+              >
+                Add New Grouping
+              </button>
+              <button
+                type="button"
+                @click="productFrom(true)"
+                class="BtnStyleProd btn btn-sm"
+              >
+                Add New Products
+              </button>
+            </div>
+          </div>
+          <div
+            class="py-3 mt-2 d-lg-none d-flex justify-content-between align-items-items container"
+          >
+            <div class="d-flex align-items-center">
+              <i class="bi bi-chevron-left"></i>
+              <p class="mb-0">Back</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="mb-0 me-2">Filter</p>
+              <i class="bi bi-funnel-fill"></i>
+            </div>
           </div>
         </div>
         <!-- admin products -->
-        <div class="AdminProd container-ful mt-2 px-4">
+        <div class="AdminProd container-ful mt-2 px-4 mt-4">
           <!-- results count -->
-          <div class="d-flex align-items-center justify-content-between pt-4">
+          <div
+            class="d-none d-lg-flex align-items-center justify-content-between pt-4"
+          >
             <!-- result number -->
             <div>
               <p>Showing 08 Results</p>
@@ -197,6 +215,11 @@
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="d-lg-none my-4 d-flex justify-content-center align-items-center"
+        >
+          <AdminPagination />
         </div>
       </div>
     </div>

@@ -1,20 +1,46 @@
 <template>
   <div class="bank-card" :class="bankStyle">
     <div class="selected" v-if="select">
-      <img src="~/assets/svg/check.svg" alt="">
+      <img src="~/assets/svg/check.svg" alt="" />
     </div>
     <div class="bank">
-      <img src="~/assets/svg/paypal.svg" width="28" alt="" v-if="bank==='paypal'">
-      <img src="~/assets/svg/mastercard.svg" width="30" alt="" v-if="bank==='master'">
-      <img src="~/assets/svg/plus-small.svg" alt="" v-if="bank==='blank'">
+      <img
+        src="~/assets/svg/paypal.svg"
+        width="28"
+        alt=""
+        v-if="bank === 'paypal'"
+      />
+      <img
+        src="~/assets/svg/mastercard.svg"
+        width="30"
+        alt=""
+        v-if="bank === 'master'"
+      />
+      <img src="~/assets/svg/plus-small.svg" alt="" v-if="bank === 'blank'" />
     </div>
-    <img id="circle1" src="~/assets/svg/circle1.svg" alt="" v-if="bank!=='blank'">
-    <img id="circle2" src="~/assets/svg/circle3.svg" alt="" v-if="bank!=='blank'">
-    <img id="blank" src="~/assets/svg/credits.svg" width="130" alt="" v-if="bank==='blank'">
+    <img
+      id="circle1"
+      src="~/assets/svg/circle1.svg"
+      alt=""
+      v-if="bank !== 'blank'"
+    />
+    <img
+      id="circle2"
+      src="~/assets/svg/circle3.svg"
+      alt=""
+      v-if="bank !== 'blank'"
+    />
+    <img
+      id="blank"
+      src="~/assets/svg/credits.svg"
+      width="130"
+      alt=""
+      v-if="bank === 'blank'"
+    />
     <div class="bank-info">
-      <h5 v-if="bank==='paypal'">Credit Card</h5>
-      <h5 v-if="bank==='master'">Master Card</h5>
-      <h5 v-if="bank==='blank'">Add a new card</h5>
+      <h5 v-if="bank === 'paypal'">Credit Card</h5>
+      <h5 v-if="bank === 'master'">Master Card</h5>
+      <h5 v-if="bank === 'blank'">Add a new card</h5>
       <div class="numbers">{{ number.replaceAll("-", " ") }}</div>
     </div>
   </div>
@@ -26,23 +52,33 @@ export default {
   props: {
     number: {
       type: String,
-      default: ''
+      default: "",
     },
     bank: {
       type: String,
-      default: "blank"
+      default: "blank",
     },
     select: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
+  },
+  data() {
+    return {
+      show: false,
+    };
   },
   computed: {
     bankStyle() {
-      return this.bank
-    }
-  }
-}
+      return this.bank;
+    },
+  },
+  methods: {
+    hello() {
+      console.log("log from bank card");
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -145,5 +181,4 @@ export default {
   border: 1px solid #fe8c7a !important;
   cursor: pointer;
 }
-
 </style>

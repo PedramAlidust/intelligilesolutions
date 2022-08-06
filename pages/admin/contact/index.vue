@@ -1,35 +1,80 @@
 <template>
   <main>
     <!-- title section -->
-    <div class="container-full py-4">
+    <div class="py-4 d-none d-lg-block">
       <p class="PageTitle">Contact</p>
     </div>
     <!-- contact section -->
-    <div class="container-full ChatSectionBkg">
-      <div class="row gx-0">
-        <div class="col-lg-3 col-md-3 pt-4 px-0">
-          <div class="ps-5 d-flex align-items-center justify-content-between">
+    <div
+      class="w-100 d-flex d-md-none d-lg-none justify-content-between align-items-center py-3 px-3 bg-white border"
+    >
+      <button
+        @click="sortStatus = !sortStatus"
+        class="d-flex bg-transparent border-0"
+      >
+        <p class="mb-0">Contact Menu</p>
+        <i
+          class="bi bi-caret-down-fill ms-2"
+          :style="sortStatus ? 'transform: rotate(180deg)' : ''"
+        ></i>
+      </button>
+      <div class="d-flex align-items-center position-relative">
+        <img
+          class="SearchIcon position-absolute"
+          style="right: 7px"
+          src="~/assets/pictures/icon_search.svg"
+          alt="SearchIcon"
+        />
+        <input
+          type="text"
+          class="py-1 px-2 border rounded-1 search"
+          placeholder="Search a User"
+        />
+      </div>
+    </div>
+    <div class="ChatSectionBkg">
+      <div class="row gx-0 bg-white">
+        <div
+          class="col-lg-3 col-md-3 pt-4 py-4 px-0"
+          :class="sortStatus ? 'w-75 border' : 'd-none d-lg-block'"
+        >
+          <div
+            class="ps-5 d-none d-lg-flex align-items-center justify-content-between"
+          >
             <p class="Profiles">Inbox</p>
-            <p class="Profiles">5</p>
+            <p class="Profiles d-none d-lg-block">5</p>
+            <i class="bi bi-caret-right-fill" v-if="sortStatus"></i>
           </div>
-          <div class="ps-5 d-flex align-items-center justify-content-between">
-            <p class="Profiles">Sent</p>
-            <p class="Profiles"></p>
+          <div
+            class="ps-5 d-flex align-items-center justify-content-between mt-lg-4"
+          >
+            <p class="Profiles mb-0">Sent</p>
+            <p class="Profiles d-none d-lg-block"></p>
+            <i class="bi bi-caret-right-fill" v-if="sortStatus"></i>
           </div>
-          <div class="ps-5 d-flex align-items-center justify-content-between">
-            <p class="Profiles">Drafts</p>
-            <p class="Profiles"></p>
+          <div
+            class="ps-5 d-flex align-items-center justify-content-between mt-4"
+          >
+            <p class="Profiles mb-0">Drafts</p>
+            <p class="Profiles d-none d-lg-block"></p>
+            <i class="bi bi-caret-right-fill" v-if="sortStatus"></i>
           </div>
-          <div class="ps-5 d-flex align-items-center justify-content-between">
-            <p class="Profiles">Trash</p>
-            <p class="Profiles">2</p>
+          <div
+            class="ps-5 d-flex align-items-center justify-content-between mt-4"
+          >
+            <p class="Profiles mb-0">Trash</p>
+            <p class="Profiles d-none d-lg-block">2</p>
+            <i class="bi bi-caret-right-fill" v-if="sortStatus"></i>
           </div>
-          <div class="ps-5 d-flex align-items-center justify-content-between">
-            <p class="Profiles">Important</p>
-            <p class="Profiles"></p>
+          <div
+            class="ps-5 d-flex align-items-center justify-content-between mt-4"
+          >
+            <p class="Profiles mb-0">Important</p>
+            <p class="Profiles d-none d-lg-block"></p>
+            <i class="bi bi-caret-right-fill" v-if="sortStatus"></i>
           </div>
           <!-- Devider Section -->
-          <div class="Devider mt-5 mb-3"></div>
+          <div class="Devider mt-4 mb-3"></div>
           <!-- Subject Section -->
           <p class="py-2 ps-5 SubjectTitle">Subject</p>
           <!-- Subject badges -->
@@ -50,7 +95,7 @@
         </div>
         <div class="col-lg-3 col-md-3 ColumnBorder p-0">
           <!-- bootstrap form -->
-          <form class="form-inline ps-3 pt-2">
+          <form class="form-inline ps-3 pt-2 d-none d-lg-block">
             <div class="d-flex">
               <img
                 class="SearchIcon"
@@ -84,7 +129,10 @@
             </div>
           </div>
           <!-- Contact Two -->
-          <div class="container-full Contact2Bkg py-2">
+          <nuxt-link
+            to="/admin/contact/replay"
+            class="container-full Contact2Bkg py-2"
+          >
             <div class="ps-3 d-flex align-items-center justify-content-start">
               <!-- profile image -->
               <div>
@@ -104,69 +152,26 @@
                 <p class="ps-2 ProfileDesc">How can i see you ...</p>
               </div>
             </div>
-          </div>
+          </nuxt-link>
         </div>
         <!-- chat section -->
-        <div class="col-lg-6 col-md-6 p-0">
-          <div class="container ChatBkg px-0">
-            <div class="container CurrentChatBkg py-4">
-              <div class="ps-3 d-flex align-items-center justify-content-start">
-                <!-- profile image -->
-                <div>
-                  <img
-                    class="ProfileImg"
-                    src="~/assets/pictures/profile1.jpg"
-                    alt="ContactIcon"
-                  />
-                </div>
-                <!-- profile texts -->
-                <div>
-                  <!-- profile name and date -->
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <p class="ps-2 ProfileName">David James</p>
-                  </div>
-                  <p class="ps-2 ProfileDesc">david@gmail.com</p>
-                </div>
-              </div>
-              <!-- role button -->
-              <div class="BtnStyle btn btn-sm mt-2">Products & Details</div>
-            </div>
-            <!-- chat box -->
-            <p class="ChatText mt-5 ps-5 pe-4">
-              Hello, good morning do not be tired, I am one of your users and I
-              have many problems when registering and I can not register with
-              the current information. I also need a large number of your
-              products at wholesale prices for sale in foreign markets and I do
-              not know how to If you become a party to the contract, please
-              email me and let me know how to do this.Also, please explain the
-              ways to participate in the production and purchase of your
-              products. I need these products for France, Norway, Switzerland,
-              Saudi Arabia, Russia, etc. Our market is very wide and we are
-              happy to cooperate with you.
-            </p>
-            <!-- send message section -->
-            <div class="ps-5 pe-4 pt-5">
-              <textarea
-                placeholder="Type Your Reply"
-                class="ReplyMessage form-control"
-                rows="4"
-              ></textarea>
-              <!-- Send Message button -->
-              <div class="SendMsgBtn btn btn-sm mt-3">Reply</div>
-            </div>
-          </div>
+        <div class="col-lg-6 col-md-6 p-0 bg-white">
+          <NuxtChild />
         </div>
       </div>
     </div>
   </main>
 </template>
-
 <script>
 export default {
   name: "admin",
   layout: "admin",
+  data() {
+    return {
+      sortStatus: false,
+      searchBar: false,
+    };
+  },
 };
 </script>
 
@@ -249,12 +254,10 @@ export default {
 
 .ContactBkg {
   background-color: #fff;
-  border-left: 3px solid #ff6565;
 }
 
 .Contact2Bkg {
   background-color: #fff;
-  border-left: 3px solid #a3a0fb;
 }
 
 .Contact2Bkg:hover {
@@ -335,5 +338,17 @@ export default {
 .ChatSectionBkg {
   background-color: #fff;
   height: 80vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .ContactBkg {
+    background-color: #fff;
+    border-left: 3px solid #ff6565;
+  }
+
+  .Contact2Bkg {
+    background-color: #fff;
+    border-left: 3px solid #a3a0fb;
+  }
 }
 </style>

@@ -1,14 +1,16 @@
 <template>
   <section>
     <!-- dashboard states section -->
-    <div class="container-full mt-4 px-4">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex DashState align-items-center">
+    <div class="container-full mt-1 mt-md-3 mt-lg-4">
+      <div class="row row-cols-md-3 row-cols-lg-5 px-3">
+        <div class="col mt-2">
+          <div
+            class="d-flex justify-content-between DashState align-items-center px-3 py-2 shadow h-100"
+          >
             <div>
               <p class="m-0 StateTitle">Total Products</p>
-              <p class="pt-1 ps-3 m-0">123,456</p>
-              <p class="pt-1 ps-3 ProdCount">
+              <p class="pt-1 m-0">123,456</p>
+              <p class="pt-1 ProdCount">
                 <span class="ProdNum">1000</span>
                 New Products
               </p>
@@ -20,12 +22,14 @@
             />
           </div>
         </div>
-        <div class="col">
-          <div class="d-flex DashState align-items-center">
+        <div class="col mt-2">
+          <div
+            class="d-flex justify-content-between DashState align-items-center px-3 py-2 shadow h-100"
+          >
             <div>
               <p class="m-0 StateTitle">Total Users</p>
-              <p class="pt-1 ps-3 m-0">5800</p>
-              <p class="pt-1 ps-3 ProdCount">
+              <p class="pt-1 m-0">5800</p>
+              <p class="pt-1 ProdCount">
                 <span class="UserNum">1000</span>
                 New Users
               </p>
@@ -37,12 +41,14 @@
             />
           </div>
         </div>
-        <div class="col">
-          <div class="d-flex DashState align-items-center">
+        <div class="col mt-2">
+          <div
+            class="d-flex justify-content-between DashState align-items-center px-3 py-2 shadow h-100"
+          >
             <div>
               <p class="m-0 StateTitle">Total Tickets</p>
-              <p class="pt-1 ps-3 m-0">20000</p>
-              <p class="pt-1 ps-3 ProdCount">
+              <p class="pt-1 m-0">20000</p>
+              <p class="pt-1 ProdCount">
                 <span class="TicketNum">180</span>
                 Current tickets
               </p>
@@ -54,12 +60,14 @@
             />
           </div>
         </div>
-        <div class="col">
-          <div class="d-flex DashState align-items-center">
+        <div class="col mt-2">
+          <div
+            class="d-flex justify-content-between DashState align-items-center px-3 py-2 shadow h-100"
+          >
             <div>
               <p class="m-0 StateTitle">Total Overview</p>
-              <p class="pt-1 ps-3 m-0">250,000</p>
-              <p class="pt-1 ps-3 ProdCount">
+              <p class="pt-1 m-0">250,000</p>
+              <p class="pt-1 ProdCount">
                 <span class="OverviewNum">2714</span>
                 Last day
               </p>
@@ -71,12 +79,14 @@
             />
           </div>
         </div>
-        <div class="col">
-          <div class="d-flex DashState align-items-center">
+        <div class="col mt-2">
+          <div
+            class="d-flex justify-content-between DashState align-items-center px-3 py-2 shadow h-100"
+          >
             <div>
               <p class="m-0 StateTitle">Total Orders</p>
-              <p class="pt-1 ps-3 m-0">1400</p>
-              <p class="pt-1 ps-3 ProdCount">
+              <p class="pt-1 m-0">1400</p>
+              <p class="pt-1 ProdCount">
                 <span class="TotalOrders">125</span>
                 Last new Orders
               </p>
@@ -91,7 +101,7 @@
       </div>
     </div>
     <!-- dashboard graph section -->
-    <div class="container-full mt-4 px-4">
+    <div class="mt-3 px-3">
       <canvas id="myChart"></canvas>
     </div>
   </section>
@@ -118,7 +128,6 @@ export default {
             });
      },
 */
-
   mounted() {
     /* chartjs config section */
     var ctx = document.getElementById("myChart");
@@ -147,7 +156,7 @@ export default {
         align: "left",
       },
     };
-    new Chart(ctx, {
+    var myChart = new Chart(ctx, {
       type: "line",
       data: {
         labels: [
@@ -196,6 +205,9 @@ export default {
       },
       plugins: [plugin],
     });
+    // if (myChart != null) {
+    //   myChart.destroy();
+    // }
   },
 };
 </script>
@@ -239,7 +251,6 @@ canvas {
   font-family: "Open Sans", sans-serif;
   font-size: 10pt;
   color: #8898aa;
-  padding: 15px;
   padding-bottom: 0;
 }
 
@@ -331,5 +342,14 @@ canvas {
   min-height: 100vh;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.shadow {
+  box-shadow: 0px 0px 15px black;
+}
+@media only screen and (min-width: 1200px) {
+  .shadow {
+    box-shadow: 0px 0px 5px black;
+  }
 }
 </style>

@@ -1,10 +1,7 @@
 <template>
   <section>
-    <div class="container-full mt-4 px-4">
-      <!-- Tabs navs -->
-    </div>
     <!-- Tabs navs -->
-    <div class="container-full mt-4 px-4 TableBkg">
+    <div class="container-full mt-4 px-4 TableBkg d-none d-md-block d-lg-block">
       <div class="d-flex justify-content-between pt-5 px-3">
         <!-- pagination -->
         <AdminPagination />
@@ -86,9 +83,141 @@
         </table>
       </div>
     </div>
+    <!--Phone response-->
+    <div class="mt-4 px-3 d-lg-none d-md-none">
+      <div class="d-flex justify-content-center align-items-center">
+        <button
+          @click="RegisterModal"
+          type="button"
+          class="BtnStyleProd btn btn-sm"
+        >
+          Add New Admin
+        </button>
+      </div>
+      <div class="mt-4" v-for="user in GetSubAdmins" :key="user.id">
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">#</p>
+          <p class="RightItemColor">{{ user.id }}</p>
+        </div>
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- end devider section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Name</p>
+          <p class="RightItemColor">{{ user.name }}</p>
+        </div>
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Gmail</p>
+          <p class="RightItemColor">{{ user.acf.zipcode }}</p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Phone Num</p>
+          <p class="RightItemColor">{{ user.acf.phonenum }}</p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Price</p>
+          <p class="RightItemColor">{{ user.acf.FullName }}</p>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <!-- item section -->
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <p class="LeftItemColor">Password</p>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-eye me-2"></i>
+            <p class="RightItemColor">pass</p>
+          </div>
+        </div>
+        <!-- end item section -->
+        <!-- devider section -->
+        <div class="devider"></div>
+        <div
+          class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+        >
+          <!-- call details modal -->
+          <div class="d-flex justify-content-between">
+            <p>inactive</p>
+            <!-- Checked switch -->
+            <div class="form-check form-switch">
+              <input
+                class="InputStyle form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+            </div>
+            <!-- end checked switch -->
+            <p class="ms-3">Active</p>
+          </div>
+          <!-- change details -->
+          <div>
+            <!-- change details modal -->
+            <div
+              id="CollapseState2"
+              aria-expanded="false"
+              class="ChangeState bg-white collapse"
+            >
+              <p
+                role="button"
+                class="StatusDevider py-2 text-danger text-center"
+              >
+                Check
+              </p>
+              <p
+                role="button"
+                class="StatusDevider py-2 text-warning text-center"
+              >
+                Send
+              </p>
+              <p
+                role="button"
+                class="StatusDevider py-2 text-success text-center"
+              >
+                Delivered
+              </p>
+              <p role="button" class="py-2 text-primary text-center">
+                Preparation
+              </p>
+            </div>
+            <i
+              data-bs-toggle="collapse"
+              data-bs-target="#CollapseState2"
+              class="bi bi-three-dots-vertical"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- end item section -->
+    </div>
     <!-- New Admin Modal -->
     <div v-if="NewAdminModal" class="BackDrop">
-      <div class="FormModal bg-white">
+      <div class="FormModal bg-white px-4 py-4">
         <div class="d-flex justify-content-between">
           <p class="RegisterModal">New Admin</p>
           <i @click="CloseModal" class="CloseBtn bi bi-x-lg"></i>
@@ -200,7 +329,9 @@ export default {
     GetSubAdmins() {
       /* filter all users if acf is not false */
       return this.AllUsers.filter((user) => {
-        return user.acf !== false;
+        if (user.acf) {
+          return user.acf !== false;
+        }
       });
     },
   },
@@ -240,7 +371,7 @@ export default {
       url: "https://api.intelligilesolutions.com/wp-json/wp/v2/users",
       headers: {
         Authorization:
-          "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY",
+          "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1OTczMjExNSwibmJmIjoxNjU5NzMyMTE1LCJleHAiOjE2NjAzMzY5MTUsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.bBnL6XbpjhJ0pOeeEHeLXpGP0DncuT9fRTYW3Ii-fII",
         "Content-Type": "application/json",
       },
       data: data,
@@ -261,7 +392,7 @@ export default {
       url: "https://api.intelligilesolutions.com/wp-json/wp/v2/users",
       headers: {
         Authorization:
-          "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1ODk5OTczNywibmJmIjoxNjU4OTk5NzM3LCJleHAiOjE2NTk2MDQ1MzcsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.XfwHuH1jpTiLW64dLeSlKtcOcS09GpXDo24G8QfJlRY",
+          "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmludGVsbGlnaWxlc29sdXRpb25zLmNvbSIsImlhdCI6MTY1OTczMjExNSwibmJmIjoxNjU5NzMyMTE1LCJleHAiOjE2NjAzMzY5MTUsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.bBnL6XbpjhJ0pOeeEHeLXpGP0DncuT9fRTYW3Ii-fII",
         "Content-Type": "application/json",
       },
     };
@@ -333,18 +464,6 @@ export default {
   font-family: "Open Sans", sans-serif;
   color: #231942;
   font-size: 18pt;
-}
-
-/*Form Modal */
-.FormModal {
-  position: fixed;
-  top: 20%;
-  left: 35%;
-  z-index: 3;
-  width: 400px;
-  background-color: #fff !important;
-  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
-  padding: 40px 50px;
 }
 
 /* filterd blur backdrop */
@@ -489,5 +608,26 @@ p {
 
 .nav-tabs {
   border-bottom: 0;
+}
+/*Form Modal */
+.FormModal {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #fff !important;
+  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1280px) {
+  .FormModal {
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    z-index: 3;
+    width: 400px;
+    background-color: #fff !important;
+    box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 50px;
+  }
 }
 </style>

@@ -2,14 +2,10 @@
   <section>
     <div class="container-full mt-4 px-4">
       <!-- Tabs navs -->
-      <ul
-        class="justify-content-center nav nav-tabs mb-3"
-        id="ex1"
-        role="tablist"
-      >
+      <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link active"
+            class="nav-link active px-3"
             id="ex1-tab-1"
             data-mdb-toggle="tab"
             href="#ex1-tabs-1"
@@ -21,7 +17,7 @@
         </li>
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link px-3"
             id="ex1-tab-2"
             data-mdb-toggle="tab"
             href="#ex1-tabs-2"
@@ -33,7 +29,7 @@
         </li>
         <li class="nav-item" role="presentation">
           <a
-            class="nav-link"
+            class="nav-link px-3"
             id="ex1-tab-3"
             data-mdb-toggle="tab"
             href="#ex1-tabs-3"
@@ -45,8 +41,15 @@
         </li>
       </ul>
     </div>
-    <!-- Tabs navs -->
-    <div class="container-full mt-4 px-4 TableBkg">
+    <div
+      class="px-3 d-flex d-lg-none align-items-center justify-content-end"
+      style="text-align: right"
+    >
+      <i class="bi bi-funnel-fill"></i>
+      <p class="fs-5">Sort By</p>
+    </div>
+    <!-- Orders Desktop version -->
+    <div class="container-full mt-4 px-4 TableBkg d-none d-md-block d-lg-block">
       <div class="d-flex justify-content-between pt-5 px-3">
         <!-- pagination -->
         <AdminPagination />
@@ -63,9 +66,9 @@
         <table class="table align-middle mb-0 bg-white">
           <thead class="bg-light">
             <tr>
-              <th>#</th>  
+              <th>#</th>
               <th>Name</th>
-              <th>Date</th>
+              <th>Data</th>
               <th>Hour</th>
               <th>priority</th>
               <th>department</th>
@@ -83,30 +86,189 @@
                 <p>Jack Dorsi</p>
               </td>
               <td>
-                <p>September30,2022</p>
+                <p>#14522322</p>
               </td>
               <td>
-                <p>10:56am</p>
+                <p>#14522322</p>
               </td>
               <td>
-                <p>Low</p>
+                <div>
+                  <p
+                    class="px-3 rounded-1 py-1"
+                    style="background-color: #c7cbd5; width: fit-content"
+                  >
+                    low
+                  </p>
+                </div>
               </td>
-               <td>
-                <p>Support</p>
+              <td>
+                <p>Unknown</p>
               </td>
-               <td>
-                <p>Open</p>
+              <td>
+                <p>Deliverd</p>
               </td>
-               <td>
-                <p>Problem with payment</p>
-              </td>
-               <td>
+              <td>awd</td>
+              <td
+                data-bs-toggle="collapse"
+                data-bs-target="#CollapseState1"
+                role="button"
+              >
                 <i class="bi bi-three-dots-vertical"></i>
+                <!-- change details modal -->
+                <div
+                  id="CollapseState1"
+                  aria-expanded="false"
+                  class="ChangeState bg-white collapse position-absolute"
+                >
+                  <p
+                    role="button"
+                    class="StatusDevider py-2 text-danger text-center"
+                  >
+                    Check
+                  </p>
+                  <p
+                    role="button"
+                    class="StatusDevider py-2 text-warning text-center"
+                  >
+                    Send
+                  </p>
+                  <p
+                    role="button"
+                    class="StatusDevider py-2 text-success text-center"
+                  >
+                    Delivered
+                  </p>
+                  <p role="button" class="py-2 text-primary text-center">
+                    Preparation
+                  </p>
+                </div>
+                <!-- Show Details Btn -->
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+    </div>
+
+    <!-- responsive Orders Items2 -->
+    <div class="mt-4 px-3 d-lg-none d-md-none">
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">#</p>
+        <p class="RightItemColor">1</p>
+      </div>
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- end devider section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">Name</p>
+        <p class="RightItemColor">jack Dorsi</p>
+      </div>
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- item section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">Data</p>
+        <p class="RightItemColor">#14522322</p>
+      </div>
+      <!-- end item section -->
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- item section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">Hour</p>
+        <p class="RightItemColor">September30,2022 at 10:56 am</p>
+      </div>
+      <!-- end item section -->
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- item section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">priority</p>
+        <div>
+          <p
+            class="px-3 rounded-1 py-1"
+            style="background-color: #c7cbd5; width: fit-content"
+          >
+            low
+          </p>
+        </div>
+      </div>
+      <!-- end item section -->
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- item section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">department</p>
+        <p class="RightItemColor">Unknown</p>
+      </div>
+      <!-- end item section -->
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- item section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+      >
+        <p class="LeftItemColor">Status</p>
+        <p class="RightItemColor">Check</p>
+      </div>
+      <!-- end item section -->
+      <!-- devider section -->
+      <div class="devider"></div>
+      <!-- item section -->
+      <div
+        class="py-3 px-4 bg-white d-flex align-items-center justify-content-end"
+      >
+        <div class="">
+          <!-- change details modal -->
+          <div
+            id="CollapseState2"
+            aria-expanded="false"
+            class="ChangeState bg-white collapse"
+          >
+            <p role="button" class="StatusDevider py-2 text-danger text-center">
+              Check
+            </p>
+            <p
+              role="button"
+              class="StatusDevider py-2 text-warning text-center"
+            >
+              Send
+            </p>
+            <p
+              role="button"
+              class="StatusDevider py-2 text-success text-center"
+            >
+              Delivered
+            </p>
+            <p role="button" class="py-2 text-primary text-center">
+              Preparation
+            </p>
+          </div>
+          <i
+            data-bs-toggle="collapse"
+            data-bs-target="#CollapseState2"
+            class="bi bi-three-dots-vertical"
+          ></i>
+        </div>
+      </div>
+      <!-- end item section -->
+    </div>
+
+    <!-- Responsive Pagination -->
+    <div class="container my-4 px-5 d-lg-none d-md-none">
+      <AdminPagination />
     </div>
   </section>
 </template>
@@ -114,32 +276,31 @@
 <script>
 import AdminPagination from "@/components/AdminPagination";
 export default {
-name: "admin",
-layout: 'admin', 
-components: { AdminPagination },
-}
+  name: "admin",
+  layout: "admin",
+  components: { AdminPagination },
+};
 </script>
 
 <style scoped>
-
 th {
-    background-color: #f5f6fa;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 10pt;
-    color: #212529;
-    padding: 10px 15px;
-    border-bottom: 0;
+  background-color: #f5f6fa;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  color: #212529;
+  padding: 10px 15px;
+  border-bottom: 0;
 }
 
 td {
-    color: black;
-    font-weight: 400;
-    font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .DetailBtn {
@@ -202,5 +363,7 @@ p {
 
 .nav-tabs {
   border-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 </style>

@@ -1,64 +1,186 @@
 <template>
   <!-- New Admin Modal -->
-  <div class="BackDrop">
-    <div class="FormModal bg-white">
-      <div class="d-flex justify-content-between">
-        <p class="UserName">{{ name }}</p>
-        <i role="button" @click="CloseDetail" class="CloseBtn bi bi-x-lg"></i>
+  <div class="BackDrop" style="overflow-y: auto">
+    <div class="FormModal">
+      <div class="d-none d-md-block d-lg-block">
+        <div class="d-flex justify-content-between">
+          <p class="UserName">{{ name }}</p>
+          <i role="button" @click="CloseDetail" class="CloseBtn bi bi-x-lg"></i>
+        </div>
+        <!-- Phone Section -->
+        <div class="d-flex align-items-top pt-2">
+          <p class="PhoneStyle">Phone:</p>
+          <p class="PhoneDesc ps-3">(001)-5410000000</p>
+        </div>
+        <!-- Address Section -->
+        <div class="d-flex align-items-top pt-2">
+          <p class="PhoneStyle">Address:</p>
+          <p class="AddressDesc ps-2">
+            132 North Border Street England,CA 50085
+          </p>
+        </div>
+        <!-- table section -->
+        <div class="container-full table-responsive mt-4">
+          <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>Products</th>
+                <th>Weight</th>
+                <th>Item</th>
+                <th>Discount</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <img
+                    class="my-2 DiscountImage"
+                    src="~/assets/pictures/off2.jpg"
+                    alt="DiscountBaner"
+                  />
+                </td>
+                <td>
+                  <p style="color: #055452">Sella Body Better</p>
+                </td>
+                <td>
+                  <p>20ml</p>
+                </td>
+                <td>
+                  <p>5</p>
+                </td>
+                <td>
+                  <p>40%</p>
+                </td>
+                <td>
+                  <p>$800</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <!-- Phone Section -->
-      <div class="d-flex align-items-top pt-2">
-      <p class="PhoneStyle">Phone:</p>
-      <p class="PhoneDesc ps-3">(001)-5410000000</p>
-      </div>
-      <!-- Address Section -->
-      <div class="d-flex align-items-top pt-2">  
-      <p class="PhoneStyle">Address:</p>
-      <p class="AddressDesc ps-2">132 North Border Street England,CA 50085</p>
-      </div>
-      <!-- table section -->
-      <div class="container-full table-responsive mt-4">
-        <table class="table align-middle mb-0 bg-white">
-          <thead class="bg-light">
-            <tr>
-              <th>#</th>
-              <th>Image</th>
-              <th>Products</th>
-              <th>Weight</th>
-              <th>Item</th>
-              <th>Discount</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <p>1</p>
-              </td>
-              <td>
-                <img class="my-2 DiscountImage" src="~/assets/pictures/off2.jpg" alt="DiscountBaner">
-              </td>
-              <td>
-                <p style="color: #055452;">Sella Body Better</p>
-              </td>
-              <td>
-                <p>20ml</p>
-              </td>
-              <td>
-                <p>5</p>
-              </td>
-              <td>
-                <p>40%</p>
-              </td>
-               <td>
-                <p>$800</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <!--Phone response-->
+      <section
+        class="d-md-none d-lg-none py-3 pb-4 px-3"
+        style="backdrop-filter: blur(3px)"
+      >
+        <div class="d-flex justify-content-between px-4">
+          <p class="UserName">{{ name }}</p>
+          <i role="button" @click="CloseDetail" class="CloseBtn bi bi-x-lg"></i>
+        </div>
+        <!-- Phone Section -->
+        <div class="d-flex align-items-top pt-2 px-4">
+          <p class="PhoneStyle">Phone:</p>
+          <p class="PhoneDesc ps-3">(001)-5410000000</p>
+        </div>
+        <!-- Address Section -->
+        <div class="d-flex align-items-top pt-2 px-4">
+          <p class="PhoneStyle">Address:</p>
+          <p class="AddressDesc ps-2">
+            132 North Border Street England,CA 50085
+          </p>
+        </div>
+        <div class="mt-4 py-3">
+          <div
+            class="py-3 px-4 d-flex align-items-center justify-content-between"
+          >
+            <img src="~/assets/pictures/off2.jpg" alt="" class="img-fluid" />
+          </div>
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- end devider section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <p class="LeftItemColor">#</p>
+            <p class="RightItemColor">1</p>
+          </div>
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- item section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <p class="LeftItemColor">Percent</p>
+            <p class="RightItemColor">Jack Dorsi</p>
+          </div>
+          <!-- end item section -->
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- item section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <p class="LeftItemColor">Code</p>
+            <p class="RightItemColor">Kandaka-discount</p>
+          </div>
+          <!-- end item section -->
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- item section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <p class="LeftItemColor">Text</p>
+            <p class="RightItemColor">September30,2022</p>
+          </div>
+          <!-- end item section -->
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- item section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <p class="LeftItemColor">Expiration date</p>
+            <p class="RightItemColor">at 10:56 am</p>
+          </div>
+          <!-- end item section -->
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- item section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <p class="LeftItemColor">Order Status</p>
+            <p class="RightItemColor">Check</p>
+          </div>
+          <!-- end item section -->
+          <!-- devider section -->
+          <div class="devider"></div>
+          <!-- item section -->
+          <div
+            class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
+          >
+            <!-- call details modal -->
+            <div class="d-flex">
+              <p>inactive</p>
+              <!-- Checked switch -->
+              <div class="ps-4 pe-3 form-check form-switch">
+                <input
+                  style="margin: 0; margin-top: 3px"
+                  class="InputStyle form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+              </div>
+              <!-- end checked switch -->
+              <p>Active</p>
+            </div>
+            <i class="bi bi-three-dots-vertical"></i>
+          </div>
+          <!-- end item section -->
+        </div>
+      </section>
       <!-- end form Input -->
-      <div class="d-flex align-items-center justify-content-center mt-4">
+      <div class="d-flex align-items-center justify-content-center py-3">
         <a class="SaveBtn mt-2 btn btn-sm" role="button">Confirm</a>
       </div>
     </div>
@@ -90,8 +212,8 @@ export default {
 <style scoped>
 /*  General style  */
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /* End General style  */
 
@@ -171,21 +293,21 @@ td {
 }
 
 .PhoneDesc {
-   color: #231942;
-   font-size: 11pt;
-   margin-top: 4px;
+  color: #231942;
+  font-size: 11pt;
+  margin-top: 4px;
 }
 
 .AddressDesc {
-   color: #231942;
-   font-size: 11pt;
-   margin-top: 4px;
+  color: #231942;
+  font-size: 11pt;
+  margin-top: 4px;
 }
 
 .PhoneStyle {
-    color: #4d4f5c;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
+  color: #4d4f5c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12pt;
 }
 
 /* modal section */
@@ -208,7 +330,7 @@ td {
   color: #fff !important;
   box-shadow: none;
   border: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14pt;
   border-radius: 4px;
   cursor: pointer;
@@ -228,20 +350,27 @@ td {
 }
 
 .CloseBtn {
- color: #a4afb7;
- font-size: 16pt;
+  color: #a4afb7;
+  font-size: 16pt;
 }
 
 /*Form Modal */
 .FormModal {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  z-index: 3;
-  width: 700px;
   background-color: #fff !important;
   box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
-  padding: 40px 50px;
+}
+@media screen and (min-width: 1200px) {
+  .FormModal {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    z-index: 3;
+    width: 700px;
+    background-color: #fff !important;
+    box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 50px;
+  }
 }
 
 /* filterd blur backdrop */

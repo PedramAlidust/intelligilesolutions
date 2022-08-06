@@ -1,16 +1,14 @@
 <template>
   <div class="dialog" role="dialog" v-show="open">
-    <div class="dialog-bg" @click="close"/>
+    <div class="dialog-bg" @click="close" />
     <transition>
       <div class="dialog-wrapper" v-if="open">
         <div class="dialog-body">
           <div class="dialog-header">
             <h4>{{ title }}</h4>
-            <span @click="close">
-              &#215;
-            </span>
+            <span @click="close"> &#215; </span>
           </div>
-          <slot/>
+          <slot />
         </div>
       </div>
     </transition>
@@ -27,22 +25,22 @@ export default {
     },
     open: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   methods: {
     close() {
-      this.$emit('close', false)
-    }
+      this.$emit("close", false);
+    },
   },
-}
+};
 </script>
 
 <style scoped>
 .v-enter-active,
 .v-leave-active {
   transform-origin: bottom center;
-  animation: fade-in-pulse-08 .4s backwards cubic-bezier(0.1, 0, 0.3, 1)
+  animation: fade-in-pulse-08 0.4s backwards cubic-bezier(0.1, 0, 0.3, 1);
 }
 
 .v-enter-from,
@@ -56,9 +54,10 @@ export default {
     transform: translateY(300px);
   }
   50% {
-    opacity: 1
+    opacity: 1;
   }
-  100%, 70% {
+  100%,
+  70% {
     transform: translateY(0);
   }
 }

@@ -20,12 +20,14 @@ const _03fef5c2 = () => interopDefault(import('..\\pages\\signup\\index.vue' /* 
 const _111040f3 = () => interopDefault(import('..\\pages\\supports\\index.vue' /* webpackChunkName: "pages/supports/index" */))
 const _6969195a = () => interopDefault(import('..\\pages\\admin\\comments\\index.vue' /* webpackChunkName: "pages/admin/comments/index" */))
 const _2eb3f166 = () => interopDefault(import('..\\pages\\admin\\contact\\index.vue' /* webpackChunkName: "pages/admin/contact/index" */))
+const _5d02f9d8 = () => interopDefault(import('..\\pages\\admin\\contact\\index\\_slug.vue' /* webpackChunkName: "pages/admin/contact/index/_slug" */))
 const _5f9a4026 = () => interopDefault(import('..\\pages\\admin\\discount\\index.vue' /* webpackChunkName: "pages/admin/discount/index" */))
 const _6b72acc9 = () => interopDefault(import('..\\pages\\admin\\orders\\index.vue' /* webpackChunkName: "pages/admin/orders/index" */))
 const _75b0c02c = () => interopDefault(import('..\\pages\\admin\\products\\index.vue' /* webpackChunkName: "pages/admin/products/index" */))
 const _3384db5f = () => interopDefault(import('..\\pages\\admin\\subadmin\\index.vue' /* webpackChunkName: "pages/admin/subadmin/index" */))
 const _56332782 = () => interopDefault(import('..\\pages\\admin\\tickets\\index.vue' /* webpackChunkName: "pages/admin/tickets/index" */))
 const _210e61aa = () => interopDefault(import('..\\pages\\profile\\edit\\index.vue' /* webpackChunkName: "pages/profile/edit/index" */))
+const _7fa3f402 = () => interopDefault(import('..\\pages\\products\\_product.vue' /* webpackChunkName: "pages/products/_product" */))
 const _22cca7f2 = () => interopDefault(import('..\\pages\\supports\\_id\\index.vue' /* webpackChunkName: "pages/supports/_id/index" */))
 const _81406492 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -103,7 +105,12 @@ export const routerOptions = {
   }, {
     path: "/admin/contact",
     component: _2eb3f166,
-    name: "admin-contact"
+    name: "admin-contact",
+    children: [{
+      path: ":slug?",
+      component: _5d02f9d8,
+      name: "admin-contact-index-slug"
+    }]
   }, {
     path: "/admin/discount",
     component: _5f9a4026,
@@ -128,6 +135,10 @@ export const routerOptions = {
     path: "/profile/edit",
     component: _210e61aa,
     name: "profile-edit"
+  }, {
+    path: "/products/:product",
+    component: _7fa3f402,
+    name: "products-product"
   }, {
     path: "/supports/:id",
     component: _22cca7f2,

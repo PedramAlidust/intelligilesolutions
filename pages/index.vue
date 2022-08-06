@@ -387,7 +387,7 @@
             products of our company
           </p>
           <!-- top products slider -->
-          <div class="TopProdSlider d-flex justify-content-center">
+          <div class="TopProdSlider d-lg-flex justify-content-center">
             <div v-for="card in resaults" class="px-2">
               <ProductCard :details="card" />
             </div>
@@ -420,7 +420,7 @@
             List of the newest and best-selling cosmetic <br />
             products of our company
           </p>
-          <div class="BestProdSlider d-flex justify-content-center">
+          <div class="BestProdSlider d-lg-flex justify-content-center">
             <div v-for="card in resaults" class="px-2">
               <ProductCard :details="card" />
             </div>

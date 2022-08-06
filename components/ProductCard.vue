@@ -1,5 +1,5 @@
 <template>
-  <div style="width: fit-content">
+  <div style="width: 100%">
     <div class="position-relative main">
       <img
         :src="details.acf.productimage"
@@ -49,7 +49,10 @@
           <p class="">150 reviews</p>
         </div>
       </div>
-      <div class="d-flex flex-column" style="margin-top: -13px">
+      <div
+        class="d-flex flex-column"
+        style="margin-top: -13px; text-align: left"
+      >
         <p class="fs-5">{{ details.title.rendered }}</p>
         <p class="fs-5" style="margin-top: -10px">
           ${{ details.acf.productprice }}
