@@ -9,12 +9,12 @@
       <!-- Phone Section -->
       <div class="d-flex align-items-top pt-2">
       <p class="PhoneStyle">Phone:</p>
-      <p class="PhoneDesc ps-3">(001)-5410000000</p>
+      <p class="PhoneDesc ps-3">{{ phone }}</p>
       </div>
       <!-- Address Section -->
       <div class="d-flex align-items-top pt-2">  
       <p class="PhoneStyle">Address:</p>
-      <p class="AddressDesc ps-2">132 North Border Street England,CA 50085</p>
+      <p class="AddressDesc ps-2">{{ address }}</p>
       </div>
       <!-- table section -->
       <div class="container-full table-responsive mt-4">
@@ -36,7 +36,7 @@
                 <p>1</p>
               </td>
               <td>
-                <img class="my-2 DiscountImage" src="~/assets/pictures/off2.jpg" alt="DiscountBaner">
+                <img class="my-2 DiscountImage" :src="image" alt="DiscountBaner">
               </td>
               <td>
                 <p style="color: #055452;">Sella Body Better</p>
@@ -45,13 +45,13 @@
                 <p>20ml</p>
               </td>
               <td>
-                <p>5</p>
+                <p>{{ item }}</p>
               </td>
               <td>
-                <p>40%</p>
+                <p>{{ discount }}</p>
               </td>
                <td>
-                <p>$800</p>
+                <p>{{ price }}</p>
               </td>
             </tr>
           </tbody>
@@ -59,7 +59,7 @@
       </div>
       <!-- end form Input -->
       <div class="d-flex align-items-center justify-content-center mt-4">
-        <a class="SaveBtn mt-2 btn btn-sm" role="button">Confirm</a>
+        <a @click="confirm('confirmed', orderid)" class="SaveBtn mt-2 btn btn-sm" role="button">Confirm</a>
       </div>
     </div>
   </div>
@@ -78,11 +78,17 @@ export default {
     "item",
     "discount",
     "price",
+    "orderid"
   ],
   methods: {
     CloseDetail() {
       this.$emit("CloseEvent");
     },
+    confirm(status, orderid) {
+      this.$parent.ChangeOrderStatus(status, orderid)
+      /* close details dialog */
+      this.$emit("CloseEvent");
+    }
   },
 };
 </script>
@@ -242,6 +248,15 @@ td {
   background-color: #fff !important;
   box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.1);
   padding: 40px 50px;
+}
+
+@media screen and (max-width: 725px) {
+  .FormModal {
+    position: relative;
+    top: 15%;
+    left: 0;
+    width: 100%;
+  }
 }
 
 /* filterd blur backdrop */

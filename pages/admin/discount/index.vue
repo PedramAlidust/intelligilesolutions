@@ -15,15 +15,14 @@
             <button
                 @click="Discount(true)"
                 type="button"
-                class="BtnStyleProd btn btn-sm"
-            >
+                class="BtnStyleProd btn btn-sm">
               Add New Discount
             </button>
           </div>
           <!-- end sort section -->
         </div>
         <!-- table section -->
-        <div class="container-full px-3 table-responsive">
+        <div v-if="!loading" class="container-full px-3 table-responsive">
           <table class="table align-middle mb-0 bg-white">
             <thead class="bg-light">
             <tr>
@@ -38,28 +37,27 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr v-for="(discount, index) in discounts" :key="index + 50">
               <td>
                 <p>1</p>
               </td>
               <td>
                 <img
                     class="DiscountImage"
-                    src="~/assets/pictures/off2.jpg"
-                    alt="DiscountBaner"
-                />
+                    :src="discount.acf.image"
+                    alt="DiscountBaner"/>
               </td>
               <td>
-                <p>%50</p>
+                <p>%{{ discount.acf.discount }}</p>
               </td>
               <td>
-                <p>Kandaka-discount</p>
+                <p>{{ discount.acf.cuponcode }}</p>
               </td>
               <td>
-                <p>Get $ 50.00 off your next full price purchase!</p>
+                <p>{{ discount.acf.pricetitle }}</p>
               </td>
               <td>
-                <p>September30,2022</p>
+                <p>{{ discount.acf.expiration }}</p>
               </td>
               <td>
                 <!-- switch button -->
@@ -80,19 +78,21 @@
                   <p>Active</p>
                 </div>
               </td>
-              <td @click="toggle = !toggle">
-                <i style="font-size: 30px; cursor: pointer;" class="bi bi-three-dots-vertical"></i>
-              </td>
+               <button type="button" class="DetailBtn btn btn-sm">
+                  <i class="CheckIcon bi bi-check2"></i>
+                </button>
+                <button type="button" class="DetailBtn btn btn-sm">
+                  <i class="CancelIcon bi bi-x-lg"></i>
+                </button>
             </tr>
-            <div class="toggle-box" v-if="toggle">
-              <ul>
-                <li><a href="/">Edit</a></li>
-                <hr>
-                <li><a href="/">Delete</a></li>
-              </ul>
-            </div>
             </tbody>
           </table>
+        </div>
+          <!--loading section -->
+        <div v-if="loading" class="text-center mt-4">
+          <p class="text-success" style="font-size: 12pt; font-weight: bold">
+            Loading...
+          </p>
         </div>
       </div>
     </section>
@@ -276,8 +276,7 @@
             <label
                 class="position-absolute bg-white"
                 style="top: -15px; left: 10px"
-            >Expiration</label
-            >
+            >Expiration</label>
             <input
                 placeholder="Expiration date"
                 type="text"
@@ -295,9 +294,7 @@
           <a
               href="/admin/subadmin"
               class="SaveBtn mt-2 btn btn-sm"
-              role="button"
-          >Add</a
-          >
+              role="button">Add</a>
         </div>
       </div>
     </div>
@@ -312,6 +309,8 @@ export default {
   components: { AdminPagination },
   data() {
     return {
+      loading: false,
+      discounts: [],
       AddDiscount: false,
       subject: "Please enter the title of the discount",
       percent: "Please enter the Percent of the discount",
@@ -324,10 +323,59 @@ export default {
       this.AddDiscount = status;
     },
   },
+  beforeMount() {
+    this.loading = true
+  },
+  async mounted() {
+    /* set request header */
+    const headers = {
+      Authorization: "Bearer" + this.$cookiz.get("AdminToken"),
+      "Content-Type": "application/json",
+    };
+
+    /* get orders */
+    const discount = await this.$axios.get("/wp-json/wp/v2/trendingdiscount", { headers });
+    this.discounts = discount.data;
+
+    /*set loading to false*/
+    this.loading = false
+
+  }
 };
 </script>
 
 <style scoped>
+
+.starbi {
+  color: #ed8a19;
+}
+.CheckIcon {
+  color: #fff;
+  font-size: 12pt;
+}
+.CancelIcon {
+  color: #000;
+  font-size: 12pt;
+}
+.DetailBtn {
+  margin-top: 15px;
+  width: 40px;
+  background-color: #e99d7b;
+  color: #231942;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0px 0px !important;
+  text-transform: capitalize;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.DetailBtn:focus {
+  box-shadow: none;
+}
+.DetailBtn:last-child {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
 * {
   font-size: 18px;
 }

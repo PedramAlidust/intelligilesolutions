@@ -76,7 +76,7 @@ const createStore = () => {
       },
 
       /* Admin Login Logic */
-      async LoginAdmin(state, payload) {
+      async LoginAdmin(state, payload, commit) {
         /*Admin get token config */
         var AdminLogConf = {
           method: "post",
@@ -124,6 +124,8 @@ const createStore = () => {
               this.$cookiz.set("AdminEmail", response.data.email);
               /* redirect to user admin area */
               this.$router.push({ path: "/admin" });
+              /*set reloaded local storage */
+              localStorage.setItem("readmin", "1");
             }
           })
           .catch((error) => {
@@ -275,6 +277,12 @@ const createStore = () => {
             state.profile.saved.splice(state.profile.saved.indexOf(saved), 1);
         });
       },
+      ExitAdminPanel() {
+          /* Remove Old AdminLogin Cookie */
+          this.$cookiz.remove("AdminToken");
+          /* redirect Admin to Main Page */
+          this.$router.push({ path: "/" });
+      }
     },
     actions: {
       async nuxtServerInit({ commit, state }, context) {
@@ -289,11 +297,11 @@ const createStore = () => {
         await this.$axios
           .get("/wp-json/wp/v2/products")
           .then((products) => commit("SetProductsData", products.data));
-
+      
         await this.$axios
-          .get("/wp-json/wp/v2/trendingdiscount")
+          .get("/wp-json/wp/v2/offers")
           .then((data) => commit("SetOffersData", data.data));
-
+        
         if (this.$cookiz.get("jwt-token")) {
           /* get user token for login */
           const LoginToken = this.$cookiz.get("jwt-token");
@@ -304,7 +312,6 @@ const createStore = () => {
               Authorization: "Bearer" + context.$cookiz.get("jwt-token"),
               "Content-Type": "application/json",
             };
-
           
             await this.$axios
               .post(
@@ -478,6 +485,11 @@ const createStore = () => {
       GetAdminRole({ commit }, payload) {
         commit("getAdminRole", payload);
       },
+
+      /*Exit Admin User */
+      ExitAdmin({commit}) {
+        commit("ExitAdminPanel")
+      }
     },
     getters: {
       GetSubAdminUser(state) {

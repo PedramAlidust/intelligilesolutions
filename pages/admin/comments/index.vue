@@ -32,49 +32,49 @@
               <th></th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
+            <tbody v-if="!loading">
+            <tr v-for="(comment, index) in comments" :key="index + 95">
               <td>
                 <p>1</p>
               </td>
               <td>
-                <p>Jack Dorsi</p>
+                <p>{{comment.acf.author}}</p>
               </td>
               <td>
                 <p style="color: #055452">Sella body butter</p>
               </td>
               <td>
-                <p>September30,2022</p>
+                <p>{{comment.acf.date}} </p>
               </td>
               <td>
-                <p>at 10:56 am</p>
+                <p>{{comment.acf.time}}</p>
               </td>
               <td style="color: #ed8a19">
-                <i class="bi bi-star-fill starbi"></i>
-                <i class="bi bi-star-fill starbi"></i>
-                <i class="bi bi-star-fill starbi"></i>
-                <i class="bi bi-star starbi"></i>
-                <i class="bi bi-star starbi"></i>
-                <span style="color: #000">(3)</span>
+                <i v-for="(star, indextwo) in Number(comment.acf.score)" :key="indextwo + 985" class="bi bi-star-fill starbi"></i>                
+                <span style="color: #000">{{comment.acf.score}}</span>
               </td>
               <td style="width: 30%">
                 <p>
-                  I really had to prep my face to make it super hydrated. I
-                  found the coverage better with a Overall, it has good
-                  coverage
+                  {{comment.acf.commenttxt}}
                 </p>
               </td>
               <td class="d-flex flex-column gap-2">
                 <button type="button" class="DetailBtn btn btn-sm">
                   <i class="CheckIcon bi bi-check2"></i>
                 </button>
-                <button type="button" class="DetailBtn btn btn-sm">
+                <button @click="DeleteComment(comment.id)" type="button" class="DetailBtn btn btn-sm">
                   <i class="CancelIcon bi bi-x-lg"></i>
                 </button>
               </td>
             </tr>
             </tbody>
           </table>
+        <!--loading section -->
+        <div v-if="loading" class="text-center mt-4">
+          <p class="text-success" style="font-size: 12pt; font-weight: bold">
+            Loading...
+          </p>
+        </div>
         </div>
       </div>
     </section>
@@ -187,7 +187,53 @@ import AdminPagination from "@/components/AdminPagination";
 export default {
   name: "admin",
   layout: "admin",
+  data() {
+    return {
+      loading: null, 
+      comments: []
+    }
+  },
   components: { AdminPagination },
+  methods: {
+    DeleteComment(id) {
+
+    /* set request header */
+    const headers = {
+      Authorization: "Bearer" + this.$cookiz.get("AdminToken"),
+      "Content-Type": "application/json",
+    };
+
+        /* axios delete comment */
+        this.$axios
+          .delete(`/wp-json/wp/v2/commentv2/${id}`, {headers})
+          .then(res => {
+            if(res.status == 201) {
+              alert('Comment deleted successfully');
+            }
+          })
+          .catch(err => {
+            console.log(err);
+          });
+    }
+  },
+    beforeMount() {
+    this.loading = true
+  },
+  async mounted() {
+    /* set request header */
+    const headers = {
+      Authorization: "Bearer" + this.$cookiz.get("AdminToken"),
+      "Content-Type": "application/json",
+    };
+
+    /* get orders */
+    const comments = await this.$axios.get("/wp-json/wp/v2/commentv2", { headers });
+    this.comments = comments.data;
+
+    /*set loading to false*/
+    this.loading = false
+
+  }
 };
 </script>
 

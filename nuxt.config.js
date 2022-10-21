@@ -65,11 +65,10 @@ export default {
         //Axios for requests
         '@nuxtjs/axios',
 
-        //Proxy for cors error
-        '@nuxtjs/proxy',
-
         //Cookies With options
         ['cookie-universal-nuxt', { alias: 'cookiz' }],
+        // pwa
+        '@nuxtjs/pwa',
     ],  
     /*
     ** Build configuration
@@ -125,10 +124,13 @@ export default {
     },
 
     proxy: {
-        '/wp-json': 'https://api.intelligilesolutions.com',
+        '/wp-json': 'https://kndkapi.theresume.ir',
     },
-    env: {
-        AdminUserName : 'Pedram',
-        AdminPassword : 'Pedram@1996' 
-     }, 
+    pwa: {
+        manifest: {
+          name: 'Kandaka App',
+          lang: 'fa',
+          useWebmanifestExtension: false
+        }
+      }
 }

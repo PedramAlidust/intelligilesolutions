@@ -29,9 +29,9 @@
                                     <!-- flex column -->
                                     <div class="d-flex flex-row pb-4">
                                         <p class="SignUpTxt">Need an account?</p>
-                                        <nuxt-link to="/signup">
+                                        <a href="/signup">
                                         <p class="SignUpTxt pe-2 text-muted">Sign Up</p>
-                                        </nuxt-link>
+                                        </a>
                                     </div>        
                                     <!-- google login -->
                                     <div class="Devider"></div>
@@ -81,25 +81,10 @@
                                     <!-- flex column -->
                                     <div class="d-flex flex-row pb-4">
                                         <p class="SignUpTxt">Need an account?</p>
-                                        <nuxt-link to="/signup">
+                                        <a href="/signup">
                                         <p class="SignUpTxt pe-2 text-muted">Sign Up</p>
-                                        </nuxt-link>
-                                    </div>        
-                                    <!-- google login -->
-                                    <div class="Devider"></div>
-                                    <p class="DeviderTxt text-muted text-center">
-                                        OR
-                                    </p>
-                                    <!-- google button -->
-                                    <div class="text-center mt-5">
-                                    <a class="btn GoogleBtn" role="button">
-                                        <img 
-                                        width="40px"
-                                        class="pe-2"
-                                        src="~assets/pictures/GoogleIcon.png" />
-                                        Continue with Google
-                                    </a>                   
-                                    </div>        
+                                        </a>
+                                    </div>                
                               </form>
                             <!-- end login form -->    
                         </div>

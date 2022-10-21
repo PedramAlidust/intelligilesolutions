@@ -14,7 +14,7 @@
                 the latest technology methods to its consumers.
               </p>
               <button type="button" class="btn btn-warning SliderBtn">
-                shop now
+                Welcome
               </button>
             </div>
           </div>
@@ -29,7 +29,7 @@
         latest technology methods to its consumers.
       </p>
       <button type="button" class="btn btn-warning SliderMobileBtn">
-        shop now
+        Welcome
       </button>
     </div>
     <!-- product categorie section -->
@@ -155,7 +155,6 @@
                        <!-- card look price and button -->
                        <div class="d-flex flex-row align-items-center justify-content-between">
                          <p class="CardPrice">% {{ offer.acf.discount }}</p>
-                          <button type="button" class="CardButton btn btn-sm" @click="GetOffer(offer.acf.cuponcode)">Get Offer</button>
                         </div>       
                       </div>
                    </div>
@@ -170,7 +169,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <p class="hr TopProducts text-dark">
-              <span class="toptextback"> Top Products </span>
+              <span class="toptextback">Products </span>
             </p>
           </div>
           <!-- top products text -->
@@ -198,39 +197,6 @@
         </div>
       </div>
     </section>
-    <!-- best products section -->
-    <section class="py-lg-5 mt-lg-0 pt-5 pt-lg-0">
-      <div class="container py-lg-4">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="hr text-dark">
-              <span class="BestProducts"> Best Products </span>
-            </p>
-          </div>
-          <!-- Best products text -->
-          <p class="text-center pt-5 text-muted">
-            List of the newest and best-selling cosmetic <br />
-            products of our company
-          </p>
-          <div class="BestProdSlider d-lg-flex justify-content-center">
-            <div v-for="(card, index) in products" class="px-2" :key="index">
-              <ProductCard :details="card" @Add="Add" @Saved="Saved"/>
-            </div>
-          </div>
-          <!-- arrows inside flex -->
-          <div
-              class="SlideArrowPosition d-flex flex-row align-items-cemter justify-content-between px-5"
-          >
-            <div class="TopProdRight">
-              <i class="SlideBtn bi bi-caret-left"></i>
-            </div>
-            <div class="TopProdLeft">
-              <i class="SlideBtn bi bi-caret-right"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <TheFooter />
   </div>
 </template>
@@ -240,7 +206,7 @@ import TheHeader from "@/components/Navigation/TheHeader";
 import TheFooter from "@/components/TheFooter";
 import ProductCard from "@/components/ProductCard.vue";
 
-import {mapActions, mapState} from "vuex";
+import {mapActions, mapState } from "vuex";
 
 export default {
   components: {
@@ -255,7 +221,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(['offers', 'products'])
+    ...mapState(['offers', 'products']), 
+    DspActiveProduct() {
+      return this.products.filter(product => product.acf.dspstatus);
+    },
   },
   methods: {
     ...mapActions(['AddToCart', 'SavedProducts']),

@@ -18,28 +18,6 @@
                     About
                   </nuxt-link>
                 </li>
-              <li class="DropDownNav nav-item px-3">
-                <nuxt-link class="nav-link" to="/products">
-                  Products
-                </nuxt-link>
-                 <div class="DropDown">
-                    <nuxt-link class="nav-link" to="/products">
-                    Lip Care
-                    </nuxt-link>
-                     <nuxt-link class="nav-link" to="/products">
-                    Skin Care
-                    </nuxt-link>
-                     <nuxt-link class="nav-link" to="/products">
-                    Jewelry
-                    </nuxt-link>
-                     <nuxt-link class="nav-link" to="/products">
-                    Nail
-                    </nuxt-link>
-                     <nuxt-link class="nav-link" to="/products">
-                    Perfum
-                    </nuxt-link>
-                 </div>
-              </li>
                 <li class="nav-item px-3">
                   <nuxt-link class="nav-link" to="/contact">
                     Contact
@@ -50,21 +28,13 @@
           </nav>
         </div>
         <div class="col-lg-3 text-end py-4 SearchForm">
-          <!-- search form -->
-          <div class="d-flex flex-row">
-            <div class="form-outline">
-              <input @blur="OnBlur" @focus="OnFocus" placeholder="Search..." type="search" id="form1" class="form-control inputstyle" />
-            </div>
-            <button type="button" :class="OnFocusCss" class="btn searchbtn rounded-circle">
-              <i class="bi bi-search searchicon"></i>
-            </button>
-          </div>
         </div>
         <div class="col-lg-3 text-start py-4 d-flex flex-row flex-row-reverse">
-          <TheNavMenu/>
-          <button type="button" class="btn shopbtn">
-            <i class="bi bi-bag shopicon"></i>
+          <nuxt-link to="/admin">
+           <button type="button" class="btn shopbtn">
+            Admin
           </button>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -331,11 +301,9 @@ input:focus::placeholder {
 
 .shopbtn {
   background-color: #e99d7b !important;
-  border-radius: 50% !important;
   margin-right: 10px;
-  height: 40px;
-  width: 40px;
   box-shadow: none;
+  color: #fff !important;
 }
 
 @media all and (max-width: 1200px) {

@@ -160,9 +160,9 @@
             <!-- flex column -->
             <div class="d-flex flex-row pb-4">
               <p class="SignUpTxt">Already have account?</p>
-              <nuxt-link to="/login">
+              <a href="/login">
                 <p class="SignUpTxt pe-2 text-muted">Log In</p>
-              </nuxt-link>
+              </a>
             </div>
             <!-- google login -->
             <div class="Devider"></div>
@@ -266,6 +266,7 @@ export default {
       password: app.$cookiz.get("Userpassword"),
       roles: ["author"],
       acf: {
+        fullname:app.$cookiz.get("Username"),
         FullName: app.$cookiz.get("Username"),
         firstname: app.$cookiz.get("Username"),
         lastname: "Default",

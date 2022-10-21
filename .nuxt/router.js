@@ -27,6 +27,8 @@ const _bbe9e70c = () => interopDefault(import('../pages/profile/comments/index.v
 const _ab8e32e0 = () => interopDefault(import('../pages/profile/edit/index.vue' /* webpackChunkName: "pages/profile/edit/index" */))
 const _5682122a = () => interopDefault(import('../pages/profile/orders/index.vue' /* webpackChunkName: "pages/profile/orders/index" */))
 const _45587f52 = () => interopDefault(import('../pages/profile/saved/index.vue' /* webpackChunkName: "pages/profile/saved/index" */))
+const _6d4fcba2 = () => interopDefault(import('../pages/admin/tickets/history/index.vue' /* webpackChunkName: "pages/admin/tickets/history/index" */))
+const _12d2ef5d = () => interopDefault(import('../pages/admin/tickets/history/index/_slug.vue' /* webpackChunkName: "pages/admin/tickets/history/index/_slug" */))
 const _2ceaf735 = () => interopDefault(import('../pages/products/_products.vue' /* webpackChunkName: "pages/products/_products" */))
 const _4d7684cf = () => interopDefault(import('../pages/supports/_id/index.vue' /* webpackChunkName: "pages/supports/_id/index" */))
 const _7799fcf6 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -135,6 +137,15 @@ export const routerOptions = {
     path: "/profile/saved",
     component: _45587f52,
     name: "profile-saved"
+  }, {
+    path: "/admin/tickets/history",
+    component: _6d4fcba2,
+    name: "admin-tickets-history",
+    children: [{
+      path: ":slug?",
+      component: _12d2ef5d,
+      name: "admin-tickets-history-index-slug"
+    }]
   }, {
     path: "/products/:products",
     component: _2ceaf735,

@@ -11,8 +11,7 @@
           <button
               @click="RegisterModal"
               type="button"
-              class="BtnStyleProd btn btn-sm"
-          >
+              class="BtnStyleProd btn btn-sm">
             Add New Admin
           </button>
         </div>
@@ -43,13 +42,13 @@
               <p>{{ user.name }}</p>
             </td>
             <td>
-              <p>{{ user.acf.zipcode }}</p>
+              <p>{{ user.name }}@gmail.com</p>
             </td>
             <td>
               <p>{{ user.acf.phonenum }}</p>
             </td>
             <td>
-              <p>{{ user.acf.FullName }}</p>
+              <p>{{ user.name }}</p>
             </td>
             <td>
               <p>pass</p>
@@ -117,7 +116,7 @@
             class="py-3 px-4 bg-white d-flex align-items-center justify-content-between"
         >
           <p class="LeftItemColor">Gmail</p>
-          <p class="RightItemColor">{{ user.acf.zipcode }}</p>
+          <p class="RightItemColor">{{ user.email }}</p>
         </div>
         <!-- end item section -->
         <!-- devider section -->
@@ -340,6 +339,7 @@ export default {
       password: store.getters.GetSubAdminPass,
       roles: ["editor"],
       acf: {
+        fullname: store.getters.GetSubAdminUser,
         FullName: "AlisaBecker",
         firstname: "jak",
         lastname: "jaki",
@@ -395,6 +395,13 @@ export default {
           console.log(error.response.data);
         });
   },
+  /* check if Admin user is not authenticated */
+  middleware({ redirect, store }) {
+    if (store.getters.GetAdminRole !== "administrator") {
+      redirect("/admin/");
+    }
+  },
+  
 };
 </script>
 

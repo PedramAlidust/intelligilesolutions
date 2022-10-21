@@ -163,6 +163,22 @@
     "_name": "_45587f52"
   },
   {
+    "name": "admin-tickets-history",
+    "path": "/admin/tickets/history",
+    "component": "/home/pedram/Projects/hesamkandaka/pages/admin/tickets/history/index.vue",
+    "chunkName": "pages/admin/tickets/history/index",
+    "children": [
+      {
+        "name": "admin-tickets-history-index-slug",
+        "path": ":slug?",
+        "component": "/home/pedram/Projects/hesamkandaka/pages/admin/tickets/history/index/_slug.vue",
+        "chunkName": "pages/admin/tickets/history/index/_slug",
+        "_name": "_12d2ef5d"
+      }
+    ],
+    "_name": "_6d4fcba2"
+  },
+  {
     "name": "products-products",
     "path": "/products/:products",
     "component": "/home/pedram/Projects/hesamkandaka/pages/products/_products.vue",
